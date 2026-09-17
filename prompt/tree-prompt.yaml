@@ -1,0 +1,134 @@
+user-prompt:
+  output-description: 
+  - write a small chapter in a fictional Agatha Christie novel where Hercule Poirot explains where the spring and the tree of Joan of Arc can be found.
+  - at the end of the chapter, add the notes of a seasoned police inspector anno 2026 who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
+  process-description: 
+  - read the documents from the document-reference-list
+  - focus on the relevant snippets from the relevant-document-snippets
+  - place the various objects to each other in terms of their locations to each other
+  - seperate the facts from the Hercule Poirot interpretation
+  - consider the location where vineyards grow
+  - let poirot explain why he went to France during his holiday and why the location of the tree intrigued him
+  - let poirot give the contemporary witness accounts the highest value
+  performance-description:
+  - give me the best location of the spring and the tree and explain your reasoning
+  personal-observations:
+  - Michel de montaigne does not mention remains of a religious artifact near the tree alongside of the vineyards
+  - The villagers would not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
+
+Candidate-Locations:
+- name: the meuse river
+  distance-from-Domremy: 600 meters
+  distance-from-the-river: 0 meters
+  location: west bank of the meuse
+  geolocation: 48.437314737010375, 5.6726921877770415
+  height: 886 ft
+- name: the calvaire
+  distance-from-Domremy: 600 meters
+  distance-from-the-river: approximately 200 meters
+  location: west bank of the meuse
+  geolocation: 48.437314737010375, 5.6726921877770415
+  height: 920 ft
+  elevation-above-the-river: 34 ft
+- name: current fontaine des Groseilliers
+  distance-from-Domremy: approximately 700 meters to the south of Domremy
+  distance-from-the-river: approximately 120 meters
+  location: west bank of the meuse
+  geolocation: 48.43540944638572, 5.67359974987573
+  height: 909 ft
+  elevation-above-the-river: 32 ft
+- name: the shrubery bushes between the calvaire and the current fountain of the Pucelle
+  distance-from-Domremy: approximately 1000 meters to the south of Domremy
+  distance-from-the-river: approximately 120 meters
+  location: west bank of the meuse
+  geolocation: 48.432359972489074, 5.672283784793448
+  height: 965 ft
+  elevation-above-the-river: 79 ft
+- name: current fontaine de Pucelle
+  distance-from-Domremy: 1500 meters
+  distance-from-the-river: approximately 350 meters
+  location: west bank of the meuse  
+  geolocation: 48.42812518793471, 5.669488065468301
+  height: 1,103 ft
+  elevation-above-the-river: 217 ft
+
+document-refence-list:
+- name: bibliotheque-monastique
+  url: https://www.bibliotheque-monastique.ch/bibliotheque/bibliotheque/saints/jeanne/index.htm
+- name: michel-montaigne
+  url: https://www.gutenberg.org/files/70838/70838-h/70838-h.htm
+- name: stjoan-center
+  url: http://www.stjoan-center.com/Trials/null03.html
+- name: balades-historiques
+  url: https://balades-historiques.com/periode/moyen-age/basilique-sainte-jeanne-darc-bois-chenu-domremy
+- name: academie-francaise
+  url: https://www.academie-francaise.fr/jeanne-darc-en-lorraine-0
+- name: biblisem
+  url: https://www.biblisem.net/etudes/andrveri.htm
+- name: mediterranee-antique
+  url: https://www.mediterranee-antique.fr/Fichiers_PdF/DEF/France_A/Jeanne_Arc_1.pdf
+- name: jollois
+  url: https://www.jeannedomremy.fr/TextesDivers/jollois.pdf
+
+relevant-document-snippets:
+- text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
+  document-reference: bibliotheque-monastique
+- text: Les petits du village, filles et garçons, avec du pain et des noix, allaient à l’arbre des Dames et à la Fontaine-des-Groseilliers, le dimanche de Laetare Jerusalem, appelé le dimanche des Fontaines.
+  document-reference: bibliotheque-monastique
+- text: Il y avait chez nous un arbre qu’on appelait aux Loges-les-Dames. C’est un arbre bien ancien. Les vieilles l’ont toujours vu là où il est. Chaque année, au printemps, particulièrement le dimanche de Laetare Jerusalem, dit le dimanche des Fontaines, cet arbre était un lieu de rendez-vous. Filles et garçons y venaient en bande, apportant de petits pains. J’y fus souvent avec Jeannette. Nous mangions sous l’arbre, puis nous allions boire à la Fontaine-des-Groseilliers. Que de fois nous avons mis la nappe sous l’arbre et mangé ensemble! Après cela, on jouait, on dansait. C’est encore de même aujourd’hui; nos enfants font comme nous faisions.
+  document-reference: bibliotheque-monastique
+- text: Ce dimanche-là, toute la jeunesse du village, garçons et filles, va à l’arbre jouer et danser. Jeannette venait danser et jouer avec nous. Comme nous, elle portait son petit pain, et puis s’en venait boire à la Fontaine-des-Groseilliers. Aujourd’hui, on va encore à l’arbre des Dames, et petits pains, jeux et danses, tout est resté de mode.
+  document-reference: bibliotheque-monastique
+- text: Il y a chez nous un arbre qu’on appelle communément l’arbre des Dames. J’ai vu une dame châtelaine de notre village, la femme du seigneur Pierre de Bourlemont, ainsi que la mère dudit seigneur, aller quelquefois s’y promener. Elles emmenaient avec elles leurs demoiselles et quelques jeunes filles du village. On emportait du pain, des oeufs, du vin. Au printemps et le dimanche Laetare, que nous appelons dimanche des Fontaines, filles et garçons ont coutume d’aller à l’arbre des Dames et aux Fontaines. Ils emportent des petits pains, et mangent sous l’arbre, et s’amusent, et chantent, et dansent. Jeannette, en ses jeunes ans, allait quelquefois, en compagnie des autres fillettes, à l’arbre des Dames et à la Fontaine-des-Groseilliers, pour courir et danser avec ses compagnes.
+  document-reference: bibliotheque-monastique
+- text: Près de Domrémy il y avait un arbre appelé l’arbre des Dames ; d’autres l’appelaient l’arbre des Fées. Auprès est une fontaine. J’ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l’eau pour se remettre en santé. Je l’ai vu moi-même, mais je ne sais s’ils guérissent ou non.
+  document-reference: bibliotheque-monastique
+  from: Jeanne D'Arc
+- text: J’ai oui dire que les malades une fois relevés, vont à cet arbre pour se divertir. Il y a un grand arbre appelé le Fou, d’où vient le beau mai. Il appartenait, d’après le commun dire, à monseigneur Pierre de Bourlemont, chevalier.
+  document-reference: bibliotheque-monastique
+  from: Jeanne D'Arc
+- text:  J’allais parfois avec d’autres filles m’ébattre au pied de l’arbre et j’y faisais des guirlandes pour l’image de la Notre-Dame de Domrémy. Souventes fois j’ai ouï dire par des anciens, — non ceux de mon lignage —que les dames fées le hantaient. J’ai même ouï dire à une de mes marraines, nommée Jeanne, femme du maire Rubery, qu’elle-même avait vu là des fées. J’ignore si c’était vrai ou non. Je n’ai, moi, jamais vu les fées près de cet arbre, que je sache. Si j’en ai vu ailleurs, je ne sais s je les ai vues ou non.
+  document-reference: bibliotheque-monastique
+  from: Jeanne D'Arc
+- text: J’ai vu des filles mettre des guirlandes aux branches de cet arbre ; moi-même j’y en ai mis avec les autres. Tantôt nous les emportions, tantôt nous les laissions.
+  document-reference: bibliotheque-monastique
+- text: A partir du moment où je sus que je devais venir en France, je m’en retirai et donnai aux jeux et promenades le moins que je pus. Je ne sais même si, depuis l’âge de raison, j’ai dansé au pied de l’arbre. J’ai bien puy danser avec les autres enfants, mais j’y ai plus chanté que dansé.
+  document-reference: bibliotheque-monastique
+  from: Jeanne D'Arc
+- text: Je ne sais et n’ai pas oui dire qu’il fût hanté par les fées. Mais j’ai ouï conter par mon frère qu’on disait dans le pays: « Jeannette a pris son fait près de l’arbre des Fées » Il n’en est rien et je le lui ai dit.
+  document-reference: bibliotheque-monastique
+  from: Jeanne D'Arc
+- text: Les saintes vous ont-elles parlé à la fontaine proche de l’arbre?
+  document-reference: bibliotheque-monastique
+  from: interrogateur
+- text: Oui, je les y ai entendues; mais je ne me rappelle pas ce qu’elles m’y ont dit.
+  document-reference: bibliotheque-monastique
+  from Jeanne D'Arc
+- text: Interroguée quant elle mectoit chappeaulx en l’arbre, s’elle les meictait en l’onneur de celles qui iny appairaient, R. Que non.
+  document-reference: bibliotheque-monastique
+- text: Item ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy] et souvent de nuit; quelquefois de jour, principalement aux heures des offices, afin d’y être seule; elle a pris part à des rondes qui s’opéraient en dansant à l’entour; ensuite elle appendait aux branches de l’arbre des guirlandes formées de diverses herbes et fleurs, en disant et chantant auparavant, ainsi qu’après, certains poèmes et chansons, accompagnés d’invocations, sortilèges et de maléfices; desquelles guirlandes le lendemain matin il ne se retrouvait plus rien
+  document-reference: bibliotheque-monastique
+- text: Lesdites saintes lui ont plusieurs fois parlé près d’une fontaine, située près d’un grand arbre, appelé communément l’arbre des fées. La renommée court au sujet de ces arbres et fontaine que les dames fées les hantent et que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé. Là et ailleurs elle a révéré lesdites saintes et leur a fait révérence.
+  document-reference: bibliotheque-monastique
+- text:  There is also a tree beside a vineyard which they call “l’arbre de la Pucelle,” but there is nothing remarkable about it. 
+  document-reference: michel-montaigne
+- text: Le lieu où se dresse aujourd’hui la basilique Sainte Jeanne à Domrémy est connu depuis l’origine de l´épopée johannique. 
+  document-reference: balades-historiques
+- text: Etienne Hordal – Chanoine de Toul et petit-neveu de Jeanne d’arc, y avait fait élever une chapelle entre 1600 et 1610 « « au lieu même où l’on dit que Jeanne avait reçu de Dieu commandement d’aller trouver le Roi »
+  document-reference: balades-historiques
+- text: De la lisière du Bois Chenu ou de l’Arbre des Fées, Jeanne pouvait apercevoir, pour ainsi dire à portée de la main, le clocher de Saint-Elophe. Elle si pieuse, elle avait dû aller en pèlerinage à la Châsse de sainte Libaire, conservée à l’église de Grand, de même qu’elle allait porter des bouquets et des guirlandes, ou faire brûler des cierges à Notre-Dame de Bermont. Le Bois Chenu lui-même devait avoir son sanctuaire ou son ermitage à la place où, au début du XVIIe siècle, Étienne Hordal fit construire sa chapelle de Notre-Dame.
+  document-reference: academie-francaise
+- text: En toute simplicité, Jeanne vivait comme les gens de son village, participant à leurs réjouissances, de même qu’à leurs travaux et à leurs tribulations. Le dimanche de Loetare, elle allait, comme on disait, « faire ses fontaines » avec les autres jeunes filles de Domremy. Faire ses fontaines, c’est aller boire l’eau des sources, que le curé, en une cérémonie spéciale, avait préalablement bénites. On banquetait sous l’Arbre des Fées, un hêtre colossal et très vieux, dont les branches et les rameaux touchaient presque terre, de manière à former comme une tente naturelle. On étendait sur l’herbe une belle nappe blanche, on y disposait des petits pains faits tout exprès pour la fête. On mangeait un repas frugal, arrosé de vin gris, qu’on avait apporté du logis. Puis, on s’amusait à suspendre des guirlandes aux branches du bel arbre, sans doute des guirlandes d’aubépine en cette époque printanière de l’année : car, s’il faut en croire un témoin, Gérardin d’Epinal, l’arbre était alors « beau comme les lys » : quia tunc est pulchra sicut lilia. On plaisantait — on daillait, comme on dit en Lorraine — on dansait et on chantait. Et après cette journée d’honnête liesse, on s’en revenait tranquillement au logis.
+  document-reference: academie-francaise
+- text: « L’arbre des Fées, dit Béatrix, veuve d’Estellin, laboureur de Domrémy, qui avait quatre-vingts ans lorsqu’elle fit sa déposition, l’arbre des fées se trouve près du grand chemin qui conduit à Neufchâteau. La beauté de cet arbre attirait sous son ombre nos seigneurs et leurs dames ; bien des fois je m’y suis promenée en leur compagnie dans ma jeunesse. D’après ce que j’ai ouï conter, les femmes qu’on appelle fées y venaient autrefois, mais, pour nos péchés, elles n’y viennent plus. La veille de l’Ascension, à la procession où les croix sont portées par les champs, le curé va sous le grand Fau et y chante l’évangile. Il va aussi à la Fontaine aux Groseilliers et aux autres fontaines pour chanter l’évangile ; ce sont faits que j’ai vus. 
+  document-reference: biblisem
+- text: Tout proche, à l’orée du bois, au-dessus du grand chemin de Neufchâteau, s’élevait un hêtre très vieux qui répandait une belle et grande ombre2. Il était vénéré presque à l’égal de ces arbres tenus pour sacrés avant que les hommes apostoliques eussent évangélisé les Gaules3. Ses branches, qu’aucune main n’osait toucher, descendaient jusqu’à terre. Les lis, disait un laboureur, ne sont pas plus beaux4. Comme la fontaine, l’arbre avait plusieurs noms. On l’appelait l’Arbre-des-Dames, l’Arbre-aux-Loges-les-Dames, l’Arbre-des-Fées, l’ArbreCharmine-Fée-de-Bourlémont, le Beau-Mai5. 
+  document-refence: mediterranee-antique
+- text: L'emplacement " de cette chapelle se voit encore aujourd'hui à i,4oo mètres environ de distance des dernières maisons de Domremy, vers le sud. Elle fut, dit-on, détruite au temps des guerres de religion, peut-être à la même époque où la statue de l'héroïne fut brisée ^ à Orléans. Il ne reste plus rien aujourd'hui dans cet emplacement, qu'un énorme tas de pierres ramassées dans les champs par les cultivateurs, et sous lequel sont cachées certainement les fondations de l'édifice. Les plus anciens de la commune de Domremy se souviennent encore de les avoir vues. Ils assurent même avoir aperçu dans les décombres une pierre que l'on disait être le dessus de l'autel. C'est aux environs de cette chapelle que devait être l'arbre des fées'^, a l'ombre duquel les jeunes garçons et les jeunes filles de Domremy venaient se reposer et se livrer aux jeux de leur âge. La tradition du pays a conservé le souvenir de cet arbre extraordinaire , qui était un hêtre d'une grande beauté, dont, suivant les expressions mêmes d'un habitant de Domremy, appelé à déposer au procès de la Pucelle, les antiques rameaux chargés d'un riche feuillage se courbaient en voûtes obscures, impénétrables, et descendaient jusquà terre. Les plus âgés de Domremy se rappellent encore avoir entendu dire que cet arbre avait été arraché par un habitant nommé Soudart. 
+  document-reference: jollois
+- text: L'arbre des fées était placé près d'une fontaine qui , d'après ce qu'en rapportent les plus anciens de Domremy , s'appelait la fontaine de l'Ermite. Comme il existe plusieurs sources sur le penchant de la côte où se trouve le vignoble connu sous le nom de la Pucelle, il est difficile d'indiquer quelle est cette fontaine; mais il est assez probable que c'est celle même des groseillers dont nous ferons bientôt mention , et qui alimente aujourd'hui la fontaine élevée sur la place de Domremy , à la mémoire de Jeanne d'Arc. 
+  document-reference: jollois
+- text: Le monument plus spécialement consacré à rappeler la mémoire de l'héroïne du quinzième siècle est érigé sur la place ' de Domremy, qui a été à cet effet nivelée et exhaussée de manière à la mettre à l'abri des inondations ordinaires de la Meuse. Les terres rapportées sont maintenues par des murs en talus construits à pierres sèches. Sur le sommet de ces murs on a établi une barrière en bois qui dessine tout l'extérieur de la place. Le monument^ consiste en une fontaine d'eaux jaillissantes amenées de la source des Groseillers, située à sept cents mètres de distance de la place de Domremy, et non loin, probablement, de l'endroit où existait l'arbre des fées. 
+  document-reference: jollois
+- text: Quand le château était en prospérité, les seigneurs du village et leurs dames allaient prendre du bon temps aux Loges-les-Dames. 
+  document-reference: bibliotheque-monastique
