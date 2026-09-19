@@ -18,8 +18,8 @@ user-prompt:
   personal-musings:
   - Michel de montaigne does not mention remains of a religious artifact near the tree alongside of the vineyards
   - The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
-  - The tree must have stood on the land of Messire Pierre de Bourlémont 
-
+  - The tree must have stood on the land of Messire Pierre de Bourlémont
+  - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
 
 
 Candidate-Locations:
@@ -43,20 +43,27 @@ Candidate-Locations:
   geolocation: 48.43540944638572, 5.67359974987573
   height: 909 ft
   elevation-above-the-river: 32 ft
-- name: the shrubery bushes between the calvaire and the current fountain of the Pucelle
+- name: the shrubbery bushes between the calvaire and the current fountain of the Pucelle
   distance-from-Domremy: approximately 1000 meters to the south of Domremy
   distance-from-the-river: approximately 120 meters
   location: west bank of the meuse
   geolocation: 48.432359972489074, 5.672283784793448
   height: 965 ft
   elevation-above-the-river: 79 ft
-- name: current fontaine de Pucelle
+- name: the location of the basilique
   distance-from-Domremy: 1500 meters
-  distance-from-the-river: approximately 350 meters
+  distance-from-the-river: approximately 550 meters
   location: west bank of the meuse  
   geolocation: 48.42812518793471, 5.669488065468301
   height: 1,103 ft
   elevation-above-the-river: 217 ft
+- name: the location of the fountain of the Pucelle
+  distance-from-Domremy: 1600 meters
+  distance-from-the-river: approximately 400 meters
+  location: west bank of the meuse  
+  geolocation: 48.42696530646268, 5.671810662798567
+  height: 984 ft
+  elevation-above-the-river: 98 ft 
 
 document-refence-list:
 - name: bibliotheque-monastique
