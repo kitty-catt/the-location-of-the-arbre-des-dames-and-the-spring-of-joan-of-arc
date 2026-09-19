@@ -26,6 +26,7 @@ Further instructions on product, process and performance are in the prompt.
 
 ## Copernicus Moisture Index
 ![Copernicus-map](images/copernicus-moisture.png)
+![Copernicus-map](images/copernicus-moisture-2.png)
 
 
 ## Candidate overview
