@@ -16,6 +16,9 @@ Further instructions on product, process and performance are in the prompt.
 1. The prompt is posted to an unitialized AI LLM model.
 2. The response is documented
 
+# Introduction in the locations
+
+![Naudin-map](images/the-naudin-map.png)
 
 # Diligence Statement
 
