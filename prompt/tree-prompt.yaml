@@ -1,18 +1,20 @@
 user-prompt:
   process-description: 
   - pretend that you are a modern day police inspector
-  - read the candidate-locations and use them as a starting point for your musing
-  - suggest an alternative candidate location for the tree on the basis of your reasoning
-  - suggest an alternative candidate location for the spring on the basis of your reasoning
-  - read the document-refence-list
-  - read the relevant-document-snippets
+  - the objective is to triangulate the location of the tree and spring
+  - read the document-refence-list in this user prompt
+  - read the relevant-document-snippets in this user prompt
+  - read the candidate-locations in this user prompt and use them as a starting point for your musing
   - consider the location where vineyards grew at the time of michel de montaigne
   - consider the practicalities of children visiting the tree
   - consider the practicalities of the Lady de Bourlemont visiting the tree with her demoiselles
   - consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
   - give the contemporary witness accounts the highest value
-  - summarize the geolocation of the tree, and the spring 
+  - find better candidates than the ones that are listed in the candidate-location array
+  - propose the candidate location for the tree on the basis of your reasoning
+  - propose the candidate location for the spring on the basis of your reasoning
   output-description: 
+  - summarize the geolocation of the tree, and the spring 
   - give a table where the seasoned police inspector lists the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
   - add the notes of a seasoned police inspector who lives at the cutoff time of the AI who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   performance-description:
