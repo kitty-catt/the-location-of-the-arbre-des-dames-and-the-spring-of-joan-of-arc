@@ -24,6 +24,10 @@ Further instructions on product, process and performance are in the prompt.
 ## The jollois map (1821)
 ![Jollois-map](images/the-jollois-map.png)
 
+## Copernicus Moisture Index
+![Copernicus-map](images/copernicus-moisture.png)
+
+
 ## Candidate overview
 ![Lidar-map](images/lidar-scan.png)
 

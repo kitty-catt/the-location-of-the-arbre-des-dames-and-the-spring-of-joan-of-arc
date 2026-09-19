@@ -13,6 +13,7 @@ user-prompt:
   - make Poirot consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
   - let poirot explain why he went to France during his holiday and why the location of the tree intrigued him
   - let poirot give the contemporary witness accounts the highest value
+  - let the police inspector summarize the geolocation of the tree, and the spring 
   performance-description:
   - give me the best location of the spring and the tree and explain your reasoning
   personal-musings:
@@ -20,7 +21,7 @@ user-prompt:
   - The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
   - The tree must have stood on the land of Messire Pierre de Bourlémont
   - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
-
+  - The spring was closer to the village than the tree according to Jean Morel
 
 Candidate-Locations:
 - name: the meuse river
