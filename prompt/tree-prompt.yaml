@@ -1,8 +1,9 @@
 user-prompt:
   process-description: 
   - pretend that you are a modern day police inspector
-  - read the candidate-locations
-  - you are free to suggest alternative candidate locations when you can think of a better one
+  - read the candidate-locations and use them as a starting point for your musing
+  - suggest an alternative candidate location for the tree on the basis of your reasoning
+  - suggest an alternative candidate location for the spring on the basis of your reasoning
   - read the document-refence-list
   - read the relevant-document-snippets
   - consider the location where vineyards grew at the time of michel de montaigne
