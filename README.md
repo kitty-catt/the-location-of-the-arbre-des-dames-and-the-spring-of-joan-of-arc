@@ -35,6 +35,6 @@ Further instructions on product, process and performance are in the prompt.
 
 # Diligence Statement
 
-In creating this chapter of a fictional Agatha Christie novel, I collaborated with Claude and ChatGPT AI to assist a fictional police inspector deduce the whereabouts of the location of the tree and the spring of the Pucelle.
+In creating this chapter of a fictional police report, I collaborated with Claude and ChatGPT AI to assist a fictional police inspector deduce the whereabouts of the location of the tree and the spring of the Pucelle.
 
 I affirm that all AI-generated and co-created content underwent thorough review and evaluation. The final output accurately reflects my understanding, expertise, and intended meaning. While AI assistance was instrumental in the process, I maintain full responsibility for the content, its accuracy, and its presentation. This disclosure is made in the spirit of transparency and to acknowledge the role of AI in the creation process.
