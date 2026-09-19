@@ -1,19 +1,19 @@
 user-prompt:
-  output-description: 
-  - write a small chapter in a fictional Agatha Christie novel where Hercule Poirot explains where the spring and the tree of Joan of Arc can be found.
-  - at the end of the chapter, add the notes of a seasoned police inspector anno 2026 who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   process-description: 
-  - read the documents from the document-reference-list
-  - focus on the relevant snippets from the relevant-document-snippets
-  - place the various objects to each other in terms of their locations to each other
-  - seperate the facts from the Hercule Poirot interpretation
+  - pretend that you are a modern day police inspector
+  - read the candidate-locations
+  - you are free to suggest alternative candidate locations when you can think of a better one
+  - read the document-refence-list
+  - read the relevant-document-snippets
   - consider the location where vineyards grew at the time of michel de montaigne
-  - make Poirot consider the practicalities of children visiting the tree
-  - make Poirot consider the practicalities of the Lady de Bourlemont visiting the tree with her demoiselles
-  - make Poirot consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
-  - let poirot explain why he went to France during his holiday and why the location of the tree intrigued him
-  - let poirot give the contemporary witness accounts the highest value
-  - let the police inspector summarize the geolocation of the tree, and the spring 
+  - consider the practicalities of children visiting the tree
+  - consider the practicalities of the Lady de Bourlemont visiting the tree with her demoiselles
+  - consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
+  - give the contemporary witness accounts the highest value
+  - summarize the geolocation of the tree, and the spring 
+  output-description: 
+  - give a table where the seasoned police inspector lists the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
+  - add the notes of a seasoned police inspector who lives at the cutoff time of the AI who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   performance-description:
   - give me the best location of the spring and the tree and explain your reasoning
   personal-musings:
@@ -23,7 +23,7 @@ user-prompt:
   - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
   - The spring was closer to the village than the tree according to Jean Morel
 
-Candidate-Locations:
+candidate-Locations:
 - name: the meuse river
   distance-from-Domremy: 600 meters
   distance-from-the-river: 0 meters
