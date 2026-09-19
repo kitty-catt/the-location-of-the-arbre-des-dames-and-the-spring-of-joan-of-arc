@@ -22,7 +22,10 @@ Further instructions on product, process and performance are in the prompt.
 ![Naudin-map](images/the-naudin-map.png)
 
 ## The jollois map (1821)
-![Jolloid-map](images/the-jollois-map.png)
+![Jollois-map](images/the-jollois-map.png)
+
+## Candidate overview
+![Lidar-map](images/lidar-scan.png)
 
 
 # Diligence Statement
