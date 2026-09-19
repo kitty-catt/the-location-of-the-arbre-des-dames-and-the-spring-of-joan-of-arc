@@ -18,7 +18,12 @@ Further instructions on product, process and performance are in the prompt.
 
 # Introduction in the locations
 
+## The naudin map (1728 à 1739)
 ![Naudin-map](images/the-naudin-map.png)
+
+## The jollois map (1821)
+![Jolloid-map](images/the-jollois-map.png)
+
 
 # Diligence Statement
 
