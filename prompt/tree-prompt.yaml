@@ -1,7 +1,8 @@
 user-prompt:
-  process-description: 
+  process-description:
   - pretend that you are a modern day police inspector
-  - the objective is to triangulate the location of the tree and spring
+  - the objective is to weigh two competing theories on the location of the tree and spring, both grounded in the 1455-1456 witness accounts
+  - read the theories in this user prompt
   - read the document-refence-list in this user prompt
   - read the relevant-document-snippets in this user prompt
   - read the candidate-locations in this user prompt and use them as a starting point for your musing
@@ -11,20 +12,29 @@ user-prompt:
   - consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
   - give the contemporary witness accounts the highest value
   - find better candidates than the ones that are listed in the candidate-location array
-  - propose the candidate location for the tree on the basis of your reasoning
-  - propose the candidate location for the spring on the basis of your reasoning
-  output-description: 
-  - summarize the geolocation of the tree, and the spring 
-  - give a table where the seasoned police inspector lists the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
+  - weigh theory A against theory B for the tree, and separately for the spring, on the basis of your reasoning
+  - the tree and the spring need not both be resolved in favor of the same theory
+  output-description:
+  - summarize the geolocation of the tree, and the spring, under theory A and under theory B
+  - give a table where the seasoned police inspector lists, per theory, the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
+  - give the inspector's verdict on which theory, or combination of theories, he finds best supported, and why
   - add the notes of a seasoned police inspector who lives at the cutoff time of the AI who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   performance-description:
-  - give me the best location of the spring and the tree and explain your reasoning
+  - give me the best supported theory (A, B, or a combination) for the spring and the tree and explain your reasoning
   personal-musings:
   - Michel de montaigne does not mention remains of a religious artifact near the tree alongside of the vineyards
   - The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
   - The tree must have stood on the land of Messire Pierre de Bourlémont
   - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
   - The spring was closer to the village than the tree according to Jean Morel
+
+theories:
+- name: Theory A
+  tree: stood south of the current location of the basilique and the Fontaine fiévreux
+  spring: stood approximately where the current basilique and Fontaine fiévreux now stand
+- name: Theory B
+  tree: stood at the current location of the basilique or the Fontaine fiévreux
+  spring: stood where the current fontaine des Groseilliers now stands
 
 candidate-Locations:
 - name: the meuse river
