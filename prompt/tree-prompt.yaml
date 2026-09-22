@@ -88,6 +88,8 @@ document-refence-list:
   url: https://www.jeannedomremy.fr/TextesDivers/jollois.pdf
 - name: questionnaire-lorraine
   url: https://jeanne.wiki/rehabilitation-depositions/questionnaire-lorraine
+- name: ste-jeannedarc.fr
+  url: https://ste-jeannedarc.fr/histoire_wallon/appendice11.html
 
 relevant-document-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -203,3 +205,6 @@ relevant-document-snippets:
   document-reference: questionnaire-lorraine
 - text: Jean Jaquard (47 ans, laboureur): Les jeunes filles et jeunes gens ont coutume, l’été et le dimanche des Fontaines, d’aller sous cet arbre, ils chantent, mangent, font des rondes, puis, jouant et se promenant, reviennent à la fontaine des Rains, boivent de son eau. Croit que Jeanne y allait avec les autres filles.
   document-reference: questionnaire-lorraine
+- text: La chapelle dont il est ici parlé est nommée, comme on le voit, Notre-Dame de Domrémy (1), et ne doit pas être confondue avec l'ermitage de Notre-Dame de Bermont, situé de l'autre côté de Domrémy. On en montre encore l'emplacement, signalé naguère par des ruines et aujourd'hui par des décombres, vers le lieu où la tradition plaçait l'arbre des Dames.
+  document-refence: ste-jeannedarc.fr
+  author: Jeanne d'Arc - Henri Wallon - 5° éd. 1879
