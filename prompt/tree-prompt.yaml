@@ -36,6 +36,17 @@ theories:
   tree: stood at the current location of the basilique or the Fontaine fiévreux
   spring: stood where the current fontaine des Groseilliers now stands
 
+object-model:
+ - L’Arbre des dames
+ - Chapelle de notre dame de domremy
+ - Hordal chapel
+ - Basilique
+ - fontaine fiévreux
+ - fontaine des Groseilliers 
+ - the road to Neufchâteau
+ - vineyard
+ - estate boundary
+
 candidate-Locations:
 - name: the meuse river
   distance-from-Domremy: 600 meters
@@ -43,13 +54,6 @@ candidate-Locations:
   location: west bank of the meuse
   geolocation: 48.43416274694946, 5.674340539129
   height: 886 ft
-- name: the calvaire
-  distance-from-Domremy: 600 meters
-  distance-from-the-river: approximately 200 meters
-  location: west bank of the meuse
-  geolocation: 48.437314737010375, 5.6726921877770415
-  height: 920 ft
-  elevation-above-the-river: 34 ft
 - name: current fontaine des Groseilliers
   distance-from-Domremy: approximately 700 meters to the south of Domremy
   distance-from-the-river: approximately 120 meters
@@ -100,6 +104,8 @@ document-refence-list:
   url: https://jeanne.wiki/rehabilitation-depositions/questionnaire-lorraine
 - name: ste-jeannedarc.fr
   url: https://ste-jeannedarc.fr/histoire_wallon/appendice11.html
+- name: gratteloup-ayrole
+  url: https://jeanne.wiki/gratteloup-ayroles/1890-1893
 
 relevant-document-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -218,3 +224,5 @@ relevant-document-snippets:
 - text: La chapelle dont il est ici parlé est nommée, comme on le voit, Notre-Dame de Domrémy (1), et ne doit pas être confondue avec l'ermitage de Notre-Dame de Bermont, situé de l'autre côté de Domrémy. On en montre encore l'emplacement, signalé naguère par des ruines et aujourd'hui par des décombres, vers le lieu où la tradition plaçait l'arbre des Dames.
   document-refence: ste-jeannedarc.fr
   author: Jeanne d'Arc - Henri Wallon - 5° éd. 1879
+- text: On se rappelle que la Basilique en construction a pour assises les ruines d’une antique chapelle, dont le constructeur fut Étienne Hordal, grand doyen de la cathédrale de Toul, et petit neveu de Jeanne d’Arc
+  document-refence: jeanne.wiki
