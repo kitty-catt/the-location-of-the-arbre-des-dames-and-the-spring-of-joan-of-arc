@@ -10,8 +10,11 @@ user-prompt:
   - consider the practicalities of the Lady de Bourlemont visiting the tree with her demoiselles
   - consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
   - give the contemporary witness accounts the most credibility
-  - suggest the best candidate location for the tree, you are free to suggest a new location
-  - suggest the best candidate location for the spring, you are free to suggest a new location
+  - think where could a large, socially prominent tree have stood that satisfies all witness acounts simultaneously?
+  - think where could the spring have stood that satisfies all witness acounts simultaneously?
+  - suggest the best candidate location for the tree, suggest a better location using the candidate-locations as a starting point for your calculations
+  - suggest the best candidate location for the spring, suggest a location location using the candidate-locations as a starting point for your calculations
+  - give a single geolocation plus a radius for each object
   output-description:
   - summarize the geolocation of the tree and the spring
   - give a table where the seasoned police inspector lists, per theory, the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
