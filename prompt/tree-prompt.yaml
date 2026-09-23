@@ -1,8 +1,7 @@
 user-prompt:
   process-description:
   - pretend that you are a modern day police inspector
-  - the objective is to weigh two competing theories on the location of the tree and spring, both grounded in the 1455-1456 witness accounts
-  - read the theories in this user prompt
+  - the objective is to make your best guess for where to search for the remants of the spring and the tree of the Pucelle
   - read the document-refence-list in this user prompt
   - read the relevant-document-snippets in this user prompt
   - read the candidate-locations in this user prompt and use them as a starting point for your musing
@@ -10,31 +9,21 @@ user-prompt:
   - consider the practicalities of children visiting the tree
   - consider the practicalities of the Lady de Bourlemont visiting the tree with her demoiselles
   - consider the practicalities of the Lord and Lady de Bourlemont visiting the tree with the mother of the Lord and their demoiselles and servants
-  - give the contemporary witness accounts the highest value
-  - find better candidates than the ones that are listed in the candidate-location array
-  - weigh theory A against theory B for the tree, and separately for the spring, on the basis of your reasoning
-  - the tree and the spring need not both be resolved in favor of the same theory
+  - give the contemporary witness accounts the most credibility
+  - suggest the best candidate location for the tree, you are free to suggest a new location
+  - suggest the best candidate location for the spring, you are free to suggest a new location
   output-description:
-  - summarize the geolocation of the tree, and the spring, under theory A and under theory B
+  - summarize the geolocation of the tree and the spring
   - give a table where the seasoned police inspector lists, per theory, the geolocation of the tree and spring. Provide the confidence score and range around the object where he would search
-  - give the inspector's verdict on which theory, or combination of theories, he finds best supported, and why
   - add the notes of a seasoned police inspector who lives at the cutoff time of the AI who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   performance-description:
-  - give me the best supported theory (A, B, or a combination) for the spring and the tree and explain your reasoning
+  - give me the best supported geolocation for the spring and the tree and explain your reasoning
   personal-musings:
   - Michel de montaigne does not mention remains of a religious artifact near the tree alongside of the vineyards
   - The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
   - The tree must have stood on the land of Messire Pierre de Bourlémont
   - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
   - The spring was closer to the village than the tree according to Jean Morel
-
-theories:
-- name: Theory A
-  tree: stood south of the current location of the basilique and the Fontaine fiévreux
-  spring: stood approximately where the current basilique and Fontaine fiévreux now stand
-- name: Theory B
-  tree: stood at the current location of the basilique or the Fontaine fiévreux
-  spring: stood where the current fontaine des Groseilliers now stands
 
 object-model:
  - L’Arbre des dames
@@ -51,13 +40,7 @@ object-model:
  - the valley
  - the river meuse
 
-candidate-Locations:
-- name: the meuse river
-  distance-from-Domremy: 600 meters
-  distance-from-the-river: 0 meters
-  location: west bank of the meuse
-  geolocation: 48.43416274694946, 5.674340539129
-  height: 886 ft
+candidate-locations:
 - name: current fontaine des Groseilliers
   distance-from-Domremy: approximately 700 meters to the south of Domremy
   distance-from-the-river: approximately 120 meters
@@ -86,6 +69,13 @@ candidate-Locations:
   geolocation: 48.42696530646268, 5.671810662798567
   height: 984 ft
   elevation-above-the-river: 98 ft 
+- name: south spot 
+  geolocation: 48.42496485738549, 5.668258634475983
+  distance-from-Domremy: 1900 meters
+  distance-from-the-river: approximately 550 meters
+  location: west bank of the meuse
+  height: 1,103 ft
+  elevation-above-the-river: 217 ft
 
 document-refence-list:
 - name: bibliotheque-monastique
