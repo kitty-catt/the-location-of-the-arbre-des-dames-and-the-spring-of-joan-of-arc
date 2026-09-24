@@ -6,6 +6,8 @@ I have calibrated it on the basis of the road pattern.
 
 
 ![Naudin-map](../images/the-naudin-map.png)
+![Naudin-map](../images/the-naudin-map-2.png)
+
 
 ## Observations
 
