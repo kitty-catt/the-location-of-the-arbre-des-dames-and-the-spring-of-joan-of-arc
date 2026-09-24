@@ -28,6 +28,13 @@ user-prompt:
   - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
   - The spring was closer to the village than the tree according to Jean Morel
   - The tree was pretty close to the tree. A 700 meter walk does not feel like pretty close.
+  obervation-list:
+  - source: naudin-map
+    remarks:
+    - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
+    - Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.
+
+
 
 object-model:
  - L’Arbre des dames
