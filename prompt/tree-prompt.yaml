@@ -33,8 +33,10 @@ user-prompt:
     remarks:
     - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
     - Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.
-
-
+  - source: jollois
+    remarks:
+    - The vineyard grew on both sides of the ridge road
+    - From the ridge road it is possible to see the old road to Neufchateau on the other side of the river
 
 object-model:
  - L’Arbre des dames
@@ -44,6 +46,7 @@ object-model:
  - fontaine fiévreux
  - fontaine des Groseilliers 
  - the road to Neufchâteau
+ - the ridge road on the west bank
  - vineyard
  - estate boundary
  - the Bois Chenu
