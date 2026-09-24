@@ -36,7 +36,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 # Personal Thoughts
 
 | Object | Observations |
-|---|---:|
+|---|---|
 | [naudin-map](breakout/naudin.md)   | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. |
 | [jollois-map](breakout/jollois.md) | - |
 | [copernicus-map](breakout/copernicus.md) | - |
