@@ -37,7 +37,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 | Object | Observations |
 |---|---|
-| [naudin-map](breakout/naudin.md)   | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. |
+| [naudin-map](breakout/naudin.md)   | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.|
 | [jollois-map](breakout/jollois.md) | - |
 | [copernicus-map](breakout/copernicus.md) | - |
 
