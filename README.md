@@ -35,6 +35,13 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 # Personal Thoughts
 
+| Object | Observations | Personal Inferences |
+|---|---|---:|
+| [naudin-map](breakout/naudin.md)   | - | - |
+| [jollois-map](breakout/jollois.md) | - | - |
+| [copernicus-map](breakout/copernicus.md) | - | - |
+
+
 
 # The fictional police report
 
