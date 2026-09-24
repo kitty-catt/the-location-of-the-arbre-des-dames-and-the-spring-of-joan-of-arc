@@ -18,7 +18,7 @@ Further instructions on product, process and performance are in the prompt.
 
 # Instruction
 
-1. The prompt is posted to an unitialized AI LLM model.
+1. The [prompt](prompt/tree-prompt.yaml) is posted to an unitialized AI LLM model.
 2. The response is documented
 
 
