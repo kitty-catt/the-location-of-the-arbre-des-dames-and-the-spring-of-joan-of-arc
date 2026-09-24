@@ -30,7 +30,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 # AI assistent mindmap
 
-![mind-map](breakout/combined.md)
+[mind-map](breakout/combined.md)
 
 
 # Personal Thoughts
