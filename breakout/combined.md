@@ -1,18 +1,23 @@
 # Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-`object-model` in `tree-prompt.yaml` has 15 entries. Only the 7 below are ever
+`object-model` in `tree-prompt.yaml` has 15 entries. Only the 6 below are ever
 directly stated (not merely inferred) to relate to another object in the
 `first-hand-snippets` array — testimony from the nullification trial
 (`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
-words — so the rest (Chapelle Hordal, Basilique, the ridge road on the west
-bank, vineyard, estate boundary, the slope to the top of the Bois Chenu, the
-valley, the river meuse) are excluded from the diagram entirely.
+words — so the rest (Hordal chapel, Basilique, the ridge road on the west
+bank, vineyard, estate boundary, the Bois Chenu, the slope to the top of the
+Bois Chenu, the valley, the river meuse) are excluded from the diagram
+entirely.
 `general-reputation` sources (Montaigne, Jollois, académie-française, etc.) and
-`candidate-locations` are likewise excluded from the grounding. `estate
-boundary` stays excluded — no snippet describes a boundary — but the new
-object `the Bourlemont land` is included: Jeanne's own testimony that the tree
-*belonged to* Pierre de Bourlémont directly states the tree stood on his land,
-so that relation is a direct statement rather than an inference.
+`candidate-locations` are likewise excluded from the grounding.
+
+Two exclusions worth calling out: `estate boundary` is dropped because the
+only relevant snippet says the tree *belonged to* Pierre de Bourlémont, which
+is ownership, not a boundary — so that edge now lives on the new object `the
+Bourlemont land` instead, where "belonged to" is a direct statement. `the Bois
+Chenu` is dropped too: the one snippet that places the tree next to a wood
+only says "un bois" (a wood) and never names it, so treating that as "the
+Bois Chenu" would itself be an inference, which the brief now rules out.
 
 Each edge is labeled with the number(s) of the numbered relations below. Where
 more than one first-hand relation supports the same edge, the numbers are
@@ -25,15 +30,13 @@ graph TD
     N5["fontaine fiévreux"]
     N6["fontaine des Groseilliers"]
     N7["the road to Neufchâteau"]
-    N11["the Bois Chenu"]
     N15["the Bourlemont land"]
 
     N1 -- "1,2,3,4" --- N6
     N1 -- "5,6,7,8" --- N5
     N1 -- "9" --- N2
     N1 -- "10,11" --- N7
-    N1 -- "12" --- N11
-    N1 -- "13" --- N15
+    N1 -- "12" --- N15
 ```
 
 ## Numbered relations

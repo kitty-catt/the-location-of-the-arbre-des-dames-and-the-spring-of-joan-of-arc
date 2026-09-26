@@ -28,11 +28,12 @@ In creating this chapter of a fictional police report, I collaborated with Claud
 
 I affirm that all AI-generated and co-created content underwent thorough review and evaluation. The final output accurately reflects my understanding, expertise, and intended meaning. While AI assistance was instrumental in the process, I maintain full responsibility for the content, its accuracy, and its presentation. This disclosure is made in the spirit of transparency and to acknowledge the role of AI in the creation process.
 
-# AI assistent mindmap
+# AI generated object relations based on first hand witness accounts
 
 Prompt used to generate the mindmap:
 
-> make a diagram based on the prompt/tree-prompt.yaml. I want to get objects from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Add "the Bourlemont land" to the object-model, and add the relationship that the tree stood on land owned by the Lord of Bourlemont. Store the output in breakout/combined.md.
+> make a diagram based on the prompt/tree-prompt.yaml. I want to get objects from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
+
 
 [mind-map](breakout/combined.md)
 
