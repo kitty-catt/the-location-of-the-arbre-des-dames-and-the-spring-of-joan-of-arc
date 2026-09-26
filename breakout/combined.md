@@ -1,123 +1,82 @@
-# Object diagram — arbre des Dames and its surroundings
+# Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-Nodes are the 13 entries of `object-model` in `tree-prompt.yaml`. Each line (edge)
-is labeled with the number(s) of the relation(s) it represents — see
-`object-relations.md` for what each number means and which source grounds it.
-Where more than one relation applies to the same line, the numbers are
+Nodes are the 14 entries of `object-model` in `tree-prompt.yaml`. Edges are drawn
+**only** where a relation between two of those objects is stated (or directly
+implied) in the `first-hand-snippets` array — testimony from the nullification
+trial (`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
+words. `general-reputation` sources (Montaigne, Jollois, académie-française, etc.)
+and `candidate-locations` are deliberately excluded from the grounding.
+
+Each edge is labeled with the number(s) of the numbered relations below. Where
+more than one first-hand relation supports the same edge, the numbers are
 comma-separated.
 
 ```mermaid
 graph TD
     N1["L'Arbre des dames"]
-    N2["Chapelle de Notre-Dame de Domremy"]
+    N2["Chapelle de notre dame de domremy"]
     N3["Hordal chapel"]
     N4["Basilique"]
-    N5["Fontaine fiévreux"]
-    N6["Fontaine des Groseilliers"]
-    N7["The road to Neufchâteau"]
-    N8["Vineyard"]
-    N9["Estate boundary"]
-    N10["The Bois Chenu"]
-    N11["The slope to the top of the Bois Chenu"]
-    N12["The valley"]
-    N13["The river Meuse"]
+    N5["fontaine fiévreux"]
+    N6["fontaine des Groseilliers"]
+    N7["the road to Neufchâteau"]
+    N8["the ridge road on the west bank"]
+    N9["vineyard"]
+    N10["estate boundary"]
+    N11["the Bois Chenu"]
+    N12["the slope to the top of the Bois Chenu"]
+    N13["the valley"]
+    N14["the river meuse"]
 
-    N1 -- "1" --- N7
-    N1 -- "2" --- N10
-    N1 -- "3" --- N8
-    N1 -- "4,5" --- N2
-    N1 -- "6" --- N9
-    N1 -- "7" --- N5
-    N1 -- "8" --- N6
-    N2 -- "9" --- N3
-    N3 -- "10" --- N4
-    N4 -- "11" --- N10
-    N4 -- "12" --- N5
-    N4 -- "13" --- N11
-    N5 -- "14" --- N11
-    N6 -- "15" --- N12
-    N6 -- "16" --- N13
-    N7 -- "17" --- N10
-    N7 -- "18" --- N12
-    N8 -- "19" --- N11
-    N8 -- "20" --- N6
-    N9 -- "21" --- N10
-    N10 -- "22" --- N11
-    N11 -- "23" --- N12
-    N12 -- "24" --- N13
+    N1 -- "1,2,3,4" --- N6
+    N1 -- "5,6,7,8" --- N5
+    N1 -- "9" --- N2
+    N1 -- "10" --- N10
+    N1 -- "11,12" --- N7
+    N1 -- "13" --- N11
 ```
-# Numbered relations
 
-Each number corresponds to a labeled line in `object-diagram.md`. Grounding is
-either a direct quote from `relevant-document-snippets`, the numeric data in
-`candidate-Locations`, or an explicit `personal-musings` entry in
-`tree-prompt.yaml`; a few are marked as inference where the file only supports
-the connection indirectly.
+`N3`, `N4`, `N8`, `N9`, `N12`, `N13`, `N14` have no edges: no first-hand snippet
+relates the Hordal chapel, the Basilique, the ridge road, the vineyard, the
+slope, the valley, or the river Meuse to any other object in the model.
 
-1. **Arbre des dames — road to Neufchâteau**: stands beside/at the edge of the road.
-   *"L'arbre des fées se trouve près du grand chemin qui conduit à Neufchâteau"* (Béatrix); *"L'arbre... est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau"* (Jean Moen); *"au-dessus du grand chemin de Neufchâteau"* (mediterranee-antique).
+## Numbered relations
 
-2. **Arbre des dames — the Bois Chenu**: stands at the wood's edge (lisière).
-   *"De la lisière du Bois Chenu ou de l'Arbre des Fées"* (académie-française); *"à l'orée du bois"* (Jollois).
+1. **Arbre des dames — fontaine des Groseilliers.** Village children walked from the tree to the fountain as part of the "dimanche des Fontaines" custom.
+   *"Les petits du village, filles et garçons, avec du pain et des noix, allaient à l'arbre des Dames et à la Fontaine-des-Groseilliers, le dimanche de Laetare Jerusalem..."* (bibliotheque-monastique).
 
-3. **Arbre des dames — vineyard**: stands beside a vineyard, per Montaigne — possibly a different/replacement tree by his time (1580).
-   *"There is also a tree beside a vineyard which they call 'l'arbre de la Pucelle,' but there is nothing remarkable about it."* (michel-montaigne).
+2. **Arbre des dames — fontaine des Groseilliers.** After eating under the tree, the group walked on to drink at the fountain.
+   *"Nous mangions sous l'arbre, puis nous allions boire à la Fontaine-des-Groseilliers."* (bibliotheque-monastique).
 
-4. **Arbre des dames — Chapelle de notre dame de domremy**: stands in the immediate vicinity of the chapel.
-   *"C'est aux environs de cette chapelle que devait être l'arbre des fées"* (Jollois).
+3. **Arbre des dames — fontaine des Groseilliers.** Jeannette herself is described going from the dancing under the tree to drink at the fountain.
+   *"Jeannette venait danser et jouer avec nous... et puis s'en venait boire à la Fontaine-des-Groseilliers."* (bibliotheque-monastique).
 
-5. **Arbre des dames — Chapelle de notre dame de domremy**: the tree was the site where Jeanne herself hung garlands for the chapel's image of Notre-Dame de Domrémy.
-   *"J'allais parfois avec d'autres filles m'ébattre au pied de l'arbre et j'y faisais des guirlandes pour l'image de la Notre-Dame de Domrémy."* (Jeanne d'Arc).
+4. **Arbre des dames — fontaine des Groseilliers.** Jeanne, in her youth, is placed at both sites together.
+   *"Jeannette, en ses jeunes ans, allait quelquefois, en compagnie des autres fillettes, à l'arbre des Dames et à la Fontaine-des-Groseilliers, pour courir et danser avec ses compagnes."* (bibliotheque-monastique).
 
-6. **Arbre des dames — estate boundary**: stands on land belonging to the Bourlémont estate.
-   personal-musing: *"The tree must have stood on the land of Messire Pierre de Bourlémont"*; deposition: *"Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."*
+5. **Arbre des dames — fontaine fiévreux.** Jeanne d'Arc herself places a spring immediately next to ("auprès") the tree, and identifies it as the one visited by feverish people seeking a cure — the defining trait of the "fontaine fiévreux" object.
+   *"Près de Domrémy il y avait un arbre appelé l'arbre des Dames... Auprès est une fontaine. J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-7. **Arbre des dames — fontaine fiévreux**: stands beside a spring to which feverish villagers came for healing.
-   *"Auprès est une fontaine. J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (Jeanne d'Arc).
+6. **Arbre des dames — fontaine fiévreux.** The interrogator and Jeanne both refer to a fountain right next to (rather than a walk away from) the tree — consistent with the same nearby spring as in #5, distinct from the fontaine des Groseilliers reached only "en revenant" (on the way back).
+   *"Les saintes vous ont-elles parlé à la fontaine proche de l'arbre? — Oui, je les y ai entendues..."* (bibliotheque-monastique, interrogateur / Jeanne D'Arc).
 
-8. **Arbre des dames — fontaine des Groseilliers**: linked by the ritual circuit — villagers ate under the tree, then walked on to drink at this fountain, which lies closer to the village than the tree does.
-   *"...en revenant ils vont à la fontaine aux Rains, qui est plus près du village que l'arbre..."* (Jean Morel).
+7. **Arbre des dames — fontaine fiévreux.** The accusation records Jeanne as habitually frequenting "the tree and fountain" as a single, adjacent pair.
+   *"ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy]..."* (bibliotheque-monastique).
 
-9. **Chapelle de notre dame de domremy — Hordal chapel**: the Hordal chapel (built 1600–1610) occupies the same traditional sanctuary site as the earlier, destroyed chapel — an inference from the convergence of two sources, not a single explicit statement.
-   Wallon: ruins found *"vers le lieu où la tradition plaçait l'arbre des Dames"*; académie-française: Hordal built his chapel *"à la place où... [le Bois Chenu] devait avoir son sanctuaire."*
+8. **Arbre des dames — fontaine fiévreux.** The saints spoke to Jeanne beside a fountain that is itself described as standing next to the great tree.
+   *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées."* (bibliotheque-monastique).
 
-10. **Hordal chapel — Basilique**: the Basilique's foundations rest directly on the ruins of the Hordal chapel.
-    *"On se rappelle que la Basilique en construction a pour assises les ruines d'une antique chapelle, dont le constructeur fut Étienne Hordal, grand doyen de la cathédrale de Toul, et petit neveu de Jeanne d'Arc."*
+9. **Arbre des dames — Chapelle de notre dame de domremy.** Jeanne herself made garlands at the foot of the tree for the image of Notre-Dame de Domrémy.
+   *"J'allais parfois avec d'autres filles m'ébattre au pied de l'arbre et j'y faisais des guirlandes pour l'image de la Notre-Dame de Domrémy."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-11. **Basilique — the Bois Chenu**: the Basilique stands within what tradition holds to be the wood's sanctuary site.
-    *"Le Bois Chenu lui-même devait avoir son sanctuaire ou son ermitage à la place où, au début du XVIIe siècle, Étienne Hordal fit construire sa chapelle de Notre-Dame."* (académie-française).
+10. **Arbre des dames — estate boundary.** Jeanne states the tree belonged to Pierre de Bourlémont, i.e. stood within his estate.
+    *"Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-12. **Basilique — fontaine fiévreux**: proposed as the two nearest, mutually adjacent candidate sites for tree and spring in Theory A/B.
-    `theories` (Theory A/B); `candidate-Locations` geolocations ~250 m apart at comparable elevation.
+11. **Arbre des dames — the road to Neufchâteau.** Béatrice, widow of Thévenin d'Estellin, places the tree right beside the road to Neufchâteau.
+    *"Cet arbre se trouve à côté du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Béatrice).
 
-13. **Basilique — the slope to the top of the Bois Chenu**: stands near the top of the slope — the highest of all candidate sites.
-    `candidate-Locations`: basilique height 1,103 ft, elevation-above-the-river 217 ft (highest recorded value).
+12. **Arbre des dames — the road to Neufchâteau.** Jean Moen likewise places the tree at the edge of that same road.
+    *"L'arbre mentionné est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Jean Moen).
 
-14. **Fontaine fiévreux — the slope to the top of the Bois Chenu**: lies partway up the slope.
-    `candidate-Locations`: Fontaine fiévreux height 984 ft, elevation-above-the-river 98 ft.
-
-15. **Fontaine des Groseilliers — the valley**: lies close to the valley floor.
-    `candidate-Locations`: current fontaine des Groseilliers elevation-above-the-river only 32 ft.
-
-16. **Fontaine des Groseilliers — the river Meuse**: lies near the west bank, close to the river.
-    `candidate-Locations`: *"west bank of the meuse"*, distance-from-the-river ≈120 m.
-
-17. **The road to Neufchâteau — the Bois Chenu**: the road runs along the edge of the wood.
-    *"L'arbre... est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (Jean Moen).
-
-18. **The road to Neufchâteau — the valley**: the road runs through the valley, below the wood's edge where the tree stood.
-    Inference from *"au-dessus du grand chemin de Neufchâteau"* (mediterranee-antique) — if the tree stood *above* the road, the road itself runs at the lower, valley side of the slope.
-
-19. **Vineyard — the slope to the top of the Bois Chenu**: the vineyard is planted on the slope.
-    *"...sur le penchant de la côte où se trouve le vignoble connu sous le nom de la Pucelle..."* (Jollois).
-
-20. **Vineyard — fontaine des Groseilliers**: several springs rise on the vineyard's slope, probably including the source that feeds this fountain.
-    *"Comme il existe plusieurs sources sur le penchant de la côte où se trouve le vignoble... il est assez probable que c'est celle même des groseillers..."* (Jollois).
-
-21. **Estate boundary — the Bois Chenu**: the Bourlémont estate borders/encloses the part of the wood where the tree stood at its edge — inference, not an explicit statement.
-
-22. **The Bois Chenu — the slope to the top of the Bois Chenu**: part–whole; the slope is the flank of the wood/hill.
-
-23. **The slope to the top of the Bois Chenu — the valley**: the slope rises up from the valley floor.
-
-24. **The valley — the river Meuse**: the river runs along/through the valley floor.
+13. **Arbre des dames — the Bois Chenu.** The same statement from Jean Moen also places the tree next to a wood — taken here as the Bois Chenu, the only wood in the object-model; the snippet itself only says "un bois" and does not name it, so this edge is a weaker, inferred reading.
+    *"L'arbre mentionné est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Jean Moen).

@@ -30,6 +30,10 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 # AI assistent mindmap
 
+Prompt used to generate the mindmap:
+
+> make a diagram based on the prompt/tree-prompt.yaml. I want to get objects from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. Store the output in breakout/combined.md
+
 [mind-map](breakout/combined.md)
 
 
