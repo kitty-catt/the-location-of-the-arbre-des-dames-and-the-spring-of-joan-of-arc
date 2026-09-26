@@ -1,14 +1,17 @@
 # Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-`object-model` in `tree-prompt.yaml` has 14 entries. Only the 7 below are ever
-mentioned (directly or by clear paraphrase) in the `first-hand-snippets` array —
-testimony from the nullification trial (`bibliotheque-monastique`,
-`questionnaire-lorraine`) and Jeanne d'Arc's own words — so the rest (Hordal
-chapel, Basilique, the ridge road on the west bank, vineyard, the slope to the
-top of the Bois Chenu, the valley, the river meuse) are excluded from the
-diagram entirely. `general-reputation` sources (Montaigne, Jollois,
-académie-française, etc.) and `candidate-locations` are likewise excluded from
-the grounding.
+`object-model` in `tree-prompt.yaml` has 14 entries. Only the 6 below are ever
+directly stated (not merely inferred) to relate to another object in the
+`first-hand-snippets` array — testimony from the nullification trial
+(`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
+words — so the rest (Chapelle Hordal, Basilique, the ridge road on the west
+bank, vineyard, estate boundary, the slope to the top of the Bois Chenu, the
+valley, the river meuse) are excluded from the diagram entirely.
+`general-reputation` sources (Montaigne, Jollois, académie-française, etc.) and
+`candidate-locations` are likewise excluded from the grounding. `estate
+boundary` was dropped: the only relevant snippet says the tree *belonged to*
+Pierre de Bourlémont, which supports ownership, not a boundary relation, so
+keeping that edge would have been an inference rather than a direct statement.
 
 Each edge is labeled with the number(s) of the numbered relations below. Where
 more than one first-hand relation supports the same edge, the numbers are
@@ -21,15 +24,13 @@ graph TD
     N5["fontaine fiévreux"]
     N6["fontaine des Groseilliers"]
     N7["the road to Neufchâteau"]
-    N10["estate boundary"]
     N11["the Bois Chenu"]
 
     N1 -- "1,2,3,4" --- N6
     N1 -- "5,6,7,8" --- N5
     N1 -- "9" --- N2
-    N1 -- "10" --- N10
-    N1 -- "11,12" --- N7
-    N1 -- "13" --- N11
+    N1 -- "10,11" --- N7
+    N1 -- "12" --- N11
 ```
 
 ## Numbered relations
@@ -61,14 +62,11 @@ graph TD
 9. **Arbre des dames — Chapelle de notre dame de domremy.** Jeanne herself made garlands at the foot of the tree for the image of Notre-Dame de Domrémy.
    *"J'allais parfois avec d'autres filles m'ébattre au pied de l'arbre et j'y faisais des guirlandes pour l'image de la Notre-Dame de Domrémy."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-10. **Arbre des dames — estate boundary.** Jeanne states the tree belonged to Pierre de Bourlémont, i.e. stood within his estate.
-    *"Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."* (bibliotheque-monastique, from Jeanne D'Arc).
-
-11. **Arbre des dames — the road to Neufchâteau.** Béatrice, widow of Thévenin d'Estellin, places the tree right beside the road to Neufchâteau.
+10. **Arbre des dames — the road to Neufchâteau.** Béatrice, widow of Thévenin d'Estellin, places the tree right beside the road to Neufchâteau.
     *"Cet arbre se trouve à côté du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Béatrice).
 
-12. **Arbre des dames — the road to Neufchâteau.** Jean Moen likewise places the tree at the edge of that same road.
+11. **Arbre des dames — the road to Neufchâteau.** Jean Moen likewise places the tree at the edge of that same road.
     *"L'arbre mentionné est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Jean Moen).
 
-13. **Arbre des dames — the Bois Chenu.** The same statement from Jean Moen also places the tree next to a wood — taken here as the Bois Chenu, the only wood in the object-model; the snippet itself only says "un bois" and does not name it, so this edge is a weaker, inferred reading.
+12. **Arbre des dames — the Bois Chenu.** The same statement from Jean Moen also places the tree next to a wood — taken here as the Bois Chenu, the only wood in the object-model; the snippet itself only says "un bois" and does not name it, so this edge is a weaker, inferred reading.
     *"L'arbre mentionné est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Jean Moen).
