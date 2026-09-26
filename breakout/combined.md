@@ -1,11 +1,14 @@
 # Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-Nodes are the 14 entries of `object-model` in `tree-prompt.yaml`. Edges are drawn
-**only** where a relation between two of those objects is stated (or directly
-implied) in the `first-hand-snippets` array — testimony from the nullification
-trial (`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
-words. `general-reputation` sources (Montaigne, Jollois, académie-française, etc.)
-and `candidate-locations` are deliberately excluded from the grounding.
+`object-model` in `tree-prompt.yaml` has 14 entries. Only the 7 below are ever
+mentioned (directly or by clear paraphrase) in the `first-hand-snippets` array —
+testimony from the nullification trial (`bibliotheque-monastique`,
+`questionnaire-lorraine`) and Jeanne d'Arc's own words — so the rest (Hordal
+chapel, Basilique, the ridge road on the west bank, vineyard, the slope to the
+top of the Bois Chenu, the valley, the river meuse) are excluded from the
+diagram entirely. `general-reputation` sources (Montaigne, Jollois,
+académie-française, etc.) and `candidate-locations` are likewise excluded from
+the grounding.
 
 Each edge is labeled with the number(s) of the numbered relations below. Where
 more than one first-hand relation supports the same edge, the numbers are
@@ -15,18 +18,11 @@ comma-separated.
 graph TD
     N1["L'Arbre des dames"]
     N2["Chapelle de notre dame de domremy"]
-    N3["Hordal chapel"]
-    N4["Basilique"]
     N5["fontaine fiévreux"]
     N6["fontaine des Groseilliers"]
     N7["the road to Neufchâteau"]
-    N8["the ridge road on the west bank"]
-    N9["vineyard"]
     N10["estate boundary"]
     N11["the Bois Chenu"]
-    N12["the slope to the top of the Bois Chenu"]
-    N13["the valley"]
-    N14["the river meuse"]
 
     N1 -- "1,2,3,4" --- N6
     N1 -- "5,6,7,8" --- N5
@@ -35,10 +31,6 @@ graph TD
     N1 -- "11,12" --- N7
     N1 -- "13" --- N11
 ```
-
-`N3`, `N4`, `N8`, `N9`, `N12`, `N13`, `N14` have no edges: no first-hand snippet
-relates the Hordal chapel, the Basilique, the ridge road, the vineyard, the
-slope, the valley, or the river Meuse to any other object in the model.
 
 ## Numbered relations
 
