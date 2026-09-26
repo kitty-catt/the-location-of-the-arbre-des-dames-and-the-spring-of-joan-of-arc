@@ -1,6 +1,6 @@
 # Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-`object-model` in `tree-prompt.yaml` has 15 entries. Only the 6 below are ever
+`object-model` in `tree-prompt.yaml` has 16 entries. Only the 7 below are ever
 directly stated (not merely inferred) to relate to another object in the
 `first-hand-snippets` array — testimony from the nullification trial
 (`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
@@ -13,11 +13,13 @@ entirely.
 
 Two exclusions worth calling out: `estate boundary` is dropped because the
 only relevant snippet says the tree *belonged to* Pierre de Bourlémont, which
-is ownership, not a boundary — so that edge now lives on the new object `the
+is ownership, not a boundary — so that edge now lives on the object `the
 Bourlemont land` instead, where "belonged to" is a direct statement. `the Bois
-Chenu` is dropped too: the one snippet that places the tree next to a wood
-only says "un bois" (a wood) and never names it, so treating that as "the
-Bois Chenu" would itself be an inference, which the brief now rules out.
+Chenu` stays dropped for the same reason as before: the one snippet that
+places the tree next to a wood only says "un bois" (a wood) and never names
+it, so treating that as "the Bois Chenu" would be an inference. That snippet's
+wording is now matched exactly by the new object `un Bois`, so the relation is
+included under that name instead.
 
 Each edge is labeled with the number(s) of the numbered relations below. Where
 more than one first-hand relation supports the same edge, the numbers are
@@ -31,12 +33,14 @@ graph TD
     N6["fontaine des Groseilliers"]
     N7["the road to Neufchâteau"]
     N15["the Bourlemont land"]
+    N16["un Bois"]
 
     N1 -- "1,2,3,4" --- N6
     N1 -- "5,6,7,8" --- N5
     N1 -- "9" --- N2
     N1 -- "10,11" --- N7
     N1 -- "12" --- N15
+    N1 -- "13" --- N16
 ```
 
 ## Numbered relations
@@ -76,3 +80,6 @@ graph TD
 
 12. **Arbre des dames — the Bourlemont land.** Jeanne d'Arc states directly that the tree belonged to Pierre de Bourlémont, i.e. it stood on his land.
     *"Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+13. **Arbre des dames — un Bois.** Jean Moen places the tree right next to a wood, using exactly this wording ("un bois"), at the edge of the road to Neufchâteau.
+    *"L'arbre mentionné est près d'un bois, au bord du grand chemin par lequel on va à Neufchâteau."* (questionnaire-lorraine, Jean Moen).
