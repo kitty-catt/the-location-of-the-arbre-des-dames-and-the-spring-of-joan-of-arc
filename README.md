@@ -46,9 +46,10 @@ Prompt used to regenerate the mindmap with sick persons included:
 
 | Object | Observations |
 |---|---|
-| [naudin-map](breakout/naudin.md)   | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.|
-| [jollois-map](breakout/jollois.md) | The vineyard grew on both sides of the ridge road. From the ridge road it is possible to see the old road to Neufchateau on the other side of the river |
-| [copernicus-map](breakout/copernicus.md) | - |
+| [naudin-map](breakout/naudin.md)              | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.|
+| [jollois-map](breakout/jollois.md)            | The vineyard grew on both sides of the ridge road. From the ridge road it is possible to see the old road to Neufchateau on the other side of the river |
+| [napoleonic-cadastre](breakout/napoleonic.md) | - |
+| [copernicus-map](breakout/copernicus.md)      | - |
 
 
 
