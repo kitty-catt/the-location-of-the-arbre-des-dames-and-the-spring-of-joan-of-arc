@@ -1,7 +1,7 @@
 # Object diagram — arbre des Dames and its surroundings (first-hand-snippets only)
 
-`object-model` in `tree-prompt.yaml` has 18 entries and `sick-persons` has 2.
-Only the 8 objects and both sick-persons below are ever directly stated (not
+`object-model` in `tree-prompt.yaml` has 19 entries and `sick-persons` has 2.
+Only the 9 objects and both sick-persons below are ever directly stated (not
 merely inferred) to relate to another object/person in the
 `first-hand-snippets` array — testimony from the nullification trial
 (`bibliotheque-monastique`, `questionnaire-lorraine`) and Jeanne d'Arc's own
@@ -47,6 +47,7 @@ graph TD
     N8["un Bois"]
     N9["fiévreux"]
     N10["malades"]
+    N11["Les saintes"]
 
     N1 -- "1,2,3,4" --- N4
     N1 -- "5,6,7,8" --- N3
@@ -57,6 +58,7 @@ graph TD
     N1 -- "14,15,16,17,18,19,20,21,22,23,24,25,26,27,28" --- N5
     N3 -- "29,30" --- N9
     N1 -- "31" --- N10
+    N3 -- "32,33" --- N11
 ```
 
 ## Numbered relations
@@ -77,7 +79,7 @@ graph TD
    *"Près de Domrémy il y avait un arbre appelé l'arbre des Dames... Auprès est une fontaine. J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, from Jeanne D'Arc).
 
 6. **Arbre des dames — fontaine fiévreux.** The interrogator and Jeanne both refer to a fountain right next to (rather than a walk away from) the tree — consistent with the same nearby spring as in #5, distinct from the fontaine des Groseilliers reached only "en revenant" (on the way back).
-   *"Les saintes vous ont-elles parlé à la fontaine proche de l'arbre? — Oui, je les y ai entendues..."* (bibliotheque-monastique, interrogateur / Jeanne D'Arc).
+   *"interrogateur - Les saintes vous ont-elles parlé à la fontaine proche de l'arbre?  Jeanne D'Arc - Oui, je les y ai entendues; mais je ne me rappelle pas ce qu'elles m'y ont dit."* (bibliotheque-monastique).
 
 7. **Arbre des dames — fontaine fiévreux.** The accusation records Jeanne as habitually frequenting "the tree and fountain" as a single, adjacent pair.
    *"ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy]..."* (bibliotheque-monastique).
@@ -153,3 +155,9 @@ graph TD
 
 31. **Arbre des dames — malades.** Jeanne d'Arc states that the sick (malades), once recovered, go to the tree to amuse themselves.
     *"J'ai oui dire que les malades une fois relevés, vont à cet arbre pour se divertir."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+32. **fontaine fiévreux — Les saintes.** Jeanne is asked whether the saints spoke to her at the fountain near the tree, and confirms she heard them there.
+    *"interrogateur - Les saintes vous ont-elles parlé à la fontaine proche de l'arbre?  Jeanne D'Arc - Oui, je les y ai entendues; mais je ne me rappelle pas ce qu'elles m'y ont dit."* (bibliotheque-monastique).
+
+33. **fontaine fiévreux — Les saintes.** The trial record likewise states the saints spoke to her several times near this fountain (itself placed near the great tree).
+    *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées."* (bibliotheque-monastique).

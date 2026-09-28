@@ -55,6 +55,7 @@ object-model:
  - the valley
  - the river meuse
  - un Bois
+ - Les saintes
 
 sick-persons:
   - fiévreux
@@ -149,12 +150,8 @@ first-hand-snippets:
 - text: 'Je ne sais et n’ai pas oui dire qu’il fût hanté par les fées. Mais j’ai ouï conter par mon frère qu’on disait dans le pays: « Jeannette a pris son fait près de l’arbre des Fées » Il n’en est rien et je le lui ai dit.'
   document-reference: bibliotheque-monastique
   from: Jeanne D'Arc
-- text: Les saintes vous ont-elles parlé à la fontaine proche de l’arbre?
+- text: interrogateur - Les saintes vous ont-elles parlé à la fontaine proche de l’arbre?  Jeanne D'Arc - Oui, je les y ai entendues; mais je ne me rappelle pas ce qu’elles m’y ont dit.
   document-reference: bibliotheque-monastique
-  from: interrogateur
-- text: Oui, je les y ai entendues; mais je ne me rappelle pas ce qu’elles m’y ont dit.
-  document-reference: bibliotheque-monastique
-  from: Jeanne D'Arc
 - text: Interroguée quant elle mectoit chappeaulx en l’arbre, s’elle les meictait en l’onneur de celles qui iny appairaient, R. Que non.
   document-reference: bibliotheque-monastique
 - text: Item ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy] et souvent de nuit; quelquefois de jour, principalement aux heures des offices, afin d’y être seule; elle a pris part à des rondes qui s’opéraient en dansant à l’entour; ensuite elle appendait aux branches de l’arbre des guirlandes formées de diverses herbes et fleurs, en disant et chantant auparavant, ainsi qu’après, certains poèmes et chansons, accompagnés d’invocations, sortilèges et de maléfices; desquelles guirlandes le lendemain matin il ne se retrouvait plus rien
