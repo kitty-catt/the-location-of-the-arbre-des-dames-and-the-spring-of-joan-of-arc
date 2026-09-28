@@ -43,6 +43,8 @@ object-model:
  - Basilique
  - fontaine fiévreux
  - fontaine des Groseilliers 
+ - fontaine aux Rains
+ - fontaine de l'Ermite 
  - the road to Neufchâteau
  - the ridge road on the west bank
  - vineyard
@@ -53,6 +55,10 @@ object-model:
  - the valley
  - the river meuse
  - un Bois
+
+sick-persons:
+  - fiévreux
+  - malades
 
 candidate-locations:
 - name: current fontaine des Groseilliers

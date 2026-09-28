@@ -34,6 +34,10 @@ Prompt used to generate the mindmap:
 
 > make a diagram based on the prompt/tree-prompt.yaml. I want to get objects from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
 
+Prompt used to regenerate the mindmap with sick persons included:
+
+> make a diagram based on the prompt/tree-prompt.yaml. I want to get objects from the object-model array as well as the sick-persons array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
+
 
 [mind-map](breakout/combined.md)
 
