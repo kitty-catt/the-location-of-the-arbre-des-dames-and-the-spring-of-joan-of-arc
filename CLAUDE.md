@@ -28,7 +28,7 @@ These rules were established while building `breakout/combined.md` and apply to 
 
 1. **First-hand only, unless told otherwise.** Only `first-hand-snippets` count as direct evidence. `general-reputation`, `observation-list`, `personal-musings`, and `candidate-locations` are context/hypothesis, not evidence — never cite them as if a witness stated something.
 2. **No inference from indirect implication.** A relationship between two entities may only be drawn if a snippet *directly* states it. Do not infer a relationship from proximity, distance math, or plausibility.
-3. **Respect the fixed `object-model` vocabulary.** When diagramming, only include entities from `object-model`; exclude any not directly named in a first-hand snippet, and say explicitly why entities were excluded (see the "Excluded entirely" section pattern in `breakout/combined.md`).
+3. **Respect the fixed `object-model` vocabulary, and drop isolated nodes.** When diagramming, only include an entity if it is directly named in a first-hand snippet AND has a first-hand-stated relationship to another included entity. Exclude everything else — whether never named first-hand, or named first-hand but never placed in a stated relationship — and say explicitly why each was excluded (see the "Excluded entirely" section pattern in `breakout/combined.md`).
 4. **Cite every claim** with its `document-reference` and, where relevant, the deposing witness (`from` or the name in the snippet text).
 5. **Flag judgment calls explicitly.** Where a categorization is ambiguous (e.g. whether two mentions of "une fontaine" refer to the same spring), state the judgment call and the textual basis for it, rather than silently resolving it.
 

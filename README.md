@@ -32,7 +32,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 Prompt used to generate the mindmap:
 
-> make a diagram based on the prompt/tree-prompt.yaml. Use entities from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
+> make a diagram based on the prompt/tree-prompt.yaml. Use entities from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Also exclude an object that is mentioned in a first-hand-snippet but has no first-hand-stated relationship to any other included object — do not draw it as an unconnected node. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
 
 [mind-map](breakout/combined.md)
 

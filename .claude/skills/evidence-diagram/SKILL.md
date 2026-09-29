@@ -22,11 +22,15 @@ read it first, keep its structure, and fold in anything new.
 2. **No inferred edges.** Draw a relationship between two entities only if a
    single snippet's text *directly* states it. Proximity, distance math, or
    plausibility from `personal-musings` is not a basis for an edge.
-3. **Fixed vocabulary.** Only draw nodes for entries that appear in the
-   `object-model` array AND are directly named in at least one first-hand
-   snippet. Every other `object-model` entry must be listed as excluded, with
-   the reason (never named first-hand, or named but with no first-hand
-   relation stated).
+3. **Fixed vocabulary, and drop isolated nodes.** Only draw a node for an
+   `object-model` entry that (a) is directly named in at least one first-hand
+   snippet, AND (b) has at least one first-hand-stated relationship to
+   another included entity. An entry that is named first-hand but never
+   appears in a directly-stated relationship must be dropped from the
+   diagram entirely — do not draw it as an unconnected node. Every other
+   `object-model` entry must be listed as excluded, with the reason: never
+   named first-hand, or named first-hand but with no stated relationship to
+   any other included entity.
 4. **Cite everything.** Every edge gets a numbered relation below the diagram,
    with the exact quote (verbatim, original French — do not translate), its
    `document-reference`, and the witness name if the snippet gives one (`from`
@@ -56,7 +60,9 @@ read it first, keep its structure, and fold in anything new.
    relation in bold, the verbatim quote in italics, and `(document-reference,
    witness)`.
 7. Write the "Included entities and why" and "Excluded entirely" sections,
-   plus a "judgment calls" section per rule 5.
+   plus a "judgment calls" section per rule 5. Split "Excluded entirely" into
+   two groups: entries never named in a first-hand snippet, and entries named
+   first-hand but dropped for having no stated relationship (isolated).
 8. Save to the target file. If this is an update to an existing file, note in
    your summary to the user exactly what changed (new nodes, new edges, or
    nothing).

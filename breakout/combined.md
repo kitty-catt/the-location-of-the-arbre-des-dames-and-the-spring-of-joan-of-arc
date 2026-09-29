@@ -4,7 +4,9 @@ Scope: only `object-model` entries that a snippet in the `first-hand-snippets`
 array (not `general-reputation`, not `observation-list`, not
 `candidate-locations`) directly names are drawn. Only relationships a
 snippet directly states are drawn as edges; nothing here is inferred from
-context, distance math, or the `personal-musings` notes.
+context, distance math, or the `personal-musings` notes. An entry that is
+named first-hand but never appears in a directly-stated relationship to any
+other included entity is dropped rather than drawn as an unconnected node.
 
 ## Included entities and why
 
@@ -18,12 +20,10 @@ context, distance math, or the `personal-musings` notes.
 - **the road to Neufchâteau**, **the Bourlemont land**, **un Bois** — named
   outright, each tied to the tree.
 - **Les saintes** — named outright, tied to `fontaine fiévreux` (see below).
-- **l’ermitage de Notre-Dame de Bermont** — named (as "l'église Notre-Dame de
-  Bermont") in one deposition, but that sentence describes a *different*
-  village's (Greux) custom and states no relation to the tree or any other
-  included object, so it is drawn as an unconnected node.
 
-## Excluded entirely (never named in a first-hand-snippet)
+## Excluded entirely
+
+### Never named in a first-hand-snippet
 
 `L’Arbre de la Pucelle`, `des ruines`, `Chapelle de notre dame de domremy`,
 `Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `the ridge road on the
@@ -40,6 +40,14 @@ not drawn as a third node: every first-hand use of unqualified "l'arbre" /
 the same testimony (mostly as "l'arbre des dames" or a synonym of it), so it
 is folded into whichever named tree that testimony uses rather than treated
 as a distinct, unlinked entity.
+
+### Named first-hand, but dropped as isolated (no stated relationship)
+
+- **l’ermitage de Notre-Dame de Bermont** — named (as "l'église Notre-Dame de
+  Bermont") in one deposition, but that sentence describes a *different*
+  village's (Greux) custom and states no relation to the tree or any other
+  included object. Since no first-hand snippet ties it to anything else, it
+  is dropped rather than drawn as an unconnected node.
 
 Two judgment calls worth flagging:
 - `un Bois` is matched only because a witness's exact wording is "un bois" —
@@ -68,7 +76,6 @@ graph TD
     N7["the Bourlemont land"]
     N8["un Bois"]
     N9["Les saintes"]
-    N10["l’ermitage de Notre-Dame de Bermont"]
 
     N1 -- "5" --- N2
     N1 -- "1,2,3,4" --- N3
