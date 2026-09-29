@@ -30,12 +30,16 @@ user-prompt:
   obervation-list:
   - source: naudin-map
     remarks:
-    - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
+    - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. 
     - Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.
   - source: jollois
     remarks:
     - The vineyard grew on both sides of the ridge road
-    - From the ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
+    - From the old ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
+  - source: Carte de L'etat major 1820-1866
+    remarks:
+    - The old ridge road was more to the west than the current D53
+    - The old ridge road ends stops where the basilique begins
 
 object-model:
  - L’Arbre des dames

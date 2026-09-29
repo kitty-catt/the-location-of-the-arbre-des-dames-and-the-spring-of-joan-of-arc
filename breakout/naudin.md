@@ -13,6 +13,7 @@ I have calibrated it on the basis of the road pattern.
 
 - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
 - Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.
+- Label this path as the ridge old road
 
 
 # Personal Thoughts
