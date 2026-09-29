@@ -5,7 +5,7 @@
 ## Observations
 
 - The vineyard grew on both sides of the ridge road
-- From the ridge road it is possible to see the old road to Neufchateau on the other side of the river
+- From the ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
 
 
 # Personal Thoughts
