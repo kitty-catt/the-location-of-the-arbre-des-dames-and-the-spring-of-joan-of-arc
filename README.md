@@ -48,7 +48,12 @@ Prompt used to generate the mindmap:
 
 
 
-# The fictional police report
+# Working with Claude Skills
+
+    Typical workflow going forward:
+    1. Add new witness testimony to prompt/tree-prompt.yaml (as first-hand-snippets, correctly categorized).
+    2. Run /evidence-diagram to fold the new snippets into the diagram — it reads the existing breakout/combined.md first so node/edge numbering for unchanged content stays stable, and reports what actually changed.
+    3. Run /verify-citations on the updated file (or the whole breakout/ folder) as a check before you trust or publish the result — it'll flag anything presented as first-hand that's actually secondary, misattributed, or overreaching beyond what the quote states.
 
 
 
