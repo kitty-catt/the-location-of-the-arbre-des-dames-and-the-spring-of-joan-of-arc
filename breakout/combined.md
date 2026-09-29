@@ -79,7 +79,8 @@ graph TD
 
     N1 -- "5" --- N2
     N1 -- "1,2,3,4" --- N3
-    N1 -- "5,7,8,9" --- N4
+    N1 -- "5,7,8" --- N4
+    N2 -- "9" --- N4
     N1 -- "6" --- N7
     N4 -- "7,9" --- N9
     N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
@@ -114,7 +115,7 @@ graph TD
 8. **Arbre des dames — fontaine fiévreux.** The accusation records Jeanne as habitually frequenting "the tree and fountain" as one adjacent pair.
    *"ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy]..."* (bibliotheque-monastique).
 
-9. **Arbre des dames — fontaine fiévreux; fontaine fiévreux — Les saintes.** The trial record places the saints' voices beside a fountain that is itself placed next to the great tree ("l'arbre des fées").
+9. **Arbre des fées — fontaine fiévreux; fontaine fiévreux — Les saintes.** The trial record places the saints' voices beside a fountain that is itself placed next to the great tree — this snippet explicitly names it "l'arbre des fées," not "des dames," so the edge attaches to that node (per skill rule 3: honor the literal name used).
    *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées."* (bibliotheque-monastique).
 
 10. **Arbre des dames — fontaine aux Rains.** Jean Morel, Jeanne's godfather, has the group return from the tree to this fountain, which he places closer to the village than the tree.

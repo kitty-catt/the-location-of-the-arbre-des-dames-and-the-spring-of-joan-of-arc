@@ -22,7 +22,17 @@ read it first, keep its structure, and fold in anything new.
 2. **No inferred edges.** Draw a relationship between two entities only if a
    single snippet's text *directly* states it. Proximity, distance math, or
    plausibility from `personal-musings` is not a basis for an edge.
-3. **Fixed vocabulary, and drop isolated nodes.** Only draw a node for an
+3. **Honor the literal name in each snippet, even across synonyms.** When two
+   entities are established as the same underlying thing under different
+   names (e.g. a snippet states the tree is called both "l'arbre des Dames"
+   and "l'arbre des Fées"), attach each new edge to whichever name that
+   specific supporting snippet actually uses — do not default an edge to one
+   synonym's node just because other edges already point there. Only fold a
+   bare/unqualified reference (e.g. plain "l'arbre", "cet arbre") into the
+   most recently-named entity in that testimony; an explicit alternate name
+   given in the snippet must be honored as its own node's edge, even if a
+   "primary" synonym node already has an edge for the same relationship.
+4. **Fixed vocabulary, and drop isolated nodes.** Only draw a node for an
    `object-model` entry that (a) is directly named in at least one first-hand
    snippet, AND (b) has at least one first-hand-stated relationship to
    another included entity. An entry that is named first-hand but never
@@ -31,11 +41,11 @@ read it first, keep its structure, and fold in anything new.
    `object-model` entry must be listed as excluded, with the reason: never
    named first-hand, or named first-hand but with no stated relationship to
    any other included entity.
-4. **Cite everything.** Every edge gets a numbered relation below the diagram,
+5. **Cite everything.** Every edge gets a numbered relation below the diagram,
    with the exact quote (verbatim, original French — do not translate), its
    `document-reference`, and the witness name if the snippet gives one (`from`
    field or a name embedded in the snippet text itself).
-5. **Flag judgment calls.** Where categorizing a snippet is ambiguous (e.g.
+6. **Flag judgment calls.** Where categorizing a snippet is ambiguous (e.g.
    whether two different phrasings of "une fontaine" refer to the same
    spring, or whether an unqualified "cet arbre" refers back to a
    previously-named tree in the same testimony), state the call and the
@@ -49,9 +59,11 @@ read it first, keep its structure, and fold in anything new.
 2. If the target output file exists, read it too, so entity numbering (`N1`,
    `N2`, ...) and relation numbering stay stable for anything unchanged.
 3. For each `object-model` entry, check whether it is named in at least one
-   first-hand snippet. Build the include/exclude lists per rule 3.
+   first-hand snippet. Build the include/exclude lists per rule 4.
 4. For each first-hand snippet, extract every directly-stated relationship
-   between included entities. Number these relations in snippet order.
+   between included entities, attaching each edge to whichever entity name
+   the snippet literally uses (rule 3). Number these relations in snippet
+   order.
 5. Emit the diagram as a Mermaid `graph TD` block, edges labeled with
    comma-separated relation numbers when more than one snippet supports the
    same edge (this is the existing convention — follow it, don't invent a new
@@ -60,7 +72,7 @@ read it first, keep its structure, and fold in anything new.
    relation in bold, the verbatim quote in italics, and `(document-reference,
    witness)`.
 7. Write the "Included entities and why" and "Excluded entirely" sections,
-   plus a "judgment calls" section per rule 5. Split "Excluded entirely" into
+   plus a "judgment calls" section per rule 6. Split "Excluded entirely" into
    two groups: entries never named in a first-hand snippet, and entries named
    first-hand but dropped for having no stated relationship (isolated).
 8. Save to the target file. If this is an update to an existing file, note in
