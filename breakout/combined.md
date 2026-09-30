@@ -25,6 +25,15 @@ other included entity is dropped rather than drawn as an unconnected node.
   go to the fountain beside the tree to recover their health.
 - **malades** — named outright in Jeanne d'Arc's testimony, which states
   they go to the tree itself to amuse themselves once recovered.
+- **fées** — named outright across many depositions — both Jeanne d'Arc's
+  own testimony and several questionnaire-lorraine witnesses — each directly
+  stating, as claim, rumor, or explicit denial, that "les fées" / "les dames
+  fées" haunted or went to the tree, and, in one snippet (the trial record's
+  "renommée" passage, already used for relations 9 and 28), to the fountain
+  beside it as well.
+- **le curé** — named outright in Béatrice's deposition, which states he
+  goes under the tree and to the fountain aux Rains each Ascension Eve to
+  chant the gospel.
 
 ## Excluded entirely
 
@@ -53,6 +62,22 @@ as a distinct, unlinked entity.
   village's (Greux) custom and states no relation to the tree or any other
   included object. Since no first-hand snippet ties it to anything else, it
   is dropped rather than drawn as an unconnected node.
+- **esprit malin** — named once, by Simonin Musnier, but only as a general
+  disclaimer — *"bien qu'il n'eût lui-même jamais vu quelque signe de
+  quelque esprit malin"* — with no location or relation stated, unlike the
+  fées clause earlier in the very same sentence, which explicitly places
+  "les fées...sous cet arbre." No first-hand snippet ties `esprit malin` to
+  the tree or to any other included entity, so it is dropped.
+- **prêtre** — named three times, but only inside a witness's own
+  occupational label in the source's parenthetical biography: Dominique
+  Jacob (35 ans, prêtre), Jean Colin (66 ans, prêtre), and Henri Arnolin (64
+  ans, prêtre). None of their substantive testimony states that they, in
+  that capacity, did anything at the tree or fountain — Jean Colin's answer
+  is just "Ne sait rien sinon par ouï-dire," and Henri Arnolin's only states
+  he never heard Jeanne went there. The priestly role that *does* get a
+  stated relation to the tree and fountain belongs to "le curé" in
+  Béatrice's deposition, which is why `le curé` is included while `prêtre`
+  is dropped as isolated.
 
 Judgment calls worth flagging:
 - `un Bois` is matched only because a witness's exact wording is "un bois" —
