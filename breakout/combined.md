@@ -18,6 +18,29 @@ of its supporting relations are. A **green** node denotes an entity that may
 have left archaeological evidence — see "Archaeological-potential coloring"
 below for the rationale on each.
 
+## New snippets reviewed in this update
+
+Nine `first-hand-snippets` were added to `prompt/tree-prompt.yaml` since the
+previous version of this diagram (all `document-reference:
+questionnaire-lorraine`, none in the judges'-assertion register excluded
+under rule 2): four from Jean Waterin (one repeated verbatim as two separate
+entries), one from Jean de Metz, and one each from Jaquier de Saint-Amant,
+Perrin Drappier, Isabelle femme de Gérardin d'Épinal, and Bertrand de
+Poulengy. They cover Jeanne plowing/herding with her father, praying apart
+in the fields, her divine mission, her prophecy about restoring France, and
+the village's flight (with livestock) to Neufchâteau under armed raids.
+
+Only one of the nine names an `object-model` entry: Jean Waterin's "allait
+au pèlerinage de Notre-Dame de Bermont," which adds a second citation to the
+already-excluded, isolated `l'ermitage de Notre-Dame de Bermont` entry (see
+below) without giving it a stated relation to any other included entity. The
+Neufchâteau-flight snippets (Jaquier de Saint-Amant, Perrin Drappier,
+Isabelle) name the town of Neufchâteau as a destination, not the `the road
+to Neufchâteau` object-model entry specifically — none uses "chemin" or
+"route" — so they add no edge to that node. No other new node or edge
+results from this batch; the diagram itself (entities, edges, numbering) is
+unchanged from the prior version.
+
 ## Included entities and why
 
 - **L’Arbre des dames** / **L’Arbre des fées** — kept as two separate nodes
@@ -71,11 +94,15 @@ as a distinct, unlinked entity.
 
 ### Named first-hand, but dropped as isolated (no stated relationship)
 
-- **l’ermitage de Notre-Dame de Bermont** — named (as "l'église Notre-Dame de
-  Bermont") in one deposition, but that sentence describes a *different*
-  village's (Greux) custom and states no relation to the tree or any other
-  included object. Since no first-hand snippet ties it to anything else, it
-  is dropped rather than drawn as an unconnected node.
+- **l’ermitage de Notre-Dame de Bermont** — named first-hand twice: (1) as
+  "l'église Notre-Dame de Bermont" in Gérard Guillemette's deposition, which
+  describes a *different* village's (Greux) custom, and (2) in Jean
+  Waterin's deposition, which states that Jeanne herself "allait au
+  pèlerinage de Notre-Dame de Bermont." Neither snippet states any relation
+  between this place and the tree, a fountain, or any other included
+  entity — the second snippet places Jeanne there but ties the visit to
+  nothing else in the diagram. Since no first-hand snippet ties it to
+  anything else, it is dropped rather than drawn as an unconnected node.
 - **esprit malin** — named once, by Simonin Musnier, but only as a general
   disclaimer — *"bien qu'il n'eût lui-même jamais vu quelque signe de
   quelque esprit malin"* — with no location or relation stated, unlike the
