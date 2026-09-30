@@ -97,6 +97,27 @@ Judgment calls worth flagging:
   *not* drawn as an edge to any single fountain node, since nothing in the
   text picks out which fountain(s) are meant, unlike the singular "une
   fontaine" / "la fontaine proche" wording used elsewhere for this edge.
+- Several `fées`-to-tree edges (relations 30–32, 34–35, 37–43) are drawn from
+  clauses phrased as hearsay, rumor, or an explicit personal denial by the
+  witness (e.g. Jeanne d'Arc's "je n'ai...jamais vu les fées près de cet
+  arbre," or Bertrand Lacloppe's "il n'a jamais vu...que lesdites fées
+  fussent allées sous cet arbre"). The edge is drawn because the text
+  directly states the *claim* that the fées haunted/visited the tree — the
+  witness denying personal verification of that claim is not the same as
+  the claim itself being absent from the text. This mirrors how relation 9's
+  "la renommée court" wording was already treated as evidence of a stated
+  claim, not of a verified fact.
+- Relation 37 (Jeannette, veuve de Thiesselin de Vittel) names "une certaine
+  dame dénommée Fée" — singular, and used here almost as a proper name for
+  one individual in a courtly legend, rather than the plural "les fées" used
+  everywhere else. Since `fées` is the only object-model entry this word
+  could belong to, and the underlying word is identical, it is folded into
+  the `fées` node, but the singular/proper-name framing is flagged here as a
+  judgment call rather than resolved silently.
+- `esprit malin` (Simonin Musnier, same sentence as relation 41) is
+  deliberately *not* drawn as an edge to the tree — see "Excluded entirely"
+  above. The clause gives no location, unlike the fées clause immediately
+  preceding it in the same sentence.
 
 Each edge is labeled with the number(s) of the matching relation(s) listed
 below. Where more than one first-hand snippet supports the same edge, the
@@ -115,6 +136,8 @@ graph TD
     N9["Les saintes"]
     N10["fiévreux"]
     N11["malades"]
+    N12["fées"]
+    N13["le curé"]
 
     N1 -- "5" --- N2
     N1 -- "1,2,3,4" --- N3
@@ -122,6 +145,11 @@ graph TD
     N2 -- "9" --- N4
     N1 -- "6" --- N7
     N4 -- "7,9" --- N9
+    N1 -- "30,31,32,34,35,37,38,39,40,41,42,43" --- N12
+    N2 -- "33" --- N12
+    N4 -- "33" --- N12
+    N1 -- "36" --- N13
+    N5 -- "36" --- N13
     N4 -- "26,28" --- N10
     N1 -- "27" --- N11
     N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
@@ -218,3 +246,45 @@ graph TD
 
 29. **Arbre des dames — fontaine fiévreux.** Bertrand Lacloppe places the young people at the tree and "the nearby fountain" together, without the "en revenant" (return-trip) framing used for the Fontaine aux Rains elsewhere — matching the adjacent-fountain pattern already established for this edge (see relations 5, 7, 8).
     *"...allaient parfois à cet arbre, avec Jeanne parmi eux, et à la fontaine proche, pour se promener et faire des rondes..."* (questionnaire-lorraine, Bertrand Lacloppe).
+
+30. **fées — Arbre des dames.** An anonymous deposition states the tree was haunted by the "dames appelées fées," while noting no one had actually been heard to have seen them.
+    *"Il y avait chez nous un arbre que, depuis l'ancien temps, on nommait l'arbre des Dames. Les vieilles gens disaient qu'il était hanté des dames appelées fées. Cependant, je n'ai jamais ouï citer personne qui ait vu les fées."* (bibliotheque-monastique).
+
+31. **fées — Arbre des dames.** Jeanne d'Arc recounts hearsay that elders said the "dames fées" haunted the tree, that one of her godmothers claimed to have seen fées there, and personally denies ever having seen fées near the tree.
+    *"Souventes fois j'ai ouï dire par des anciens...que les dames fées le hantaient. J'ai même ouï dire à une de mes marraines, nommée Jeanne, femme du maire Rubery, qu'elle-même avait vu là des fées...Je n'ai, moi, jamais vu les fées près de cet arbre, que je sache."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+32. **fées — Arbre des dames.** Jeanne d'Arc denies knowing or having heard that the tree was haunted by fées.
+    *"Je ne sais et n'ai pas oui dire qu'il fût hanté par les fées."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+33. **fées — Arbre des fées; fées — fontaine fiévreux.** The trial record's "renommée" passage states that reputation holds the fées haunt both the tree (named here "l'arbre des fées") and the fountain beside it, where feverish people go to recover.
+    *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées. La renommée court au sujet de ces arbres et fontaine que les dames fées les hantent et que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé."* (bibliotheque-monastique).
+
+34. **fées — Arbre des dames.** Jean Morel, Jeanne's godfather, recounts that supernatural women called fées formerly danced under the tree called "des dames."
+    *"Entendit dire autrefois que des femmes ou personnes surnaturelles, on les appelait fées, allaient anciennement danser sous l'arbre appelé des dames."* (questionnaire-lorraine, Jean Morel).
+
+35. **fées — Arbre des dames.** Béatrice recounts that the "dames fatales," in French "les fées," formerly went under this tree (already named "l'arbre des dames" earlier in her deposition).
+    *"...autrefois entendit dire qu'anciennement les dames fatales, en français les fées, allaient sous cet arbre; mais n'y vont plus à cause des péchés."* (questionnaire-lorraine, Béatrice).
+
+36. **le curé — Arbre des dames; le curé — fontaine aux Rains.** Béatrice states that on Ascension Eve the curé, carrying the processional crosses through the fields, also goes under the tree and chants the gospel there, as well as at the fountain aux Rains.
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
+
+37. **fées — Arbre des dames** *(judgment call — see below)*. Jeannette, widow of Thiesselin de Vittel, recounts a tale that a lord, Pierre Gravier de Bourlemont, used to meet a lady called "Fée" under this tree.
+    *"...on raconte qu'anciennement un seigneur appelé seigneur Pierre Gravier, chevalier, seigneur de Bourlemont, allait rencontrer sous cet arbre une certaine dame dénommée Fée, et qu'ils parlaient ensemble; l'a entendu lire dans un roman."* (questionnaire-lorraine, Jeannette veuve de Thiesselin de Vittel).
+
+38. **fées — Arbre des dames.** Bertrand Lacloppe recounts that "les fées" were formerly said to go under the tree, though he never saw or heard of it happening in his own time.
+    *"On disait jadis que les fées (en français) y allaient; cependant il n'a jamais vu, ni entendu dire à l'époque que lesdites fées fussent allées sous cet arbre."* (questionnaire-lorraine, Bertrand Lacloppe).
+
+39. **fées — Arbre des dames.** Hauviette recounts that the "dames appelées fées" used to go to the tree, though she never heard that anyone had seen them.
+    *"On disait qu'avant, les dames appelées fées allaient à cet arbre, mais elle-même n'a jamais entendu dire que quelqu'un les ait vues."* (questionnaire-lorraine, Hauviette).
+
+40. **fées — Arbre des dames.** Jean Waterin recounts that women called fées formerly went there, though he never heard that anyone had seen them.
+    *"Entendit dire que jadis des femmes appelées fées s'y rendaient; mais n'entendit jamais dire que quelqu'un les y ait vues."* (questionnaire-lorraine, Jean Waterin).
+
+41. **fées — Arbre des dames.** Simonin Musnier recounts that those called "les fées" formerly went under the tree — in the same breath disclaiming ever having seen a sign of an "esprit malin" himself (see judgment calls below).
+    *"...on dit que jadis celles qu'on appelle les fées allaient sous cet arbre, bien qu'il n'eût lui-même jamais vu quelque signe de quelque esprit malin."* (questionnaire-lorraine, Simonin Musnier).
+
+42. **fées — Arbre des dames.** Michel Le Buin recounts that women called fées formerly went under the tree, though they no longer do, so far as he knows.
+    *"A entendu dire que des femmes appelée fées se rendaient autrefois sous cet arbre, mais ignore si c'est vrai puisqu'elles n'y ont plus."* (questionnaire-lorraine, Michel Le Buin).
+
+43. **fées — Arbre des dames.** Albert d'Ourches recounts that fées formerly came under the tree, though no one had ever seen them.
+    *"A entendu dire autrefois que jadis les fées venaient sous cet arbre, sans que personne ne les eût vues."* (questionnaire-lorraine, Albert d'Ourches).
