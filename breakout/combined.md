@@ -7,6 +7,16 @@ snippet directly states are drawn as edges; nothing here is inferred from
 context, distance math, or the `personal-musings` notes. An entry that is
 named first-hand but never appears in a directly-stated relationship to any
 other included entity is dropped rather than drawn as an unconnected node.
+Snippets that are the condemnation-trial judges'/promoter's own accusatory
+assertions about Jeanne — rather than a witness's or Jeanne's own statement —
+are excluded as well, since the judges were never eyewitnesses to anything in
+Domremy (see "Excluded first-hand-snippets" below).
+
+Legend: a **thick** edge (`==`) means at least one of its supporting
+relations is Jeanne d'Arc's own testimony; a normal edge (`--`) means none
+of its supporting relations are. A **green** node denotes an entity that may
+have left archaeological evidence — see "Archaeological-potential coloring"
+below for the rationale on each.
 
 ## Included entities and why
 
@@ -19,18 +29,22 @@ other included entity is dropped rather than drawn as an unconnected node.
   — each is named outright in a snippet, each tied to the tree.
 - **the road to Neufchâteau**, **the Bourlemont land**, **un Bois** — named
   outright, each tied to the tree.
-- **Les saintes** — named outright, tied to `fontaine fiévreux` (see below).
-- **fiévreux** — named outright in two snippets (Jeanne d'Arc's own
-  testimony, and the trial record's "renommée" passage), each stating they
-  go to the fountain beside the tree to recover their health.
+- **Les saintes** — named outright, tied to `fontaine fiévreux` via Jeanne
+  d'Arc's confirmed interrogation answer (relation 7 — see below).
+- **fiévreux** — named outright in Jeanne d'Arc's own testimony, which
+  states they go to the fountain beside the tree to recover their health.
+  (A second snippet making the same claim — the trial record's "renommée"
+  passage — is excluded under rule 2; see "Excluded first-hand-snippets"
+  below.)
 - **malades** — named outright in Jeanne d'Arc's testimony, which states
   they go to the tree itself to amuse themselves once recovered.
 - **fées** — named outright across many depositions — both Jeanne d'Arc's
   own testimony and several questionnaire-lorraine witnesses — each directly
   stating, as claim, rumor, or explicit denial, that "les fées" / "les dames
-  fées" haunted or went to the tree, and, in one snippet (the trial record's
-  "renommée" passage, already used for relations 9 and 28), to the fountain
-  beside it as well.
+  fées" haunted or went to the tree. (The same "renommée" passage also once
+  tied `fées` to `fontaine fiévreux` and `L’Arbre des fées`, but that
+  snippet is excluded under rule 2, so those two edges are dropped — see
+  "Excluded first-hand-snippets" below.)
 - **le curé** — named outright in Béatrice's deposition, which states he
   goes under the tree and to the fountain aux Rains each Ascension Eve to
   chant the gospel.
@@ -79,7 +93,65 @@ as a distinct, unlinked entity.
   Béatrice's deposition, which is why `le curé` is included while `prêtre`
   is dropped as isolated.
 
+### Named only in a snippet excluded under rule 2 (judges' assertion)
+
+None. Both `Les saintes` and `fiévreux` are also stated in a surviving
+snippet (Jeanne d'Arc's own testimony, or her confirmed interrogation
+answer), so excluding the two judges'-authored snippets below removes edges
+and relation numbers but drops no entity from the diagram.
+
+### Excluded first-hand-snippets: condemnation-trial judges' assertions (rule 2)
+
+Two `first-hand-snippets` under `document-reference: bibliotheque-monastique`
+are excluded as the judges'/promoter's own accusatory record rather than a
+witness's or Jeanne's own statement — neither has a `from` field or a named
+witness, and both address Jeanne in the third person in the legalistic
+register of the Articles of Accusation, unlike every surrounding snippet
+from that same source (which is either first-person witness/Jeanne testimony
+or a named-witness deposition):
+
+1. *"Item ladite Jeanne avait coutume de fréquenter lesdits arbre et
+   fontaine [de Domremy] et souvent de nuit; quelquefois de jour,
+   principalement aux heures des offices, afin d'y être seule; elle a pris
+   part à des rondes qui s'opéraient en dansant à l'entour; ensuite elle
+   appendait aux branches de l'arbre des guirlandes formées de diverses
+   herbes et fleurs, en disant et chantant auparavant, ainsi qu'après,
+   certains poèmes et chansons, accompagnés d'invocations, sortilèges et de
+   maléfices; desquelles guirlandes le lendemain matin il ne se retrouvait
+   plus rien"* — the opening "Item ladite Jeanne..." and the closing charge
+   of "invocations, sortilèges et de maléfices" mark this as an Article of
+   Accusation, not testimony. Previously cited as relation 8 (this number is
+   now retired, not reassigned).
+2. *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine,
+   située près d'un grand arbre, appelé communément l'arbre des fées. La
+   renommée court au sujet de ces arbres et fontaine que les dames fées les
+   hantent et que des fiévreux y vont, quoique ce soit profane, pour
+   recouvrer la santé. Là et ailleurs elle a révéré lesdites saintes et leur
+   a fait révérence."* — same third-person, no-witness pattern, describing
+   Jeanne's acts and "la renommée" (reputation/rumor) as grounds for a
+   charge, immediately following snippet 1 in the source. Previously cited
+   as relations 9, 28, and 33 (these numbers are now retired, not
+   reassigned).
+
+Dropping these two snippets removes the edges `L’Arbre des fées — fontaine
+fiévreux` (previously relation 9), `fées — L’Arbre des fées` and `fées —
+fontaine fiévreux` (previously relation 33) entirely, and shrinks the
+relation-number labels on `L’Arbre des dames — fontaine fiévreux` (previously
+5,7,8,29 → now 5,7,29), `fontaine fiévreux — Les saintes` (previously 7,9 →
+now 7), and `fiévreux — fontaine fiévreux` (previously 26,28 → now 26). No
+node becomes isolated as a result (see previous section).
+
 Judgment calls worth flagging:
+- Whether snippets 1 and 2 above are truly the judges'/promoter's own words,
+  as opposed to a further, simply unnamed, witness deposition, is itself a
+  judgment call: the yaml gives no explicit "speaker" tag distinguishing
+  judge from witness for any snippet. The call here rests on register and
+  content (third-person "ladite Jeanne"/"elle", no witness name, and — for
+  snippet 1 — explicit accusatory language about "sortilèges et de
+  maléfices" that no witness deposition in this dataset uses about Jeanne),
+  contrasted with the surrounding anonymous-witness snippets at the top of
+  the same source, which are first-person ("je", "nous") folk-custom
+  recollections rather than legal charges.
 - `un Bois` is matched only because a witness's exact wording is "un bois" —
   the object-model entry `the Bois Chenu` is a different, more specific name
   that no first-hand snippet uses, so that entry stays excluded.
@@ -104,8 +176,8 @@ Judgment calls worth flagging:
   fussent allées sous cet arbre"). The edge is drawn because the text
   directly states the *claim* that the fées haunted/visited the tree — the
   witness denying personal verification of that claim is not the same as
-  the claim itself being absent from the text. This mirrors how relation 9's
-  "la renommée court" wording was already treated as evidence of a stated
+  the claim itself being absent from the text. This mirrors how relation 30's
+  "on disait" / "hanté" wording is already treated as evidence of a stated
   claim, not of a verified fact.
 - Relation 37 (Jeannette, veuve de Thiesselin de Vittel) names "une certaine
   dame dénommée Fée" — singular, and used here almost as a proper name for
@@ -125,6 +197,8 @@ numbers are comma-separated.
 
 ```mermaid
 graph TD
+    classDef archaeological fill:#2ecc71,stroke:#1e8449,color:#000;
+
     N1["L’Arbre des dames"]
     N2["L’Arbre des fées"]
     N3["fontaine des Groseilliers"]
@@ -139,23 +213,22 @@ graph TD
     N12["fées"]
     N13["le curé"]
 
-    N1 -- "5" --- N2
+    N1 == "5" === N2
     N1 -- "1,2,3,4" --- N3
-    N1 -- "5,7,8,29" --- N4
-    N2 -- "9" --- N4
-    N1 -- "6" --- N7
-    N4 -- "7,9" --- N9
-    N1 -- "30,31,32,34,35,37,38,39,40,41,42,43" --- N12
-    N2 -- "33" --- N12
-    N4 -- "33" --- N12
+    N1 == "5,7,29" === N4
+    N1 == "6" === N7
+    N4 == "7" === N9
+    N1 == "30,31,32,34,35,37,38,39,40,41,42,43" === N12
     N1 -- "36" --- N13
     N5 -- "36" --- N13
-    N4 -- "26,28" --- N10
-    N1 -- "27" --- N11
+    N4 == "26" === N10
+    N1 == "27" === N11
     N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
     N2 -- "17" --- N5
     N1 -- "12,14" --- N6
     N1 -- "14" --- N8
+
+    class N3,N4,N5,N6 archaeological
 ```
 
 ## Numbered relations
@@ -172,20 +245,16 @@ graph TD
 4. **Arbre des dames — fontaine des Groseilliers.** Jeanne, in her youth, is placed at both sites together.
    *"Jeannette, en ses jeunes ans, allait quelquefois, en compagnie des autres fillettes, à l'arbre des Dames et à la Fontaine-des-Groseilliers, pour courir et danser avec ses compagnes."* (bibliotheque-monastique).
 
-5. **Arbre des dames = Arbre des fées; Arbre des dames — fontaine fiévreux.** Jeanne d'Arc states the tree has two names, and places a fountain immediately beside it where feverish people (fiévreux) go to recover.
+5. **Arbre des dames = Arbre des fées; Arbre des dames — fontaine fiévreux.** *(Jeanne D'Arc — thick edges)* Jeanne d'Arc states the tree has two names, and places a fountain immediately beside it where feverish people (fiévreux) go to recover.
    *"Près de Domrémy il y avait un arbre appelé l'arbre des Dames ; d'autres l'appelaient l'arbre des Fées. Auprès est une fontaine. J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-6. **Arbre des dames — the Bourlemont land.** Jeanne d'Arc states the tree (here called "le Fou," the same tree as in #5) belonged to Pierre de Bourlémont.
+6. **Arbre des dames — the Bourlemont land.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states the tree (here called "le Fou," the same tree as in #5) belonged to Pierre de Bourlémont.
    *"Il y a un grand arbre appelé le Fou, d'où vient le beau mai. Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-7. **Arbre des dames — fontaine fiévreux; fontaine fiévreux — Les saintes.** Jeanne is asked about, and confirms hearing, the saints at "the fountain near the tree."
+7. **Arbre des dames — fontaine fiévreux; fontaine fiévreux — Les saintes.** *(Jeanne D'Arc — thick edges)* Jeanne is asked about, and confirms hearing, the saints at "the fountain near the tree" — the confirmed answer is hers, so this counts as her own statement even though the judge poses the question.
    *"interrogateur - Les saintes vous ont-elles parlé à la fontaine proche de l'arbre? Jeanne D'Arc - Oui, je les y ai entendues; mais je ne me rappelle pas ce qu'elles m'y ont dit."* (bibliotheque-monastique).
 
-8. **Arbre des dames — fontaine fiévreux.** The accusation records Jeanne as habitually frequenting "the tree and fountain" as one adjacent pair.
-   *"ladite Jeanne avait coutume de fréquenter lesdits arbre et fontaine [de Domremy]..."* (bibliotheque-monastique).
-
-9. **Arbre des fées — fontaine fiévreux; fontaine fiévreux — Les saintes.** The trial record places the saints' voices beside a fountain that is itself placed next to the great tree — this snippet explicitly names it "l'arbre des fées," not "des dames," so the edge attaches to that node (per skill rule 3: honor the literal name used).
-   *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées."* (bibliotheque-monastique).
+*(Relations 8, 9, and 33 — previously drawn from two snippets that are judges'/promoter's accusatory assertions, not testimony — are retired under rule 2. See "Excluded first-hand-snippets" above for the dropped quotes and the edges/labels this removed.)*
 
 10. **Arbre des dames — fontaine aux Rains.** Jean Morel, Jeanne's godfather, has the group return from the tree to this fountain, which he places closer to the village than the tree.
     *"...en revenant ils vont à la fontaine aux Rains, qui est plus près du village que l'arbre, en se promenant et chantant, y boivent son eau..."* (questionnaire-lorraine, Jean Morel).
@@ -235,29 +304,27 @@ graph TD
 25. **Arbre des dames — fontaine aux Rains.** Jean Jaquard has the group return from the tree to drink at the fountain.
     *"...puis, jouant et se promenant, reviennent à la fontaine des Rains, boivent de son eau."* (questionnaire-lorraine, Jean Jaquard).
 
-26. **fiévreux — fontaine fiévreux.** Jeanne d'Arc states that feverish people drink from the fountain beside the tree to recover their health.
+26. **fiévreux — fontaine fiévreux.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states that feverish people drink from the fountain beside the tree to recover their health.
     *"J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-27. **Arbre des dames — malades.** Jeanne d'Arc states that the sick, once recovered, go to the tree to amuse themselves. "Cet arbre" is folded into "l'arbre des Dames," following the same continuity already used for relation 6 (the immediately preceding sentence in the same testimony names the tree "l'arbre des Dames"/"l'arbre des Fées").
+27. **Arbre des dames — malades.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states that the sick, once recovered, go to the tree to amuse themselves. "Cet arbre" is folded into "l'arbre des Dames," following the same continuity already used for relation 6 (the immediately preceding sentence in the same testimony names the tree "l'arbre des Dames"/"l'arbre des Fées").
     *"J'ai oui dire que les malades une fois relevés, vont à cet arbre pour se divertir."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-28. **fiévreux — fontaine fiévreux.** The trial record repeats the claim in describing the tree and fountain's reputation: feverish people go there, profane though it is, to recover their health.
-    *"...que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé."* (bibliotheque-monastique).
+*(Relation 28 — the trial record's repetition of this claim — is retired along with relations 8, 9, and 33; see "Excluded first-hand-snippets" above.)*
 
-29. **Arbre des dames — fontaine fiévreux.** Bertrand Lacloppe places the young people at the tree and "the nearby fountain" together, without the "en revenant" (return-trip) framing used for the Fontaine aux Rains elsewhere — matching the adjacent-fountain pattern already established for this edge (see relations 5, 7, 8).
+29. **Arbre des dames — fontaine fiévreux.** Bertrand Lacloppe places the young people at the tree and "the nearby fountain" together, without the "en revenant" (return-trip) framing used for the Fontaine aux Rains elsewhere — matching the adjacent-fountain pattern already established for this edge (see relations 5 and 7).
     *"...allaient parfois à cet arbre, avec Jeanne parmi eux, et à la fontaine proche, pour se promener et faire des rondes..."* (questionnaire-lorraine, Bertrand Lacloppe).
 
 30. **fées — Arbre des dames.** An anonymous deposition states the tree was haunted by the "dames appelées fées," while noting no one had actually been heard to have seen them.
     *"Il y avait chez nous un arbre que, depuis l'ancien temps, on nommait l'arbre des Dames. Les vieilles gens disaient qu'il était hanté des dames appelées fées. Cependant, je n'ai jamais ouï citer personne qui ait vu les fées."* (bibliotheque-monastique).
 
-31. **fées — Arbre des dames.** Jeanne d'Arc recounts hearsay that elders said the "dames fées" haunted the tree, that one of her godmothers claimed to have seen fées there, and personally denies ever having seen fées near the tree.
+31. **fées — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc recounts hearsay that elders said the "dames fées" haunted the tree, that one of her godmothers claimed to have seen fées there, and personally denies ever having seen fées near the tree.
     *"Souventes fois j'ai ouï dire par des anciens...que les dames fées le hantaient. J'ai même ouï dire à une de mes marraines, nommée Jeanne, femme du maire Rubery, qu'elle-même avait vu là des fées...Je n'ai, moi, jamais vu les fées près de cet arbre, que je sache."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-32. **fées — Arbre des dames.** Jeanne d'Arc denies knowing or having heard that the tree was haunted by fées.
+32. **fées — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc denies knowing or having heard that the tree was haunted by fées.
     *"Je ne sais et n'ai pas oui dire qu'il fût hanté par les fées."* (bibliotheque-monastique, from Jeanne D'Arc).
 
-33. **fées — Arbre des fées; fées — fontaine fiévreux.** The trial record's "renommée" passage states that reputation holds the fées haunt both the tree (named here "l'arbre des fées") and the fountain beside it, where feverish people go to recover.
-    *"Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées. La renommée court au sujet de ces arbres et fontaine que les dames fées les hantent et que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé."* (bibliotheque-monastique).
+*(Relation 33 — the trial record's "renommée" passage tying fées to Arbre des fées and to fontaine fiévreux — is retired along with relations 8, 9, and 28; see "Excluded first-hand-snippets" above.)*
 
 34. **fées — Arbre des dames.** Jean Morel, Jeanne's godfather, recounts that supernatural women called fées formerly danced under the tree called "des dames."
     *"Entendit dire autrefois que des femmes ou personnes surnaturelles, on les appelait fées, allaient anciennement danser sous l'arbre appelé des dames."* (questionnaire-lorraine, Jean Morel).
@@ -288,3 +355,38 @@ graph TD
 
 43. **fées — Arbre des dames.** Albert d'Ourches recounts that fées formerly came under the tree, though no one had ever seen them.
     *"A entendu dire autrefois que jadis les fées venaient sous cet arbre, sans que personne ne les eût vues."* (questionnaire-lorraine, Albert d'Ourches).
+
+## Archaeological-potential coloring
+
+Green nodes denote an included entity that denotes a constructed/physical
+feature which could plausibly leave a trace diggable today (worked stone,
+masonry, a built basin, a road bed), as opposed to a living tree, a
+folkloric being, a person's office, or an unformed group of people. This is
+an interpretive layer, not a first-hand claim, so it needs no citation — but
+the rationale for each is given here, and any debatable call is flagged.
+
+- **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux
+  Rains** *(green — judgment call)*. None of the surviving testimony
+  describes these springs' construction directly, so coloring them green
+  rests on the general likelihood that a named, regularly-visited village
+  fountain of this kind was fitted with at least a stone-lined basin or
+  well-head, which could leave worked-stone remains even after the spring
+  itself silts up or shifts. This is inference from the *kind* of object
+  named, not from any first-hand-stated fact about these particular
+  fountains — flagged here rather than resolved silently, per rule 7.
+- **the road to Neufchâteau** *(green)*. An old right-of-way of this kind
+  typically leaves a road bed, ditch, or verge trace even where its exact
+  route has since shifted — one of rule 9's own listed examples of a
+  qualifying constructed feature.
+- **L’Arbre des dames** / **L’Arbre des fées** *(not green)*. A living beech,
+  however venerable — no masonry or worked stone to leave behind.
+- **the Bourlemont land** *(not green)*. Denotes ownership of a stretch of
+  land, not a built structure on it; nothing first-hand describes markers,
+  walls, or boundary stones for it.
+- **un Bois** *(not green)*. A wood — a natural feature, not constructed.
+- **Les saintes**, **fées** *(not green)*. Non-physical/folkloric entities —
+  rule 9's own example of what does not qualify.
+- **fiévreux**, **malades** *(not green)*. Groups of people, not places or
+  structures.
+- **le curé** *(not green)*. A person's office, not a physical feature —
+  rule 9's own example of what does not qualify.
