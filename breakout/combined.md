@@ -20,6 +20,11 @@ other included entity is dropped rather than drawn as an unconnected node.
 - **the road to Neufchâteau**, **the Bourlemont land**, **un Bois** — named
   outright, each tied to the tree.
 - **Les saintes** — named outright, tied to `fontaine fiévreux` (see below).
+- **fiévreux** — named outright in two snippets (Jeanne d'Arc's own
+  testimony, and the trial record's "renommée" passage), each stating they
+  go to the fountain beside the tree to recover their health.
+- **malades** — named outright in Jeanne d'Arc's testimony, which states
+  they go to the tree itself to amuse themselves once recovered.
 
 ## Excluded entirely
 
@@ -49,7 +54,7 @@ as a distinct, unlinked entity.
   included object. Since no first-hand snippet ties it to anything else, it
   is dropped rather than drawn as an unconnected node.
 
-Two judgment calls worth flagging:
+Judgment calls worth flagging:
 - `un Bois` is matched only because a witness's exact wording is "un bois" —
   the object-model entry `the Bois Chenu` is a different, more specific name
   that no first-hand snippet uses, so that entry stays excluded.
@@ -60,6 +65,13 @@ Two judgment calls worth flagging:
   Groseilliers` or `fontaine aux Rains`, which the snippets always place at
   the end of a walk back ("en revenant"). That distinction (adjacent vs.
   reached after walking back) is stated directly in the snippets themselves.
+- Bertrand Lacloppe's "la fontaine proche" (relation 29) is drawn as the same
+  adjacent-fountain edge, since it uses the same "proche" wording next to the
+  tree, with no "en revenant" framing. By contrast, Jean Moen's "vont aux
+  fontaines près de cet arbre pour boire" is plural and unqualified — it is
+  *not* drawn as an edge to any single fountain node, since nothing in the
+  text picks out which fountain(s) are meant, unlike the singular "une
+  fontaine" / "la fontaine proche" wording used elsewhere for this edge.
 
 Each edge is labeled with the number(s) of the matching relation(s) listed
 below. Where more than one first-hand snippet supports the same edge, the
@@ -76,13 +88,17 @@ graph TD
     N7["the Bourlemont land"]
     N8["un Bois"]
     N9["Les saintes"]
+    N10["fiévreux"]
+    N11["malades"]
 
     N1 -- "5" --- N2
     N1 -- "1,2,3,4" --- N3
-    N1 -- "5,7,8" --- N4
+    N1 -- "5,7,8,29" --- N4
     N2 -- "9" --- N4
     N1 -- "6" --- N7
     N4 -- "7,9" --- N9
+    N4 -- "26,28" --- N10
+    N1 -- "27" --- N11
     N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
     N2 -- "17" --- N5
     N1 -- "12,14" --- N6
@@ -165,3 +181,15 @@ graph TD
 
 25. **Arbre des dames — fontaine aux Rains.** Jean Jaquard has the group return from the tree to drink at the fountain.
     *"...puis, jouant et se promenant, reviennent à la fontaine des Rains, boivent de son eau."* (questionnaire-lorraine, Jean Jaquard).
+
+26. **fiévreux — fontaine fiévreux.** Jeanne d'Arc states that feverish people drink from the fountain beside the tree to recover their health.
+    *"J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+27. **Arbre des dames — malades.** Jeanne d'Arc states that the sick, once recovered, go to the tree to amuse themselves. "Cet arbre" is folded into "l'arbre des Dames," following the same continuity already used for relation 6 (the immediately preceding sentence in the same testimony names the tree "l'arbre des Dames"/"l'arbre des Fées").
+    *"J'ai oui dire que les malades une fois relevés, vont à cet arbre pour se divertir."* (bibliotheque-monastique, from Jeanne D'Arc).
+
+28. **fiévreux — fontaine fiévreux.** The trial record repeats the claim in describing the tree and fountain's reputation: feverish people go there, profane though it is, to recover their health.
+    *"...que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé."* (bibliotheque-monastique).
+
+29. **Arbre des dames — fontaine fiévreux.** Bertrand Lacloppe places the young people at the tree and "the nearby fountain" together, without the "en revenant" (return-trip) framing used for the Fontaine aux Rains elsewhere — matching the adjacent-fountain pattern already established for this edge (see relations 5, 7, 8).
+    *"...allaient parfois à cet arbre, avec Jeanne parmi eux, et à la fontaine proche, pour se promener et faire des rondes..."* (questionnaire-lorraine, Bertrand Lacloppe).

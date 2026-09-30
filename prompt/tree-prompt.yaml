@@ -65,11 +65,11 @@ object-model:
  - the valley
  - the river meuse
  - un Bois
- - Les saintes
-
-sick-persons:
-  - fiévreux
-  - malades
+ - saintes
+ - fiévreux
+ - malades 
+ - fées
+ - esprit malin
 
 candidate-locations:
 - name: current fontaine des Groseilliers
