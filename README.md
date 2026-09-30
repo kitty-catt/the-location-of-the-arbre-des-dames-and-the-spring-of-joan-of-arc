@@ -30,11 +30,43 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 # AI generated object relations based on first hand witness accounts
 
-Prompt used to generate the mindmap:
+[click here for the diagram](breakout/combined.md)
 
-> make a diagram based on the prompt/tree-prompt.yaml. Use entities from the object-model array and their relations. Only take into account the first-hand-snippets. For each relationship that exists, add a numbered description, add komma separated numbers to the diagram if more than one relationship exist. When objects are not mentioned in the first-hand-snippets exclude them from the diagram. Also exclude an object that is mentioned in a first-hand-snippet but has no first-hand-stated relationship to any other included object — do not draw it as an unconnected node. Only add a relationship when a first-hand-snippet directly states it; do not infer a relationship from an indirect implication. Store the output in breakout/combined.md. Update the README.md with the instructions that you received to generate it.
+```mermaid
+graph TD
+    classDef archaeological fill:#2ecc71,stroke:#1e8449,color:#000;
 
-[mind-map](breakout/combined.md)
+    N1["L’Arbre des dames"]
+    N2["L’Arbre des fées"]
+    N3["fontaine des Groseilliers"]
+    N4["fontaine fiévreux"]
+    N5["fontaine aux Rains"]
+    N6["the road to Neufchâteau"]
+    N7["the Bourlemont land"]
+    N8["un Bois"]
+    N9["Les saintes"]
+    N10["fiévreux"]
+    N11["malades"]
+    N12["fées"]
+    N13["le curé"]
+
+    N1 == "5" === N2
+    N1 -- "1,2,3,4" --- N3
+    N1 == "5,7,29" === N4
+    N1 == "6" === N7
+    N4 == "7" === N9
+    N1 == "30,31,32,34,35,37,38,39,40,41,42,43" === N12
+    N1 -- "36" --- N13
+    N5 -- "36" --- N13
+    N4 == "26" === N10
+    N1 == "27" === N11
+    N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
+    N2 -- "17" --- N5
+    N1 -- "12,14" --- N6
+    N1 -- "14" --- N8
+
+    class N3,N4,N5,N6 archaeological
+```
 
 
 # Personal Thoughts

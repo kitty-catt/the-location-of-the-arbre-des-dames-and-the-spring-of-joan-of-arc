@@ -133,10 +133,19 @@ read it first, keep its structure, and fold in anything new.
 10. Save to the target file. If this is an update to an existing file, note in
     your summary to the user exactly what changed (new nodes, new edges,
     newly-thick or newly-green elements, or nothing).
-11. If asked to reflect this new/updated diagram in `README.md`, follow the
-    existing convention there: append the exact prompt you were given plus a
-    link to the output file, under the relevant section — do not overwrite
-    prior entries.
+11. Copy the Mermaid diagram block emitted in step 6 — the fenced ` ```mermaid
+    ... ``` ` block only, no relations list, no prose, no `classDef`
+    explanation — into `README.md`, under the `# AI generated object
+    relations based on first hand witness accounts` heading. If a diagram
+    block already sits there from a prior run, replace it in place so it
+    stays in sync with the latest version; keep the existing link to the
+    output file (e.g. `breakout/combined.md`) in that section rather than
+    removing it.
+12. If asked to reflect this new/updated diagram in `README.md` beyond the
+    diagram copy in step 11 — e.g. documenting the prompt that produced it —
+    follow the existing convention there: append the exact prompt you were
+    given plus a link to the output file, under the relevant section — do
+    not overwrite prior entries.
 
 ## Output
 
@@ -145,4 +154,7 @@ A single Markdown file at the target path, matching the structure of
 relations, normal (`-->`) edges otherwise, and a green `classDef` applied to
 nodes that may have left archaeological evidence. Do not fabricate entities
 or relations not present in `prompt/tree-prompt.yaml` — when in doubt,
-exclude and say why.
+exclude and say why. Additionally, `README.md`'s "AI generated object
+relations based on first hand witness accounts" section always carries a
+synced copy of that same diagram block (diagram only) alongside its existing
+link to the output file.
