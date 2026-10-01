@@ -41,6 +41,9 @@ user-prompt:
     remarks:
     - The ridge road could have been more to the west than the current D53
     - The old ridge road ends stops where the basilique begins
+  - source: LiDar Scan
+    remarks:
+    - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
 
 object-model:
  - L’Arbre des dames
