@@ -83,10 +83,28 @@ graph TD
 
 # Working with Claude Skills
 
-    Typical workflow going forward:
-    1. Add new witness testimony to prompt/tree-prompt.yaml (as first-hand-snippets, correctly categorized).
-    2. Run /evidence-diagram to fold the new snippets into the diagram — it reads the existing breakout/combined.md first so node/edge numbering for unchanged content stays stable, and reports what actually changed.
-    3. Run /verify-citations on the updated file (or the whole breakout/ folder) as a check before you trust or publish the result — it'll flag anything presented as first-hand that's actually secondary, misattributed, or overreaching beyond what the quote states.
+A Claude Skill is a packaged, reusable set of instructions stored as a
+`SKILL.md` file under `.claude/skills/<name>/`. Each one carries a `name` and
+`description` in its frontmatter so Claude Code can tell when it applies, and
+a body of step-by-step instructions tailored to this repo's evidentiary
+rules. Invoke one explicitly by typing `/<name>` (e.g. `/evidence-diagram`)
+in Claude Code; Claude may also offer to use one on its own when a request
+matches its description.
+
+Skills defined in this repo:
+
+| Skill | Use it to... |
+|---|---|
+| `/evidence-diagram` | Rebuild the first-hand-only Mermaid diagram (`breakout/combined.md`) after adding witness testimony. |
+| `/verify-citations` | Audit a `breakout/` file against `prompt/tree-prompt.yaml` for claims miscategorized as first-hand. |
+| `/extract-entities` | Pull named people/supernatural beings/afflicted groups out of `prompt/tree-prompt.yaml` into `prompt/entities.yaml`. |
+| `/locate-tree-and-spring` | Produce the retired inspector's best-guess geolocation for the tree and spring from the current `personal-musings`, `candidate-locations`, and `obervation-list` — the hypothesis-building task, as opposed to the strictly-first-hand diagram. |
+
+Typical workflow going forward:
+1. Add new witness testimony to `prompt/tree-prompt.yaml` (as `first-hand-snippets`, correctly categorized).
+2. Run `/evidence-diagram` to fold the new snippets into the diagram — it reads the existing `breakout/combined.md` first so node/edge numbering for unchanged content stays stable, and reports what actually changed.
+3. Run `/verify-citations` on the updated file (or the whole `breakout/` folder) as a check before you trust or publish the result — it'll flag anything presented as first-hand that's actually secondary, misattributed, or overreaching beyond what the quote states.
+4. When adding a new `personal-musing` or `candidate-location` (e.g. a map/LiDAR observation), run `/locate-tree-and-spring` to see whether it changes the best-guess location for either object.
 
 
 
