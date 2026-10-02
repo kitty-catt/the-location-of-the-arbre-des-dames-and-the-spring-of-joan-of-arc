@@ -107,13 +107,21 @@ candidate-locations:
   geolocation: 48.42696530646268, 5.671810662798567
   height: 984 ft
   elevation-above-the-river: 98 ft 
-- name: south spot 
+- name: south spot
   geolocation: 48.42496485738549, 5.668258634475983
   distance-from-Domremy: 1900 meters
   distance-from-the-river: approximately 550 meters
   location: west bank of the meuse
   height: 1,103 ft
   elevation-above-the-river: 217 ft
+- name: fountain washout at the plateau edge (north of basilique)
+  distance-from-Domremy: approximately 1400 meters to the south of Domremy
+  distance-from-the-river: approximately 460 meters
+  location: west bank of the meuse
+  geolocation: 48.428972, 5.670047
+  height: 1,075 ft
+  elevation-above-the-river: 189 ft
+  note: estimated by linear interpolation between "the shrubbery bushes between the calvaire and the current fountain of the Pucelle" and "the location of the basilique", based on the observation-list entries describing a fountain washout where the old ridge road narrows and the plateau begins, just north of the basilique (naudin-map, Carte de L'etat major 1820-1866, LiDar Scan). Not derived from a GPS fix or first-hand testimony.
 
 document-refence-list:
 - name: bibliotheque-monastique
