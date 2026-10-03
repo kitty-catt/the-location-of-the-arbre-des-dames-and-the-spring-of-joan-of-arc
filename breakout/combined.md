@@ -20,26 +20,32 @@ below for the rationale on each.
 
 ## New snippets reviewed in this update
 
-Nine `first-hand-snippets` were added to `prompt/tree-prompt.yaml` since the
-previous version of this diagram (all `document-reference:
-questionnaire-lorraine`, none in the judges'-assertion register excluded
-under rule 2): four from Jean Waterin (one repeated verbatim as two separate
-entries), one from Jean de Metz, and one each from Jaquier de Saint-Amant,
-Perrin Drappier, Isabelle femme de Gérardin d'Épinal, and Bertrand de
-Poulengy. They cover Jeanne plowing/herding with her father, praying apart
-in the fields, her divine mission, her prophecy about restoring France, and
-the village's flight (with livestock) to Neufchâteau under armed raids.
+Three `first-hand-snippets` were added to `prompt/tree-prompt.yaml` since the
+previous version of this diagram: the Latin originals of depositions by
+Gérardin d'Épinal (`document-reference: dep_gerardin_epinal`), Mengette
+(`dep_mengette`), and Jean Morel (`dep_jean_morel`) — each a sworn witness
+deposition ("Dixit per suum iuramentum...") in the same third-person legal
+register already used for the other `questionnaire-lorraine` depositions, not
+the judges'/promoter's accusatory framing, so none is excluded under rule 2.
+Gérardin d'Épinal's and Jean Morel's Latin texts are the originals behind
+French summaries already in the diagram (relations 20 and 10/34
+respectively); Mengette's is a new witness not previously represented.
 
-Only one of the nine names an `object-model` entry: Jean Waterin's "allait
-au pèlerinage de Notre-Dame de Bermont," which adds a second citation to the
-already-excluded, isolated `l'ermitage de Notre-Dame de Bermont` entry (see
-below) without giving it a stated relation to any other included entity. The
-Neufchâteau-flight snippets (Jaquier de Saint-Amant, Perrin Drappier,
-Isabelle) name the town of Neufchâteau as a destination, not the `the road
-to Neufchâteau` object-model entry specifically — none uses "chemin" or
-"route" — so they add no edge to that node. No other new node or edge
-results from this batch; the diagram itself (entities, edges, numbering) is
-unchanged from the prior version.
+Three new `object-model` entries arrived alongside them: `Fontem Rannorum`,
+`the spring of the frogs`, and `fontaine des grenouilles`. The latter two
+come only from a new `general-reputation` entry (an editorial note
+discussing whether "fontaine des Rains" should be retranslated as "fontaine
+des groseilles" or "fontaine des grenouilles") — not first-hand, so neither
+is drawn; see "Excluded entirely" below. `Fontem Rannorum`, by contrast, is
+the literal Latin phrase all three new depositions use for the fountain the
+young people walk back to from the tree, so it is drawn as its own node,
+distinct from `fontaine aux Rains` — see the judgment call below.
+
+All three new snippets state the tree-to-fountain return-trip relation
+already established for `fontaine aux Rains` (now attached to `Fontem
+Rannorum` instead, per the literal-name rule), and Jean Morel's additionally
+restates the fées-haunted-the-tree claim already carried by relation 34. No
+other new node or edge results from this batch.
 
 ## Included entities and why
 
@@ -50,6 +56,10 @@ unchanged from the prior version.
   throw the evidence for it away.
 - **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux Rains**
   — each is named outright in a snippet, each tied to the tree.
+- **Fontem Rannorum** — the Latin name three new witness depositions
+  (Gérardin d'Épinal, Mengette, Jean Morel) use for the fountain the young
+  people walk back to from the tree; kept as its own node rather than folded
+  into `fontaine aux Rains` (see judgment calls below).
 - **the road to Neufchâteau**, **the Bourlemont land**, **un Bois** — named
   outright, each tied to the tree.
 - **Les saintes** — named outright, tied to `fontaine fiévreux` via Jeanne
@@ -77,10 +87,15 @@ unchanged from the prior version.
 ### Never named in a first-hand-snippet
 
 `L’Arbre de la Pucelle`, `des ruines`, `Chapelle de notre dame de domremy`,
-`Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `the ridge road on the
-west bank`, `vineyard`, `estate boundary`, `the Bois Chenu`, `the slope to the
-top of the bois Chenu`, `the valley`, `the river meuse`. (`fontaine de
-l'Ermite` and `Chapelle de notre dame de domremy` are close calls — Jeanne
+`Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `the spring of the
+frogs`, `fontaine des grenouilles`, `the ridge road on the west bank`,
+`vineyard`, `estate boundary`, `the Bois Chenu`, `the slope to the top of the
+bois Chenu`, `the valley`, `the river meuse`. (`the spring of the frogs` and
+`fontaine des grenouilles` are both named only in a new `general-reputation`
+editorial note speculating that "fontaine des Rains" might really mean
+"fontaine des grenouilles" — not a first-hand snippet, so neither is drawn.
+`fontaine de l'Ermite` and `Chapelle de notre dame de domremy` are close
+calls — Jeanne
 d'Arc mentions garlands for "l'image de la Notre-Dame de Domrémy," and the
 Jollois text names a "fontaine de l'Ermite," but the first is an image, not
 the chapel, and the second only appears in `general-reputation`, not a
@@ -217,6 +232,21 @@ Judgment calls worth flagging:
   deliberately *not* drawn as an edge to the tree — see "Excluded entirely"
   above. The clause gives no location, unlike the fées clause immediately
   preceding it in the same sentence.
+- **`Fontem Rannorum` kept separate from `fontaine aux Rains`.** Three new
+  Latin depositions (Gérardin d'Épinal, Mengette, Jean Morel) describe the
+  young people returning from the tree to drink at "fontem rannorum" / "ad
+  Rannos" — almost certainly the same real-world fountain the French
+  depositions call "la fontaine aux Rains"/"la fontaine des Rains" (Gérardin
+  d'Épinal's own French-summarized testimony, already in the diagram, even
+  describes the identical scene using "la fontaine des Rains"). But no
+  single first-hand snippet states that equivalence directly — unlike the
+  tree, where Jeanne's own testimony explicitly says "appelé l'arbre des
+  Dames; d'autres l'appelaient l'arbre des Fées" in one sentence. Rule 3 bars
+  inferring a merge from plausibility alone, and the `object-model` now
+  lists `Fontem Rannorum` as its own fixed-vocabulary entry distinct from
+  `fontaine aux Rains`, so this diagram keeps them as two nodes rather than
+  silently treating the Latin name as a synonym. Flagged here per rule 7
+  rather than resolved either way.
 
 Each edge is labeled with the number(s) of the matching relation(s) listed
 below. Where more than one first-hand snippet supports the same edge, the
@@ -239,13 +269,14 @@ graph TD
     N11["malades"]
     N12["fées"]
     N13["le curé"]
+    N14["Fontem Rannorum"]
 
     N1 == "5" === N2
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29" === N4
     N1 == "6" === N7
     N4 == "7" === N9
-    N1 == "30,31,32,34,35,37,38,39,40,41,42,43" === N12
+    N1 == "30,31,32,34,35,37,38,39,40,41,42,43,46" === N12
     N1 -- "36" --- N13
     N5 -- "36" --- N13
     N4 == "26" === N10
@@ -254,8 +285,9 @@ graph TD
     N2 -- "17" --- N5
     N1 -- "12,14" --- N6
     N1 -- "14" --- N8
+    N1 -- "44,45,47" --- N14
 
-    class N3,N4,N5,N6 archaeological
+    class N3,N4,N5,N6,N14 archaeological
 ```
 
 ## Numbered relations
@@ -383,6 +415,18 @@ graph TD
 43. **fées — Arbre des dames.** Albert d'Ourches recounts that fées formerly came under the tree, though no one had ever seen them.
     *"A entendu dire autrefois que jadis les fées venaient sous cet arbre, sans que personne ne les eût vues."* (questionnaire-lorraine, Albert d'Ourches).
 
+44. **Arbre des dames — Fontem Rannorum.** Gérardin d'Épinal's Latin deposition has the village children return from the tree ("l'obre dominarum") to eat and drink at Fontem Rannorum.
+    *"...et postea redeunt ad fontem rannorum ; et comedunt panem, et bibunt de aqua illius, prout vidit."* (dep_gerardin_epinal, Gérardin d'Épinal).
+
+45. **Arbre des dames — Fontem Rannorum.** Mengette's Latin deposition has the group come to drink at Fontem Rannorum after eating under the tree ("ad lobias dominarum").
+    *"Et postea veniebant bibitum ad fontem rannorum."* (dep_mengette, Mengette).
+
+46. **fées — Arbre des dames.** Jean Morel's Latin deposition recounts that supernatural women called "lees" (fées) formerly danced under the tree ("arbore, que dicitur dominarum").
+    *"...audivit alias dici quod mulieres et persone fatales, que vocabantur lees, ibant antiquitus choreatum sub illa arbore."* (dep_jean_morel, Jean Morel).
+
+47. **Arbre des dames — Fontem Rannorum.** Jean Morel's Latin deposition has the young people return singing from the tree to the fountain, which he states is closer to the village than the tree.
+    *"...et redeundo veniunt supra fontem ad Rannos, spaciando et cantando, et de aqua illius fontis bibunt...nec ad fontem, qui fens est propinquior villa quam sit arbor."* (dep_jean_morel, Jean Morel).
+
 ## Archaeological-potential coloring
 
 Green nodes denote an included entity that denotes a constructed/physical
@@ -393,14 +437,18 @@ an interpretive layer, not a first-hand claim, so it needs no citation — but
 the rationale for each is given here, and any debatable call is flagged.
 
 - **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux
-  Rains** *(green — judgment call)*. None of the surviving testimony
-  describes these springs' construction directly, so coloring them green
-  rests on the general likelihood that a named, regularly-visited village
-  fountain of this kind was fitted with at least a stone-lined basin or
-  well-head, which could leave worked-stone remains even after the spring
-  itself silts up or shifts. This is inference from the *kind* of object
-  named, not from any first-hand-stated fact about these particular
-  fountains — flagged here rather than resolved silently, per rule 7.
+  Rains**, **Fontem Rannorum** *(green — judgment call)*. None of the
+  surviving testimony describes these springs' construction directly, so
+  coloring them green rests on the general likelihood that a named,
+  regularly-visited village fountain of this kind was fitted with at least a
+  stone-lined basin or well-head, which could leave worked-stone remains
+  even after the spring itself silts up or shifts. This is inference from
+  the *kind* of object named, not from any first-hand-stated fact about
+  these particular fountains — flagged here rather than resolved silently,
+  per rule 7. `Fontem Rannorum` is colored on the same basis even though it
+  is kept as a node distinct from `fontaine aux Rains` (see judgment calls
+  above) — if the two do denote the same physical spring, as seems likely,
+  this coloring call is identical either way.
 - **the road to Neufchâteau** *(green)*. An old right-of-way of this kind
   typically leaves a road bed, ditch, or verge trace even where its exact
   route has since shifted — one of rule 9's own listed examples of a

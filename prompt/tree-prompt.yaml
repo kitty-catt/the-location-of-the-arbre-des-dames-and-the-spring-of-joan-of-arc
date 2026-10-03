@@ -60,6 +60,9 @@ object-model:
  - fontaine des Groseilliers 
  - fontaine aux Rains
  - fontaine de l'Ermite 
+ - Fontem Rannorum
+ - the spring of the frogs
+ - fontaine des grenouilles
  - the road to Neufchâteau
  - the ridge road on the west bank
  - vineyard
@@ -147,6 +150,12 @@ document-refence-list:
   url: https://ste-jeannedarc.fr/histoire_wallon/appendice11.html
 - name: gratteloup-ayrole
   url: https://jeanne.wiki/gratteloup-ayroles/1890-1893
+- name: dep_gerardin_epinal
+  url: https://ste-jeannedarc.fr/rehabilitation/dep_gerardin_epinal.html
+- name: dep_mengette
+  url: https://ste-jeannedarc.fr/rehabilitation/dep_mengette.html
+- name: dep_jean_morel
+  url: https://ste-jeannedarc.fr/rehabilitation/dep_jean_morel.html
 
 first-hand-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -256,6 +265,12 @@ first-hand-snippets:
   document-reference: questionnaire-lorraine
 - text: 'Bertrand de Poulengy (63 ans)  : Elle filait, gardait parfois les animaux et les chevaux de son père.'
   document-reference: questionnaire-lorraine
+- text: "Gérardin d'Épinal : Dixit per suum iuramentum quod illa arbor vocatur l'obre dominarum. Vidit eciam quod domini et domine temporales de Dompno Remigio, semel aut bis, tempore veris, portabant vinum et panem ; et ibant comestum subtus arborem, quia tunc est pulcra sicut lilia ; et est dispersa, ac folia et rami eius veniunt usque ad terram. Consueverunt enim filie et iuvenes dicte ville de Dompno Remigio, in dominico des Fontaines, ire ad illam arborem ; et matres eorum faciunt panes ; et vadunt dicti pueri et puelle factum suos fontes subtus illam arborem. Cantant ibidem et coreant ; et postea redeunt ad fontem rannorum ; et comedunt panem, et bibunt de aqua illius, prout vidit. Dixitque quod dicta Iohanneta ibat cum aliis puellis ; et faciebat sicut alie puelle faciebant. Nec alias deposuit."
+  document-reference: dep_gerardin_epinal
+- text: "Mengette: Dixit per suum iuramentum, quod arbor illa vocatur 'ad lobias dominarum', et est antiqua arbor. Non enim unquam audivit dici quod illa arbor non esset ibi. Et dixit quod, annis singulis tempore veris, ac specialiter in die dominico Lætare Iherusalem, dicto des Fontaines, omnes puelle et pueri cum parvis panibus solent ire ad arborem ; ibidemque comedunt. Et ipsa testis fuit pluries cum dicta Iohanna in dicta die, ibidemque comedebant. Et postea veniebant bibitum ad fontem rannorum. Aliquando habebant unam mappam subtus illam arborem. Et comedebant insimul. Et postea iocabant et tripudiebant prout adhuc de presenti alie faciunt. Nec aliud scit"
+  document-reference: dep_mengette
+- text: "Jean Morel : Dixit per suum iuramentum quod de arbore, que dicitur dominarum, audivit alias dici quod mulieres et persone fatales, que vocabantur lees, ibant antiquitus choreatum sub illa arbore. Sed, ut dicitur, postquam evangelium beati Iohannis legitur et dicitur, amplius non vadunt. Dixit eeiam quod, modernis temporibus, in dominica qua cantatur in sancta Dei ecclesia in introitu misse Letare lherusalem, in istis partibus vulgariter dicta des Fontaines, puelle et iuvenes de Dompno Remigio vadunt subtus illam arborem, et aliquociens tempore veris et estatis, diebus festivis ad coreandum ; et aliquando ibidem comedunt ; et redeundo veniunt supra fontem ad Rannos, spaciando et cantando, et de aqua illius fontis bibunt, et circumcirca ludendo flores colligunt. Dixit eciam quod ipsa Iohanna la Pucelle, cum aliis puellis, dictis temporibus, aliquociens ibat, et sicut cetere faciebat. Nec unquam dici audivit quod Iohanneta articulata sola, nec propter aliam causam, iret ad arborem, nee ad fontem, qui fens est propinquior villa quam sit arbor ; nisi ad spaciandum et iocandum, sicut et alie iuvencule. Nec alias deposuit."
+  document-reference: dep_jean_morel
 
 general-reputation:
 - text:  There is also a tree beside a vineyard which they call “l’arbre de la Pucelle,” but there is nothing remarkable about it. 
@@ -283,3 +298,6 @@ general-reputation:
   author: Jeanne d'Arc - Henri Wallon - 5° éd. 1879
 - text: On se rappelle que la Basilique en construction a pour assises les ruines d’une antique chapelle, dont le constructeur fut Étienne Hordal, grand doyen de la cathédrale de Toul, et petit neveu de Jeanne d’Arc
   document-refence: jeanne.wiki
+- text: 'Cette fontaine des Rains est souvent traduite par fontaine des "groseilles". Certains ont dit que "rains" pourrait être "grenouilles". Il semble que sur l''acte d''accensement des biens en faveur de Gérardin d''Epinal en 1442 (photo), les termes "La Loge les Dames" (arbre des fées) et "Grouselier" accrédite la traduction "fontaine des groseilles". (ndlr)'
+  document-refence: dep_gerardin_epinal
+
