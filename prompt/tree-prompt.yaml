@@ -29,6 +29,8 @@ user-prompt:
   - The fact that the children danced around the tree makes it likely that the tree was in a clearing, not in a dense forest and not on a steep slope.
   - When Domremy was raided, the villagers fled to Neufchateau with their livestock. That implies that the road to Neufchateau was safe and passable for cows, horses, and children. Most likely they would have taken the ridge road to Neufchateau, which is the D53 today. That road avoids crossing through the pro Burgundian village of Coussey. 
   - Jeanne D'Arc said that she heard the voices of the saints at the spring, not at the tree which implies that the tree was not at the spring. The tree and the spring were separate locations.
+  - If "Fontem Rannorum" translates to "the spring of the frogs" then it is likely that the spring was a wetland area with frogs, not a dry area with a tree. The spring was likely in a low-lying area, not on the ridge.
+  
   obervation-list:
   - source: naudin-map
     remarks:
@@ -40,8 +42,9 @@ user-prompt:
     - From the old ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
   - source: Carte de L'etat major 1820-1866
     remarks:
-    - The ridge road could have been more to the west than the current D53
     - The old ridge road ends stops where the basilique begins
+    - The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
+    - There is a patch of land next to the river Meuse called "la Fontaine aux Groselles"
   - source: LiDar Scan
     remarks:
     - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
@@ -63,6 +66,7 @@ object-model:
  - Fontem Rannorum
  - the spring of the frogs
  - fontaine des grenouilles
+ - fontaine aux Groselles
  - the road to Neufchâteau
  - the ridge road on the west bank
  - vineyard
@@ -90,6 +94,13 @@ candidate-locations:
   geolocation: 48.43540944638572, 5.67359974987573
   height: 909 ft
   elevation-above-the-river: 32 ft
+- name: la Fontaine aux Groselles
+  distance-from-Domremy: approximately 800 meters to the south of Domremy
+  distance-from-the-river: approximately 10 meters
+  location: west bank of the meuse
+  geolocation: 48.43403052445277, 5.6740496095353405
+  height: 887 ft
+  elevation-above-the-river: 1 ft  
 - name: the shrubbery bushes between the calvaire and the current fountain of the Pucelle
   distance-from-Domremy: approximately 1000 meters to the south of Domremy
   distance-from-the-river: approximately 120 meters

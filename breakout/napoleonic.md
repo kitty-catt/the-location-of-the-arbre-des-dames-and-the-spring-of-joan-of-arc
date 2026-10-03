@@ -14,11 +14,19 @@
 4. Les Fontaines aux Groselles
 5. Audessus de la Fontaine aux Groselles
 
+![Napoleonic-cadastre-fontaine](../images/fontaines-aux-groselles.png)
+
 ## Observations
 
-The map shows that South of the basilique the territory of Coussey starts
+- The old ridge road ends stops where the basilique begins
+- The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
+- There is a patch of land next to the river Meuse called la Fontaine aux Groselles
 
 ## Personal Thoughts
+
+- The ridge road could have been more to the west than the current D53
+- In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank
+- The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled
 
 
 # What Claude Code thinks of it
