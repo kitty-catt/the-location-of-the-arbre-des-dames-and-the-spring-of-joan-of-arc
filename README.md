@@ -75,13 +75,13 @@ graph TD
 
 # Personal Thoughts
 
-| Object | Observations |
-|---|---|
-| [naudin-map](breakout/naudin.md)                  | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. Where the path leads to the plateau, there is also a spot where the ridge becomes more narrow. The fountain may have washed out the path and made it smaller. Label this path as the ridge old road.|
-| [jollois-map](breakout/jollois.md)                | The vineyard grew on both sides of the ridge road. From the ridge road it is possible to see the new road to Neufchateau on the other side of the river |
-| [carte-etat-major](breakout/carte-etat-major.md)  | The ridge road could have been more to the west than the current D53. The ridge road ends stops where the basilique begins. Lidar Scan: there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins |
-| [napoleonic-cadastre](breakout/napoleonic.md)     | The old ridge road ends stops where the basilique begins. The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times. There is a patch of land next to the river Meuse called la Fontaine aux Groselles |
-| [copernicus-map](breakout/copernicus.md)          | - |
+| Object | Observations | Personal Thoughts |
+|---|---|---|
+| [naudin-map](breakout/naudin.md)                  | The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill. Where the path leads to the plateau, there is also a spot where the ridge becomes more narrow. The fountain may have washed out the path and made it smaller. Label this path as the ridge old road.| - |
+| [jollois-map](breakout/jollois.md)                | The vineyard grew on both sides of the ridge road. From the ridge road it is possible to see the new road to Neufchateau on the other side of the river | Consequenty, it is possible to see the vineyards from the other side of the river |
+| [carte-etat-major](breakout/carte-etat-major.md)  | The ridge road could have been more to the west than the current D53. The ridge road ends stops where the basilique begins. Lidar Scan: there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins | That line on the map may not accurately represent the old road |
+| [napoleonic-cadastre](breakout/napoleonic.md)     | The old ridge road ends stops where the basilique begins. The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times. There is a patch of land next to the river Meuse called la Fontaine aux Groselles | The ridge road could have been more to the west than the current D53. In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank. The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled. |
+| [copernicus-map](breakout/copernicus.md)          | - | - |
 
 
 
@@ -103,13 +103,13 @@ Skills defined in this repo:
 | `/verify-citations` | Audit a `breakout/` file against `prompt/tree-prompt.yaml` for claims miscategorized as first-hand. |
 | `/extract-entities` | Pull named people/supernatural beings/afflicted groups out of `prompt/tree-prompt.yaml` into `prompt/entities.yaml`. |
 | `/locate-tree-and-spring` | Produce the retired inspector's best-guess geolocation for the tree and spring from the current `personal-musings`, `candidate-locations`, and `obervation-list` — the hypothesis-building task, as opposed to the strictly-first-hand diagram. |
-| `/sync-observations` | Carry new `## Observations` bullets from a `breakout/*.md` map/data file into `prompt/tree-prompt.yaml`'s `obervation-list`, then refresh the matching row of this README's Personal Thoughts table. |
+| `/sync-observations` | Carry new `## Observations` bullets into `prompt/tree-prompt.yaml`'s `obervation-list` and new `Personal Thoughts` bullets into its `personal-musings`, from any `breakout/*.md` file, then refresh the matching row(s) of this README's two-column Personal Thoughts table. |
 
 Typical workflow going forward:
 1. Add new witness testimony to `prompt/tree-prompt.yaml` (as `first-hand-snippets`, correctly categorized).
 2. Run `/evidence-diagram` to fold the new snippets into the diagram — it reads the existing `breakout/combined.md` first so node/edge numbering for unchanged content stays stable, and reports what actually changed.
 3. Run `/verify-citations` on the updated file (or the whole `breakout/` folder) as a check before you trust or publish the result — it'll flag anything presented as first-hand that's actually secondary, misattributed, or overreaching beyond what the quote states.
-4. When you notice a new fact in a breakout file's `## Observations` section, run `/sync-observations` to carry it into `prompt/tree-prompt.yaml` and this README's Personal Thoughts table together, instead of editing all three by hand.
+4. When you notice a new fact or inference in a breakout file's `## Observations` or `Personal Thoughts` section, run `/sync-observations` to carry it into `prompt/tree-prompt.yaml` and this README's table together, instead of editing all three by hand.
 5. When adding a new `personal-musing` or `candidate-location` (e.g. a map/LiDAR observation), run `/locate-tree-and-spring` to see whether it changes the best-guess location for either object.
 
 
