@@ -1,6 +1,6 @@
 ---
 name: evidence-diagram
-description: Build or rebuild a first-hand-only Mermaid object-relationship diagram from prompt/tree-prompt.yaml, following the strict evidentiary rules used for breakout/combined.md — excluding condemnation-trial judges' assertions, drawing thick/double edges for relations Jeanne D'Arc herself stated, coloring nodes green when they may have left archaeological evidence, and coloring nodes light blue when Jeanne D'Arc herself directly ties them to the fontaine fiévreux. Use when new witness snippets are added, or when asked to diagram relationships between tree/spring/road/land entities.
+description: Build or rebuild a first-hand-only Mermaid object-relationship diagram from prompt/tree-prompt.yaml, following the strict evidentiary rules used for breakout/combined.md — excluding condemnation-trial judges' assertions, drawing thick/double edges for relations Jeanne D'Arc herself stated, and coloring a node green whenever Jeanne D'Arc herself said something that touches it (default styling otherwise). Use when new witness snippets are added, or when asked to diagram relationships between tree/spring/road/land entities.
 ---
 
 # Evidence diagram
@@ -64,11 +64,9 @@ read it first, keep its structure, and fold in anything new.
 7. **Flag judgment calls.** Where categorizing a snippet is ambiguous (e.g.
    whether two different phrasings of "une fontaine" refer to the same
    spring, whether an unqualified "cet arbre" refers back to a
-   previously-named tree in the same testimony, whether a snippet is a
-   judges' assertion under rule 2, or whether a node's archaeological-
-   potential coloring under rule 9 is debatable), state the call and the
-   textual basis for it explicitly in its own section — don't resolve it
-   silently.
+   previously-named tree in the same testimony, or whether a snippet is a
+   judges' assertion under rule 2), state the call and the textual basis
+   for it explicitly in its own section — don't resolve it silently.
 8. **Double/thick edges for anything Jeanne D'Arc herself said.** If any
    relation supporting an edge comes from a snippet where Jeanne is the
    speaker — `from: Jeanne D'Arc`, or her own quoted answer per rule 2 —
@@ -77,32 +75,14 @@ read it first, keep its structure, and fold in anything new.
    An edge only needs one Jeanne-sourced relation among its supporting
    numbers to qualify; note in the relations list which numbers are
    Jeanne-sourced so the diagram's line weights stay traceable.
-9. **Green nodes for entities that may have left archaeological evidence.**
-   Color an included node green (via a Mermaid `classDef`/`class` pair, not a
-   relationship claim) if it denotes a constructed/physical feature that
-   could plausibly leave a trace diggable today — worked stone, masonry,
-   foundations, walls, a built basin/well-head, road bed, terracing — as
-   opposed to a living tree, an unimproved natural feature, a person's
-   office, or a folkloric being, none of which leave that kind of trace.
-   This is an interpretive layer on top of the strictly first-hand-sourced
-   node set, not itself a first-hand claim, so it needs no citation — but
-   state the one-line rationale for every green node (and flag any debatable
-   call under rule 7) in its own "Archaeological-potential coloring" section.
-10. **Light-blue nodes for anything Jeanne D'Arc herself directly tied to the
-    `fontaine fiévreux`.** Color an included node light blue if it is the
-    *other* endpoint of an edge to `fontaine fiévreux`, where that edge is
-    Jeanne-D'Arc-sourced per rule 8 (one of its supporting relation numbers
-    comes from `from: Jeanne D'Arc` or her own quoted answer). `fontaine
-    fiévreux` itself is not colored light blue by this rule — it is the
-    reference point, not an "other" endpoint of itself. This is a second,
-    independent coloring layer on top of rule 9's green: a node can
-    legitimately be both green and light blue (e.g. a constructed fountain
-    that Jeanne also ties to `fontaine fiévreux`); apply both Mermaid
-    classes to it and flag the overlap in the "Archaeological-potential
-    coloring" section per rule 7, since Mermaid applies the later-listed
-    `class` line's conflicting styles (e.g. `fill`) on top of the earlier
-    one. Use a separate `classDef` (e.g. `classDef jeanneFievreux
-    fill:#aed6f1,stroke:#2471a3,color:#000;`) from the archaeological one.
+9. **Green nodes for anything Jeanne D'Arc herself said something about.**
+   No archaeological or fontaine-fiévreux-specific coloring rule anymore —
+   every included node gets the diagram's default styling *unless* it is an
+   endpoint of at least one thick edge (rule 8), in which case color it
+   green (via a Mermaid `classDef`/`class` pair). This is purely derived
+   from which edges are already thick — a node qualifies the moment any one
+   of its edges does, with no separate citation needed beyond what already
+   justifies that edge's thickness.
 
 ## Steps
 
@@ -128,15 +108,11 @@ read it first, keep its structure, and fold in anything new.
      label scheme). Render an edge as thick (`A ==>|1,2| B`) if any of its
      supporting relation numbers is Jeanne-sourced; otherwise normal-weight
      (`A -->|3| B`) (rule 8).
-   - Nodes: add a `classDef` (e.g. `classDef archaeological fill:#2ecc71`)
-     and a `class` line assigning it to every included node that qualifies
-     under rule 9; leave every other node with the diagram's default
-     styling. Separately, add the `classDef jeanneFievreux` light-blue style
-     and a `class` line assigning it to every node that qualifies under rule
-     10 (the other endpoint of a Jeanne-sourced edge to `fontaine
-     fiévreux`). List a node under both `class` lines if it qualifies for
-     both colors, with the `jeanneFievreux` line listed after the
-     `archaeological` one so light blue wins the conflicting `fill`.
+   - Nodes: add one `classDef` (e.g. `classDef jeanneSourced
+     fill:#2ecc71,stroke:#1e8449,color:#000;`) and a single `class` line
+     assigning it to every node that is an endpoint of at least one thick
+     edge (rule 9); leave every other node with the diagram's default
+     styling.
 7. Below the diagram, write the numbered relations list: each entry gives the
    relation in bold, the verbatim quote in italics, `(document-reference,
    witness)`, and — when it's one of the relations marked in step 5 — a
@@ -146,18 +122,14 @@ read it first, keep its structure, and fold in anything new.
    three groups: entries never named in a first-hand snippet, entries named
    only in a snippet dropped under rule 2 (judges' assertion), and entries
    named first-hand but dropped for having no stated relationship (isolated).
-9. Write an "Archaeological-potential coloring" section: one line per green
-   node giving the constructed/physical-feature rationale under rule 9.
-   Cross-reference the judgment-calls section (step 8) for any node where the
-   call was debatable rather than clear-cut.
-10. Write a "Jeanne-fiévreux coloring" section: one line per light-blue node
-    naming the Jeanne-sourced relation number(s) that tie it to `fontaine
-    fiévreux` under rule 10. Note any node colored both green and light blue
-    here as well, cross-referenced with the judgment-calls section (step 8).
-11. Save to the target file. If this is an update to an existing file, note in
-    your summary to the user exactly what changed (new nodes, new edges,
-    newly-thick, newly-green, or newly-light-blue elements, or nothing).
-12. Copy the Mermaid diagram block emitted in step 6 — the fenced ` ```mermaid
+9. Write a "Jeanne-sourced coloring" section: one line per green node naming
+   the thick-edge relation number(s) that qualify it under rule 9 — no
+   separate rationale needed beyond pointing at the edge, since the color
+   is purely derived from edge thickness.
+10. Save to the target file. If this is an update to an existing file, note
+    in your summary to the user exactly what changed (new nodes, new edges,
+    newly-thick or newly-green elements, or nothing).
+11. Copy the Mermaid diagram block emitted in step 6 — the fenced ` ```mermaid
     ... ``` ` block only, no relations list, no prose, no `classDef`
     explanation — into `README.md`, under the `# AI generated object
     relations based on first hand witness accounts` heading. If a diagram
@@ -165,8 +137,8 @@ read it first, keep its structure, and fold in anything new.
     stays in sync with the latest version; keep the existing link to the
     output file (e.g. `breakout/combined.md`) in that section rather than
     removing it.
-13. If asked to reflect this new/updated diagram in `README.md` beyond the
-    diagram copy in step 12 — e.g. documenting the prompt that produced it —
+12. If asked to reflect this new/updated diagram in `README.md` beyond the
+    diagram copy in step 11 — e.g. documenting the prompt that produced it —
     follow the existing convention there: append the exact prompt you were
     given plus a link to the output file, under the relevant section — do
     not overwrite prior entries.
@@ -175,10 +147,9 @@ read it first, keep its structure, and fold in anything new.
 
 A single Markdown file at the target path, matching the structure of
 `breakout/combined.md`, with thick (`==>`) edges for Jeanne-D'Arc-sourced
-relations, normal (`-->`) edges otherwise, a green `classDef` applied to
-nodes that may have left archaeological evidence, and a light-blue
-`classDef` applied to nodes Jeanne D'Arc herself directly tied to `fontaine
-fiévreux`. Do not fabricate entities or relations not present in
+relations, normal (`-->`) edges otherwise, and a single green `classDef`
+applied to every node touched by at least one thick edge — no other
+coloring rule. Do not fabricate entities or relations not present in
 `prompt/tree-prompt.yaml` — when in doubt, exclude and say why.
 Additionally, `README.md`'s "AI generated object relations based on first
 hand witness accounts" section always carries a synced copy of that same

@@ -14,17 +14,28 @@ Domremy (see "Excluded first-hand-snippets" below).
 
 Legend: a **thick** edge (`==`) means at least one of its supporting
 relations is Jeanne d'Arc's own testimony; a normal edge (`--`) means none
-of its supporting relations are. A **green** node denotes an entity that may
-have left archaeological evidence — see "Archaeological-potential coloring"
-below for the rationale on each. A **light-blue** node denotes an entity
-that Jeanne d'Arc herself directly tied to `fontaine fiévreux` — see
-"Jeanne-fiévreux coloring" below.
+of its supporting relations are. A **green** node denotes an entity that is
+an endpoint of at least one thick edge — i.e. Jeanne d'Arc herself said
+something that touches it — see "Jeanne-sourced coloring" below. Every
+other node keeps the diagram's default styling.
 
 ## Change in this update
 
-No `first-hand-snippets` were added or removed this pass. The `object-model`
-changed instead: **`fées` and `esprit malin` were removed** from the fixed
-vocabulary, and `fontaine aux Groselles` was added.
+The coloring rules were simplified: the previous archaeological-potential
+(green) and fontaine-fiévreux-specific (light-blue) rules are both gone,
+replaced by one rule — a node is green if it is an endpoint of a
+Jeanne-D'Arc-sourced (thick) edge, default otherwise. This recolors the
+diagram: `fontaine des Groseilliers`, `fontaine aux Rains`, `the road to
+Neufchâteau`, and `Fontem Rannorum` lose the green they had under the old
+archaeological rule (none of their edges are thick), while `L'Arbre des
+fées`, `the Bourlemont land`, and `malades` gain green for the first time
+(each is the far end of a thick edge from `L'Arbre des dames`).
+`L'Arbre des dames`, `Les saintes`, and `fiévreux` stay green, carried over
+from the old light-blue rule rather than the old green one. `fontaine
+fiévreux` itself stays green too — unlike the retired light-blue rule, this
+one has no "reference point" carve-out, and Jeanne herself does talk about
+`fontaine fiévreux` directly (relations 5, 7, 26). No `first-hand-snippets`
+or `object-model` entries changed this pass.
 
 `fontaine aux Groselles` is never named in a first-hand snippet (it comes
 from the Napoleonic-cadastre `observation-list` entry and the "groseilles"
@@ -255,8 +266,7 @@ numbers are comma-separated.
 
 ```mermaid
 graph TD
-    classDef archaeological fill:#2ecc71,stroke:#1e8449,color:#000;
-    classDef jeanneFievreux fill:#aed6f1,stroke:#2471a3,color:#000;
+    classDef jeanneSourced fill:#2ecc71,stroke:#1e8449,color:#000;
 
     N1["L’Arbre des dames"]
     N2["L’Arbre des fées"]
@@ -287,8 +297,7 @@ graph TD
     N1 -- "14" --- N8
     N1 -- "44,45,47" --- N14
 
-    class N3,N4,N5,N6,N14 archaeological
-    class N1,N9,N10 jeanneFievreux
+    class N1,N2,N4,N7,N9,N10,N11 jeanneSourced
 ```
 
 ## Numbered relations
@@ -389,69 +398,32 @@ graph TD
 47. **Arbre des dames — Fontem Rannorum.** Jean Morel's Latin deposition has the young people return singing from the tree to the fountain, which he states is closer to the village than the tree.
     *"...et redeundo veniunt supra fontem ad Rannos, spaciando et cantando, et de aqua illius fontis bibunt...nec ad fontem, qui fens est propinquior villa quam sit arbor."* (dep_jean_morel, Jean Morel).
 
-## Archaeological-potential coloring
+## Jeanne-sourced coloring
 
-Green nodes denote an included entity that denotes a constructed/physical
-feature which could plausibly leave a trace diggable today (worked stone,
-masonry, a built basin, a road bed), as opposed to a living tree, a
-folkloric being, a person's office, or an unformed group of people. This is
-an interpretive layer, not a first-hand claim, so it needs no citation — but
-the rationale for each is given here, and any debatable call is flagged.
+Green nodes denote an included entity that is an endpoint of at least one
+thick (Jeanne-D'Arc-sourced) edge, per rule 9. This is purely derived from
+which edges are already thick — no separate rationale is needed beyond
+pointing at the qualifying relation number(s), since those are already
+cited in full above.
 
-- **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux
-  Rains**, **Fontem Rannorum** *(green — judgment call)*. None of the
-  surviving testimony describes these springs' construction directly, so
-  coloring them green rests on the general likelihood that a named,
-  regularly-visited village fountain of this kind was fitted with at least a
-  stone-lined basin or well-head, which could leave worked-stone remains
-  even after the spring itself silts up or shifts. This is inference from
-  the *kind* of object named, not from any first-hand-stated fact about
-  these particular fountains — flagged here rather than resolved silently,
-  per rule 7. `Fontem Rannorum` is colored on the same basis even though it
-  is kept as a node distinct from `fontaine aux Rains` (see judgment calls
-  above) — if the two do denote the same physical spring, as seems likely,
-  this coloring call is identical either way.
-- **the road to Neufchâteau** *(green)*. An old right-of-way of this kind
-  typically leaves a road bed, ditch, or verge trace even where its exact
-  route has since shifted — one of rule 9's own listed examples of a
-  qualifying constructed feature.
-- **L’Arbre des dames** / **L’Arbre des fées** *(not green)*. A living beech,
-  however venerable — no masonry or worked stone to leave behind.
-- **the Bourlemont land** *(not green)*. Denotes ownership of a stretch of
-  land, not a built structure on it; nothing first-hand describes markers,
-  walls, or boundary stones for it.
-- **un Bois** *(not green)*. A wood — a natural feature, not constructed.
-- **Les saintes** *(not green)*. A non-physical/folkloric entity — rule 9's
-  own example of what does not qualify.
-- **fiévreux**, **malades** *(not green)*. Groups of people, not places or
-  structures.
-- **le curé** *(not green)*. A person's office, not a physical feature —
-  rule 9's own example of what does not qualify.
-
-## Jeanne-fiévreux coloring
-
-Light-blue nodes denote an included entity that is the other endpoint of a
-Jeanne-D'Arc-sourced edge to `fontaine fiévreux` (`N4`), per rule 10. This is
-a second interpretive-but-rule-driven layer independent of the green
-archaeological coloring, not a new relationship claim — the edges
-themselves are already cited above; this section just names which of their
-supporting relation numbers are Jeanne-sourced and therefore trigger the
-color.
-
-- **L’Arbre des dames** (`N1`) *(light blue)*. Its edge to `fontaine
-  fiévreux` is labeled "5,7,29"; relations 5 and 7 are both Jeanne D'Arc's
-  own testimony (see relations 5 and 7 above), so the edge qualifies even
-  though relation 29 (Bertrand Lacloppe) is not hers.
-- **Les saintes** (`N9`) *(light blue)*. Its only edge, to `fontaine
-  fiévreux`, is relation 7 — Jeanne D'Arc's confirmed interrogation answer.
-- **fiévreux** (`N10`) *(light blue)*. Its only edge, to `fontaine
-  fiévreux`, is relation 26 — Jeanne D'Arc's own testimony.
-- **fontaine fiévreux** (`N4`) *(not light blue)*. It is the reference node
-  for rule 10, not an "other" endpoint of itself, so the rule does not color
-  it; it keeps its green archaeological coloring from rule 9 instead.
-
-No node currently qualifies for both green and light blue, so the
-later-listed-class-wins convention from rule 10 is not yet exercised in this
-diagram — noted here per rule 7 in case a future snippet creates that
-overlap (e.g. if a new Jeanne-sourced edge ever ties `fontaine fiévreux` to
-one of the already-green fountain nodes).
+- **L’Arbre des dames** (`N1`) *(green)*. Endpoint of several thick edges:
+  5/7/29 to `fontaine fiévreux`, 5 to `L'Arbre des fées`, 6 to `the
+  Bourlemont land`, 27 to `malades`.
+- **L’Arbre des fées** (`N2`) *(green)*. Its edge to `N1` is relation 5 —
+  Jeanne d'Arc's own testimony that the tree has two names.
+- **fontaine fiévreux** (`N4`) *(green)*. Endpoint of thick edges 5/7/29 (to
+  `N1`), 7 (to `Les saintes`), and 26 (to `fiévreux`).
+- **the Bourlemont land** (`N7`) *(green)*. Its edge to `N1` is relation 6 —
+  Jeanne d'Arc's own testimony that the tree belonged to Pierre de
+  Bourlemont.
+- **Les saintes** (`N9`) *(green)*. Its only edge, to `N4`, is relation 7 —
+  Jeanne D'Arc's confirmed interrogation answer.
+- **fiévreux** (`N10`) *(green)*. Its only edge, to `N4`, is relation 26 —
+  Jeanne D'Arc's own testimony.
+- **malades** (`N11`) *(green)*. Its only edge, to `N1`, is relation 27 —
+  Jeanne D'Arc's own testimony.
+- **fontaine des Groseilliers** (`N3`), **fontaine aux Rains** (`N5`), **the
+  road to Neufchâteau** (`N6`), **un Bois** (`N8`), **le curé** (`N13`),
+  **Fontem Rannorum** (`N14`) *(default styling)*. None of their edges are
+  thick — every relation touching them comes from a named witness other
+  than Jeanne, so they stay uncolored.
