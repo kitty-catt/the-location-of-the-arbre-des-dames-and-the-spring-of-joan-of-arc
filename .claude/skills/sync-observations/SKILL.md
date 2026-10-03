@@ -94,10 +94,14 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
    or patch the table's previous content; never read it as a source of
    bullets. Strip any `"<Name>:"` prefix from an Observations bullet before
    putting it in the table (the prefix is yaml bookkeeping, not prose).
-6. **Join each cell's bullets into prose**, period-separated, no bullet
-   markers, matching the table's existing sentence style. Use `-` for a
-   cell whose section is absent or empty (e.g. `naudin-map`'s Personal
-   Thoughts cell, `copernicus-map`'s both cells).
+6. **Render each cell as a bullet list, not joined prose.** A bare `-`
+   markdown list doesn't render inside a single-line GFM table cell, so use
+   an HTML list: `<ul><li>First bullet</li><li>Second bullet</li></ul>`, one
+   `<li>` per bullet, in the breakout file's own order. Keep each bullet's
+   wording verbatim (aside from stripping a `"<Name>:"` prefix per rule 5) —
+   don't merge bullets into sentences or add connecting words. Use a plain
+   `-` (no list) for a cell whose section is absent or empty (e.g.
+   `naudin-map`'s Personal Thoughts cell, `copernicus-map`'s both cells).
 7. **Preserve each row's identity, not its content.** Keep the existing
    `[display-name](breakout/file.md)` link text and the existing row order
    for every breakout file already in the table — these names aren't purely
@@ -139,8 +143,10 @@ Edits to two files: `prompt/tree-prompt.yaml` (new remarks appended to the
 right `obervation-list` source entries, new bullets appended to
 `personal-musings` — additive only, nothing removed) and `README.md` (the
 entire `# Personal Thoughts` table replaced with a fresh rebuild straight
-from the breakout files — including rows that didn't change, since the
-rebuild is unconditional). No new files are created. When an Observations
+from the breakout files, each cell an HTML bullet list (`<ul><li>...</li></ul>`)
+of that file's own bullets rather than joined prose — including rows that
+didn't change, since the rebuild is unconditional). No new files are
+created. When an Observations
 bullet's `source` key can't be resolved mechanically (rule 2c) or a brand-new
 breakout file needs a new row (rule 7), say so and propose a default rather
 than deciding silently.
