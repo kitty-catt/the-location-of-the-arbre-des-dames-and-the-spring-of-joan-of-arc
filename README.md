@@ -35,6 +35,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 ```mermaid
 graph TD
     classDef archaeological fill:#2ecc71,stroke:#1e8449,color:#000;
+    classDef jeanneFievreux fill:#aed6f1,stroke:#2471a3,color:#000;
 
     N1["L’Arbre des dames"]
     N2["L’Arbre des fées"]
@@ -68,6 +69,7 @@ graph TD
     N1 -- "44,45,47" --- N14
 
     class N3,N4,N5,N6,N14 archaeological
+    class N1,N9,N10 jeanneFievreux
 ```
 
 

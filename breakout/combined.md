@@ -16,7 +16,9 @@ Legend: a **thick** edge (`==`) means at least one of its supporting
 relations is Jeanne d'Arc's own testimony; a normal edge (`--`) means none
 of its supporting relations are. A **green** node denotes an entity that may
 have left archaeological evidence — see "Archaeological-potential coloring"
-below for the rationale on each.
+below for the rationale on each. A **light-blue** node denotes an entity
+that Jeanne d'Arc herself directly tied to `fontaine fiévreux` — see
+"Jeanne-fiévreux coloring" below.
 
 ## New snippets reviewed in this update
 
@@ -46,6 +48,19 @@ already established for `fontaine aux Rains` (now attached to `Fontem
 Rannorum` instead, per the literal-name rule), and Jean Morel's additionally
 restates the fées-haunted-the-tree claim already carried by relation 34. No
 other new node or edge results from this batch.
+
+## Coloring rule added in this update
+
+A new rule 10 adds a second, independent coloring layer: a node is colored
+light blue if it is the *other* endpoint of a Jeanne-D'Arc-sourced edge to
+`fontaine fiévreux` (`N4`). No `first-hand-snippets` changed for this pass —
+only the three edges already touching `N4` were checked against this new
+rule. All three (`N1`—`N4`, `N4`—`N9`, `N4`—`N10`) turn out to already be
+thick/Jeanne-sourced edges, so `L’Arbre des dames` (`N1`), `Les saintes`
+(`N9`), and `fiévreux` (`N10`) are now colored light blue; `fontaine
+fiévreux` itself is not (it's the reference point, not an "other" endpoint).
+None of these three nodes was already green, so there is no color conflict
+to resolve this time — see "Jeanne-fiévreux coloring" below.
 
 ## Included entities and why
 
@@ -255,6 +270,7 @@ numbers are comma-separated.
 ```mermaid
 graph TD
     classDef archaeological fill:#2ecc71,stroke:#1e8449,color:#000;
+    classDef jeanneFievreux fill:#aed6f1,stroke:#2471a3,color:#000;
 
     N1["L’Arbre des dames"]
     N2["L’Arbre des fées"]
@@ -288,6 +304,7 @@ graph TD
     N1 -- "44,45,47" --- N14
 
     class N3,N4,N5,N6,N14 archaeological
+    class N1,N9,N10 jeanneFievreux
 ```
 
 ## Numbered relations
@@ -465,3 +482,31 @@ the rationale for each is given here, and any debatable call is flagged.
   structures.
 - **le curé** *(not green)*. A person's office, not a physical feature —
   rule 9's own example of what does not qualify.
+
+## Jeanne-fiévreux coloring
+
+Light-blue nodes denote an included entity that is the other endpoint of a
+Jeanne-D'Arc-sourced edge to `fontaine fiévreux` (`N4`), per rule 10. This is
+a second interpretive-but-rule-driven layer independent of the green
+archaeological coloring, not a new relationship claim — the edges
+themselves are already cited above; this section just names which of their
+supporting relation numbers are Jeanne-sourced and therefore trigger the
+color.
+
+- **L’Arbre des dames** (`N1`) *(light blue)*. Its edge to `fontaine
+  fiévreux` is labeled "5,7,29"; relations 5 and 7 are both Jeanne D'Arc's
+  own testimony (see relations 5 and 7 above), so the edge qualifies even
+  though relation 29 (Bertrand Lacloppe) is not hers.
+- **Les saintes** (`N9`) *(light blue)*. Its only edge, to `fontaine
+  fiévreux`, is relation 7 — Jeanne D'Arc's confirmed interrogation answer.
+- **fiévreux** (`N10`) *(light blue)*. Its only edge, to `fontaine
+  fiévreux`, is relation 26 — Jeanne D'Arc's own testimony.
+- **fontaine fiévreux** (`N4`) *(not light blue)*. It is the reference node
+  for rule 10, not an "other" endpoint of itself, so the rule does not color
+  it; it keeps its green archaeological coloring from rule 9 instead.
+
+No node currently qualifies for both green and light blue, so the
+later-listed-class-wins convention from rule 10 is not yet exercised in this
+diagram — noted here per rule 7 in case a future snippet creates that
+overlap (e.g. if a new Jeanne-sourced edge ever ties `fontaine fiévreux` to
+one of the already-green fountain nodes).
