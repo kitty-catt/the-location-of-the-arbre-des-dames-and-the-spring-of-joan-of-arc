@@ -13,8 +13,9 @@ I have calibrated it on the basis of the road pattern.
 
 - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
 - Where the path leads to the plateau, there is also a spot where the ridge becomes narrow.
-- Label this path as the ridge old road
+- Let us refer to this path as the ridge road
 
 
 # Personal Thoughts
 
+- The ridge may have become narrow because a fountain washed out sand from the hill over centuries.

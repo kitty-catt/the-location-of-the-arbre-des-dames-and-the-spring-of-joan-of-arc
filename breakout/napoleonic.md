@@ -25,8 +25,6 @@
 ## Personal Thoughts
 
 - The ridge road could have been more to the west than the current D53
-- In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank
-- The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled
 
 
 # What Claude Code thinks of it
