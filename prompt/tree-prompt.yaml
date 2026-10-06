@@ -68,7 +68,7 @@ object-model:
  - L'Arbre
  #- Arbor Dominarum
  #- Arborem Fatalium des Faées
- - Fagus
+ #- Fagus
  - l'ermitage de Notre-Dame de Bermont
  - des ruines 
  - Chapelle de notre dame de domremy
@@ -97,8 +97,8 @@ object-model:
  - saintes
  - fiévreux
  - malades 
- - prêtre
- - le curé
+# - prêtre
+# - le curé
  - bois
  - charrue
  - château
@@ -108,7 +108,7 @@ object-model:
  - cierge
  - eau
  - église
- - évangile
+# - évangile
  - fleur
  - fontaine
  - guirlande
@@ -120,7 +120,7 @@ object-model:
  #- mai
  - maison
  - mandragore
- - nappe
+ #- nappe
  #- noix
  #- oeuf
  #- pain
@@ -212,6 +212,8 @@ document-refence-list:
   url: https://www.ste-jeannedarc.fr/condamnation/interro_public3.html
 - name: interro_public5
   url: https://www.ste-jeannedarc.fr/condamnation/interro_public5.html
+- name: tome2livre7pieceK-5
+  url: https://jeanne.wiki/ayroles-vraie-jeanne/tome2/livre7#tome2livre7pieceK-5
 
 first-hand-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -380,7 +382,9 @@ first-hand-snippets:
 - text: "Interrogata quid fecit de sua mandragora, respondit quod non habet mandragoram, nec unquam habuit ; sed audivit dici quod prope villam suam est una, et nunquam vidit aliquam. Dixit etiam quod audivit dici quod est res periculosa et mala ad custodiendum ; nescit tamen de quo deservit. Interrogata in quo loco illa mandragora est, de qua loqui audivit, respondit quod audivit dici quod est in terra, prope illam arborem de qua superius dictum est ; sed nescit locum. Dicit etiam se audivisse dici quod supra illam mandragoram est una corylus. Interrogata de quo audivit dici quod serviat illa mandragora, respondit se audivisse quod facit venire pecunias ; sed non credit in hoc aliquid. Et dicit quod voces suæ nunquam de hoc sibi aliquid dixerunt."
   document-reference: interro_public5
   who: Jeanne D'Arc according to the interrogatoire of 1431
-
+- text: Super IX, sequente articulo incipiente Item quid habet fama, etc. requisitus dixit quod arbor articulata est subtus nemus, juxta magnum iter per quod itur ad NovumCastrum ; et pueri et puellæ dictæ villæ, annis singulis communiter in dicto dominico des Fontaines, solent ire ad spatiandum subtus illam arborem, et ibidem comedunt jocose, et vadunt ad fontes juxta illam arborem ad bibendum. Nec aliud scit de contentis in eodem articulo.
+  who: Johannes Moen
+  document-reference: tome2livre7pieceK-5
 
 general-reputation:
 - text:  There is also a tree beside a vineyard which they call “l’arbre de la Pucelle,” but there is nothing remarkable about it. 
