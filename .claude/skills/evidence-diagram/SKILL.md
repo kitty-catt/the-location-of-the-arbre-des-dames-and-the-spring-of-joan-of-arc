@@ -37,16 +37,22 @@ read it first, keep its structure, and fold in anything new.
 3. **No inferred edges.** Draw a relationship between two entities only if a
    single snippet's text *directly* states it. Proximity, distance math, or
    plausibility from `personal-musings` is not a basis for an edge.
-4. **Honor the literal name in each snippet, even across synonyms.** When two
-   entities are established as the same underlying thing under different
-   names (e.g. a snippet states the tree is called both "l'arbre des Dames"
-   and "l'arbre des Fées"), attach each new edge to whichever name that
-   specific supporting snippet actually uses — do not default an edge to one
-   synonym's node just because other edges already point there. Only fold a
-   bare/unqualified reference (e.g. plain "l'arbre", "cet arbre") into the
-   most recently-named entity in that testimony; an explicit alternate name
-   given in the snippet must be honored as its own node's edge, even if a
-   "primary" synonym node already has an edge for the same relationship.
+4. **Collapse confirmed synonyms into one node.** When a first-hand snippet
+   *directly states* that two different names refer to the same underlying
+   entity (e.g. Jeanne's own testimony: "il y avait un arbre appelé l'arbre
+   des Dames; d'autres l'appelaient l'arbre des Fées"), treat them as a
+   single node rather than two. Pick one canonical label — prefer the name
+   already used as the `object-model` entry, or if both synonyms are
+   separate `object-model` entries, the one supported by the most snippets —
+   and state which label was chosen and why. Route every edge from any
+   snippet using any confirmed-synonym name to that one node; attach a bare
+   / unqualified reference (e.g. plain "l'arbre", "cet arbre") to the most
+   recently-named entity in that testimony, same as before. Only collapse
+   where a snippet makes the identity *explicit* — do not merge two entities
+   just because they seem similar or plausible-same (e.g. two separate
+   mentions of "une fontaine" with no identity statement between them);
+   that remains a judgment call under rule 7, and defaults to separate
+   nodes until an explicit identity statement appears.
 5. **Fixed vocabulary, and drop isolated nodes.** Only draw a node for an
    `object-model` entry that (a) is directly named in at least one first-hand
    snippet that survives rule 2, AND (b) has at least one first-hand-stated
@@ -98,10 +104,11 @@ read it first, keep its structure, and fold in anything new.
    snippet that survived step 3. Build the include/exclude lists per rule 5.
 5. For each surviving first-hand snippet, extract every directly-stated
    relationship between included entities, attaching each edge to whichever
-   entity name the snippet literally uses (rule 4). Number these relations in
-   snippet order, and mark which relation numbers are Jeanne-D'Arc-sourced
-   (rule 8: `from: Jeanne D'Arc`, or her own quoted answer within an
-   interrogation-transcript snippet).
+   entity name the snippet literally uses — unless that name is a confirmed
+   synonym under rule 4, in which case attach it to the chosen canonical
+   node instead. Number these relations in snippet order, and mark which
+   relation numbers are Jeanne-D'Arc-sourced (rule 8: `from: Jeanne D'Arc`,
+   or her own quoted answer within an interrogation-transcript snippet).
 6. Emit the diagram as a Mermaid `graph TD` block:
    - Edges: label with comma-separated relation numbers when more than one
      snippet supports the same edge (existing convention — don't invent a new
@@ -118,10 +125,16 @@ read it first, keep its structure, and fold in anything new.
    witness)`, and — when it's one of the relations marked in step 5 — a
    "(Jeanne D'Arc)" tag so the thick edges stay traceable to their source.
 8. Write the "Included entities and why" and "Excluded entirely" sections,
-   plus a "judgment calls" section per rule 7. Split "Excluded entirely" into
-   three groups: entries never named in a first-hand snippet, entries named
-   only in a snippet dropped under rule 2 (judges' assertion), and entries
-   named first-hand but dropped for having no stated relationship (isolated).
+   plus a "judgment calls" section per rule 7. For any node formed by
+   collapsing confirmed synonyms (rule 4), note in its entry every alternate
+   name folded into it, the canonical label chosen and why, and the relation
+   number of the identity-stating snippet — so the collapse stays traceable
+   even though the alternate names don't get their own nodes. Split
+   "Excluded entirely" into three groups: entries never named in a
+   first-hand snippet, entries named only in a snippet dropped under rule 2
+   (judges' assertion), and entries named first-hand but dropped for having
+   no stated relationship (isolated) — a synonym folded into another node
+   under rule 4 is not "excluded" and does not belong in this section.
 9. Write a "Jeanne-sourced coloring" section: one line per green node naming
    the thick-edge relation number(s) that qualify it under rule 9 — no
    separate rationale needed beyond pointing at the edge, since the color

@@ -41,7 +41,6 @@ graph TD
     classDef jeanneSourced fill:#2ecc71,stroke:#1e8449,color:#000;
 
     N1["L'Arbre des dames"]
-    N2["L'Arbre des fées"]
     N3["fontaine des Groseilliers"]
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
@@ -54,8 +53,6 @@ graph TD
     N13["le curé"]
     N14["Fontem Rannorum"]
     N15["Arbor Dominarum"]
-    N16["Arborem Fatalium des Faées"]
-    N17["Fagus"]
     N18["fons"]
     N19["fontaine"]
     N20["pain"]
@@ -75,7 +72,6 @@ graph TD
     N34["évangile"]
     N36["le Bois Chenu"]
 
-    N1 == "5,48" === N2
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48" === N4
     N1 == "6,51" === N7
@@ -84,18 +80,16 @@ graph TD
     N5 -- "36" --- N13
     N4 == "26,49" === N10
     N1 == "27,50" === N11
-    N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
-    N2 -- "17" --- N5
+    N1 -- "10,11,12,13,15,16,17,18,19,20,21,22,23,24,25" --- N5
     N1 -- "12,14" --- N6
     N1 -- "14" --- N8
     N1 -- "45" --- N14
     N15 -- "44,47" --- N14
-    N15 == "73" === N16
     N15 == "73" === N18
     N10 == "74" === N18
     N11 == "75" === N15
-    N28 == "76" === N17
-    N7 == "77" === N17
+    N28 == "76" === N15
+    N7 == "77" === N15
     N20 -- "78" --- N15
     N21 -- "78" --- N15
     N29 -- "79" --- N14
@@ -122,7 +116,7 @@ graph TD
     N1 -- "72" --- N34
     N13 -- "72" --- N34
 
-    class N1,N2,N4,N7,N9,N10,N11,N15,N16,N17,N18,N24,N26,N27,N28,N30,N31,N32,N36 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N15,N18,N24,N26,N27,N28,N30,N31,N32,N36 jeanneSourced
 ```
 
 
