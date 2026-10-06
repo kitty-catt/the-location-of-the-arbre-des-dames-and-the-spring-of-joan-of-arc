@@ -28,6 +28,10 @@ In creating this chapter of a fictional police report, I collaborated with Claud
 
 I affirm that all AI-generated and co-created content underwent thorough review and evaluation. The final output accurately reflects my understanding, expertise, and intended meaning. While AI assistance was instrumental in the process, I maintain full responsibility for the content, its accuracy, and its presentation. This disclosure is made in the spirit of transparency and to acknowledge the role of AI in the creation process.
 
+# juxta quam est unus fons
+
+    Item, interrogata fuit de quadam arbore, existente prope villam ipsius. Ad quod respondit quod satis prope villam de Dompremi est quædam arbor, vocata Arbor Dominarum, et alii vocant eam Arborem Fatalium des Faées, juxta quam est unus fons ; et audivit dici quod infirmi febricitantes potant de illo fonte et vadunt quæsitum de aqua illius, pro habenda sanitate. Et hoc ipsamet vidit ; sed nescit utrum inde sanentur, vel non. Item, dicit quod audivit infirmi, quando possunt se levare, vadunt ad arborem pro spatiendo. Et est una magna arbor, vocata Fagus, unde venit mayum, le beau may ; et solebat pertinere domino Petro de Bourlemont, militi.
+
 # AI generated object relations based on first hand witness accounts
 
 [click here for the diagram](breakout/combined.md)
@@ -36,8 +40,8 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 graph TD
     classDef jeanneSourced fill:#2ecc71,stroke:#1e8449,color:#000;
 
-    N1["L’Arbre des dames"]
-    N2["L’Arbre des fées"]
+    N1["L'Arbre des dames"]
+    N2["L'Arbre des fées"]
     N3["fontaine des Groseilliers"]
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
@@ -49,23 +53,76 @@ graph TD
     N11["malades"]
     N13["le curé"]
     N14["Fontem Rannorum"]
+    N15["Arbor Dominarum"]
+    N16["Arborem Fatalium des Faées"]
+    N17["Fagus"]
+    N18["fons"]
+    N19["fontaine"]
+    N20["pain"]
+    N21["vin"]
+    N22["oeuf"]
+    N23["noix"]
+    N24["eau"]
+    N25["nappe"]
+    N26["guirlande"]
+    N27["image"]
+    N28["mai"]
+    N29["fleur"]
+    N30["maison"]
+    N31["mandragore"]
+    N32["coudrier"]
+    N33["croix"]
+    N34["évangile"]
+    N36["le Bois Chenu"]
 
-    N1 == "5" === N2
+    N1 == "5,48" === N2
     N1 -- "1,2,3,4" --- N3
-    N1 == "5,7,29" === N4
-    N1 == "6" === N7
-    N4 == "7" === N9
+    N1 == "5,7,29,48" === N4
+    N1 == "6,51" === N7
+    N4 == "7,52" === N9
     N1 -- "36" --- N13
     N5 -- "36" --- N13
-    N4 == "26" === N10
-    N1 == "27" === N11
+    N4 == "26,49" === N10
+    N1 == "27,50" === N11
     N1 -- "10,11,12,13,15,16,18,19,20,21,22,23,24,25" --- N5
     N2 -- "17" --- N5
     N1 -- "12,14" --- N6
     N1 -- "14" --- N8
-    N1 -- "44,45,47" --- N14
+    N1 -- "45" --- N14
+    N15 -- "44,47" --- N14
+    N15 == "73" === N16
+    N15 == "73" === N18
+    N10 == "74" === N18
+    N11 == "75" === N15
+    N28 == "76" === N17
+    N7 == "77" === N17
+    N20 -- "78" --- N15
+    N21 -- "78" --- N15
+    N29 -- "79" --- N14
+    N9 == "80" === N18
+    N1 -- "81,83" --- N19
+    N13 -- "82" --- N19
+    N23 -- "57" --- N19
+    N1 -- "53,54,55" --- N20
+    N1 -- "53,54,55" --- N21
+    N1 -- "53,54" --- N22
+    N1 -- "56,57" --- N23
+    N1 == "58" === N24
+    N5 -- "59" --- N24
+    N1 -- "60" --- N25
+    N1 == "61,62,63" === N26
+    N26 == "61,63" === N27
+    N1 == "64,51,65" === N28
+    N1 -- "66" --- N29
+    N5 -- "67" --- N29
+    N30 == "68" === N36
+    N1 == "69" === N31
+    N31 == "70" === N32
+    N13 -- "71" --- N33
+    N1 -- "72" --- N34
+    N13 -- "72" --- N34
 
-    class N1,N2,N4,N7,N9,N10,N11 jeanneSourced
+    class N1,N2,N4,N7,N9,N10,N11,N15,N16,N17,N18,N24,N26,N27,N28,N30,N31,N32,N36 jeanneSourced
 ```
 
 
@@ -98,6 +155,7 @@ Skills defined in this repo:
 | `/evidence-diagram` | Rebuild the first-hand-only Mermaid diagram (`breakout/combined.md`) after adding witness testimony. |
 | `/verify-citations` | Audit a `breakout/` file against `prompt/tree-prompt.yaml` for claims miscategorized as first-hand. |
 | `/extract-entities` | Pull named people/supernatural beings/afflicted groups out of `prompt/tree-prompt.yaml` into `prompt/entities.yaml`. |
+| `/extract-objects` | Pull named inanimate objects (trees, fountains/springs, roads, and other physical things) out of `prompt/tree-prompt.yaml` into `prompt/objects.yaml`. |
 | `/locate-tree-and-spring` | Produce the retired inspector's best-guess geolocation for the tree and spring from the current `personal-musings`, `candidate-locations`, and `obervation-list` — the hypothesis-building task, as opposed to the strictly-first-hand diagram. |
 | `/sync-observations` | Carry new `## Observations` bullets into `prompt/tree-prompt.yaml`'s `obervation-list` and new `Personal Thoughts` bullets into its `personal-musings`, from any `breakout/*.md` file, then refresh the matching row(s) of this README's two-column Personal Thoughts table. |
 

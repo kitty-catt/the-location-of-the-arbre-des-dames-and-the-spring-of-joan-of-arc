@@ -27,6 +27,24 @@ entity-types:
       document-reference: questionnaire-lorraine
       quote: "Simonin Musnier, voisin et ami d'enfance (44 ans, laboureur)"
 
+  ancien:
+    - name: "(collective, unnamed — des anciens, not of her own lineage)"
+      document-reference: bibliotheque-monastique
+      from: Jeanne D'Arc
+      quote: "Souventes fois j'ai ouï dire par des anciens, — non ceux de mon lignage —que les dames fées le hantaient."
+      note: >
+        Corroborated by three parallel condemnation-trial minutes of the
+        same testimony, newly added under document-reference interro_public3:
+        modern French "plusieurs fois elle a ouï dire des anciens, non pas
+        de ceux de son lignage, que les dames fées y repairaient"; Latin
+        "pluries audivit ab antiquis, (non ab illis de sua progenie), quod
+        Dominæ Fatales illuc couversabantur"; archaic French "a ouy dire a
+        plusieurs anciens, non pas de son lignaiges, que les fees y
+        reperoyent." Not a separate instance — same speaker (Jeanne D'Arc),
+        same fact, different transcriptions of the same deposition. Distinct
+        from the context-only `ancien-du-village` type (general-reputation /
+        personal-musings), which is never merged with first-hand testimony.
+
   charron:
     - name: Jean Moen
       document-reference: questionnaire-lorraine
@@ -44,6 +62,15 @@ entity-types:
     - name: Albert d'Ourches
       document-reference: questionnaire-lorraine
       quote: "Albert d'Ourches (60 ans, chevalier): A entendu dire autrefois que jadis les fées venaient sous cet arbre..."
+      note: >
+        Pierre de Bourlemont (above) is also corroborated by three newly
+        added parallel condemnation-trial minutes under
+        document-reference interro_public3: modern French "appartenait, à ce
+        qu'on dit, à Messire Pierre de Bourlemont, chevalier"; Latin
+        "solebat pertinere domino Petro de Bourlemont, militi"; archaic
+        French "souloit estre a messyre Pierre de Bolemont." Not a separate
+        instance — same named individual, same fact, different
+        transcriptions of the same deposition.
 
   couvreur:
     - name: Bertrand Lacloppe
@@ -101,6 +128,13 @@ entity-types:
       document-reference: bibliotheque-monastique
       from: Jeanne D'Arc
       quote: "J'ai bien puy danser avec les autres enfants, mais j'y ai plus chanté que dansé."
+      note: >
+        Corroborated by three parallel condemnation-trial minutes newly
+        added under document-reference interro_public3: modern French
+        "mais parfois elle peut bien y avoir dansé avec les enfants"; Latin
+        "sed aliquando bene potuit ibi tripudiare cum pueris"; archaic
+        French "mais aulcunes foys y peult bien avoir dansé avecques les
+        enfans." Not a separate instance — same speaker, same fact.
 
   esprit-malin:
     - name: "(collective, unnamed; witness denies ever witnessing one)"
@@ -143,6 +177,31 @@ entity-types:
     - name: "(collective, unnamed)"
       document-reference: bibliotheque-monastique
       quote: "que des fiévreux y vont, quoique ce soit profane, pour recouvrer la santé"
+    - name: "(collective, unnamed)"
+      document-reference: interro_public3
+      from: Jeanne D'Arc
+      quote: "les gens malades de fièvre boivent à cette fontaine et vont quérir de son eau pour recouvrer santé"
+      note: >
+        Parallel Latin (interro_public3): "infirmi febricitantes potant de
+        illo fonte et vadunt quæsitum de aqua illius, pro habenda
+        sanitate"; archaic French: "les gens malades des fiebvrez en
+        boyvent... en a veu aller querir pour en guarir."
+
+  frère:
+    - name: "(unnamed — son frère, Jeanne's brother)"
+      document-reference: bibliotheque-monastique
+      from: Jeanne D'Arc
+      quote: "j'ai ouï conter par mon frère qu'on disait dans le pays: « Jeannette a pris son fait près de l'arbre des Fées »"
+      note: >
+        Corroborated by three parallel condemnation-trial minutes newly
+        added under document-reference interro_public3: modern French "a
+        ouï dire de son frère qu'on disait au pays qu'elle, Jeanne, avait
+        pris son fait à l'arbre des dames fées"; Latin "audivit dici a
+        fratre suo quod dicebatur in patria quod ipsa johanna ceperat
+        factum suum apud arborem Dominarum Fatalium"; archaic French "elle
+        a ouy dire a son frere que on disoit au pays qu'elle avoit prins
+        ses revelacions a l'arbre et es fees." Not named; "frère" is not
+        catalogued as a separate name.
 
   garçon:
     - name: "(collective, unnamed)"
@@ -216,6 +275,15 @@ entity-types:
       document-reference: bibliotheque-monastique
       from: Jeanne D'Arc
       quote: "J'ai oui dire que les malades une fois relevés, vont à cet arbre pour se divertir."
+    - name: "(collective, unnamed)"
+      document-reference: interro_public3
+      from: Jeanne D'Arc
+      quote: "les malades, quand ils peuvent se lever vont à l'arbre pour s'ébattre"
+      note: >
+        Parallel Latin (interro_public3): "audivit infirmi, quando possunt
+        se levare, vadunt ad arborem pro spatiendo"; archaic French: "les
+        malades, quand ilz se pevent lever, vont a l'arbre pour leur
+        esbattre."
 
   marguillier:
     - name: Perrin Drappier
@@ -238,6 +306,23 @@ entity-types:
       from: Jeanne D'Arc
       quote: "J'ai même ouï dire à une de mes marraines, nommée Jeanne, femme du maire Rubery, qu'elle-même avait vu là des fées."
       note: "Distinct person from Jeanne D'Arc and from Jeanette, femme de Thévenin Le Royer, above."
+    - name: Jeanne, femme du maire Aubery
+      document-reference: interro_public3
+      from: Jeanne D'Arc
+      quote: "a ouï dire à une nommée Jeanne, femme du maire Aubery, de Domrémy, qui était sa marraine, qu'elle avait vu les dites dames fées"
+      note: >
+        Parallel Latin (interro_public3): "ab una muliere, nominata
+        Johanna, uxore Majoris Alberici du Maire Aubery, de illa villa,
+        quæ erat ipsius Johannæ loquentis matrina"; archaic French (no
+        surname given there): "a une nommee Jhenne, femme du maire de la
+        ville de Dompremy, sa marraine." Judgment call: this is almost
+        certainly the same deposition fact as "Jeanne, femme du maire
+        Rubery" above (same role — Jeanne's godmother, same anecdote about
+        having seen the fées), with "Aubery"/"Rubery" plausibly a spelling
+        variant of the same surname across documents. Not merged, since no
+        single snippet states the two names are the same person — flagged
+        here per the project's evidentiary rules rather than resolved
+        silently.
 
   oncle:
     - name: Durand Laxart
@@ -248,6 +333,16 @@ entity-types:
     - name: Jean Morel
       document-reference: questionnaire-lorraine
       quote: "Jean Morel, parrain de Jeanne (70 ans, laboureur)"
+
+  père:
+    - name: "(unnamed — son père, Jeanne's father)"
+      document-reference: interro_public3
+      from: Jeanne D'Arc
+      quote: "il y a un bois chenu qu'on voit de l'huis de sa maison de son père"
+      note: >
+        Parallel Latin (interro_public3): "quod videtur ab ostio patris
+        sui"; archaic French: "que on voit de l'huys de son pere." Not
+        named in any of the three parallel minutes.
 
   prêtre:
     - name: Dominique Jacob
@@ -272,6 +367,22 @@ entity-types:
     - name: Les saintes (collective, unnamed voices)
       document-reference: bibliotheque-monastique
       quote: "Lesdites saintes lui ont plusieurs fois parlé près d'une fontaine, située près d'un grand arbre, appelé communément l'arbre des fées."
+    - name: Sainte Catherine
+      document-reference: interro_public5
+      from: Jeanne D'Arc
+      quote: "Interrogée si saintes Catherine et Marguerite lui parlèrent sous l'arbre mentionné plus haut, répondit : \"Je ne sais\"."
+      note: >
+        First time either saint is named individually in a first-hand
+        snippet rather than only as the collective "les saintes". Parallel
+        Latin (interro_public5): "sanctæ Katharina et Margareta."
+    - name: Sainte Marguerite
+      document-reference: interro_public5
+      from: Jeanne D'Arc
+      quote: "Interrogée si saintes Catherine et Marguerite lui parlèrent sous l'arbre mentionné plus haut, répondit : \"Je ne sais\"."
+      note: >
+        First time either saint is named individually in a first-hand
+        snippet rather than only as the collective "les saintes". Parallel
+        Latin (interro_public5): "sanctæ Katharina et Margareta."
 
   seigneur:
     - name: Pierre de Bourlemont

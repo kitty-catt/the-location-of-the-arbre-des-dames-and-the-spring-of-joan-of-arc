@@ -37,10 +37,8 @@ user-prompt:
   - The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled
   - The ridge may have become narrow because a fountain washed out sand from the hill over centuries.
   - In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank because on the East Bank they may be welcomed with stones.
+  - Jeanne's healing fountain is not necessarily the fountain that was mentioned by the witnesses, “fountain of the frogs”
   
-  Hypothesis: 
-  - Jeanne's healing fountain ≠ the later/other “fountain of the frogs”
-
   obervation-list:
   - source: naudin-map
     remarks:
@@ -63,15 +61,20 @@ user-prompt:
     - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
 
 object-model:
+ - arbre
  - L’Arbre des dames
  - L’Arbre des fées
  - L’Arbre de la Pucelle
  - L'Arbre
+ - Arbor Dominarum
+ - Arborem Fatalium des Faées
+ - Fagus
  - l'ermitage de Notre-Dame de Bermont
  - des ruines 
  - Chapelle de notre dame de domremy
  - Hordal chapel
  - Basilique
+ - fons
  - fontaine fiévreux
  - fontaine des Groseilliers 
  - fontaine aux Rains
@@ -96,6 +99,32 @@ object-model:
  - malades 
  - prêtre
  - le curé
+ - bois
+ - charrue
+ - château
+ - chemin
+ - coudrier
+ - croix
+ - cierge
+ - eau
+ - église
+ - évangile
+ - fleur
+ - fontaine
+ - guirlande
+ - herbe
+ - image
+ - mai
+ - maison
+ - image
+ - mai
+ - maison
+ - mandragore
+ - nappe
+ - noix
+ - oeuf
+ - pain
+ - vin 
 
 
 candidate-locations:
