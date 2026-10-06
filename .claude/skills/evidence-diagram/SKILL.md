@@ -89,6 +89,16 @@ read it first, keep its structure, and fold in anything new.
    from which edges are already thick — a node qualifies the moment any one
    of its edges does, with no separate citation needed beyond what already
    justifies that edge's thickness.
+10. **Every relation number must label the edge it actually describes.** A
+    relation's bold title (e.g. "eau — fontaine fiévreux") names the exact
+    two entities (after rule-4 collapsing) that number may appear on in the
+    diagram — never attach it to a different pair just because it's
+    numerically adjacent to other relations that do belong on that edge, or
+    because the surrounding snippet also happens to mention the tree. If a
+    relation's title names entities X and Y, its number belongs on the X–Y
+    edge and nowhere else, even when X or Y is also linked to a third entity
+    elsewhere in the same snippet (that's a separate relation number, drawn
+    on its own edge).
 
 ## Steps
 
@@ -139,10 +149,24 @@ read it first, keep its structure, and fold in anything new.
    the thick-edge relation number(s) that qualify it under rule 9 — no
    separate rationale needed beyond pointing at the edge, since the color
    is purely derived from edge thickness.
-10. Save to the target file. If this is an update to an existing file, note
+10. **Self-check pass (rule 10) — do this before saving, every time, even on
+    a small update.** Walk every edge in the Mermaid block and, for every
+    relation number on its label, re-read that relation's own bold title in
+    the numbered list below the diagram. Confirm the title's two named
+    entities (after rule-4 collapsing) are exactly this edge's two
+    endpoints — not a different pair mentioned elsewhere in the same
+    snippet. If a number is on the wrong edge, move it to the edge its
+    title actually names (creating that edge if it doesn't exist yet, and
+    dropping the number from any node-count/coloring text that assumed the
+    wrong edge). Also re-check the "Jeanne-sourced coloring" prose and any
+    per-node "endpoint of relation N" bullets against the corrected
+    diagram — a prose description that already names the right pair (as
+    happened here) is a signal the diagram edge itself is the thing that's
+    wrong, not the other way around.
+11. Save to the target file. If this is an update to an existing file, note
     in your summary to the user exactly what changed (new nodes, new edges,
     newly-thick or newly-green elements, or nothing).
-11. Copy the Mermaid diagram block emitted in step 6 — the fenced ` ```mermaid
+12. Copy the Mermaid diagram block emitted in step 6 — the fenced ` ```mermaid
     ... ``` ` block only, no relations list, no prose, no `classDef`
     explanation — into `README.md`, under the `# AI generated object
     relations based on first hand witness accounts` heading. If a diagram
@@ -150,8 +174,8 @@ read it first, keep its structure, and fold in anything new.
     stays in sync with the latest version; keep the existing link to the
     output file (e.g. `breakout/combined.md`) in that section rather than
     removing it.
-12. If asked to reflect this new/updated diagram in `README.md` beyond the
-    diagram copy in step 11 — e.g. documenting the prompt that produced it —
+13. If asked to reflect this new/updated diagram in `README.md` beyond the
+    diagram copy in step 12 — e.g. documenting the prompt that produced it —
     follow the existing convention there: append the exact prompt you were
     given plus a link to the output file, under the relevant section — do
     not overwrite prior entries.

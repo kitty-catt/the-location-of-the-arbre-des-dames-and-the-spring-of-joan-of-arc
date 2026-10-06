@@ -45,25 +45,18 @@ graph TD
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
     N6["the road to Neufchâteau"]
-    N7["the Bourlemont land"]
+    N7["the Bourlemont estate"]
     N8["un Bois"]
     N9["Les saintes"]
     N10["fiévreux"]
     N11["malades"]
     N13["le curé"]
     N14["Fontem Rannorum"]
-    N15["Arbor Dominarum"]
-    N18["fons"]
     N19["fontaine"]
-    N20["pain"]
-    N21["vin"]
-    N22["oeuf"]
-    N23["noix"]
     N24["eau"]
     N25["nappe"]
     N26["guirlande"]
     N27["image"]
-    N28["mai"]
     N29["fleur"]
     N30["maison"]
     N31["mandragore"]
@@ -71,6 +64,7 @@ graph TD
     N33["croix"]
     N34["évangile"]
     N36["le Bois Chenu"]
+    N37["Fagus"]
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48" === N4
@@ -84,29 +78,14 @@ graph TD
     N1 -- "12,14" --- N6
     N1 -- "14" --- N8
     N1 -- "45" --- N14
-    N15 -- "44,47" --- N14
-    N15 == "73" === N18
-    N10 == "74" === N18
-    N11 == "75" === N15
-    N28 == "76" === N15
-    N7 == "77" === N15
-    N20 -- "78" --- N15
-    N21 -- "78" --- N15
     N29 -- "79" --- N14
-    N9 == "80" === N18
     N1 -- "81,83" --- N19
     N13 -- "82" --- N19
-    N23 -- "57" --- N19
-    N1 -- "53,54,55" --- N20
-    N1 -- "53,54,55" --- N21
-    N1 -- "53,54" --- N22
-    N1 -- "56,57" --- N23
-    N1 == "58" === N24
+    N4 == "58" === N24
     N5 -- "59" --- N24
     N1 -- "60" --- N25
     N1 == "61,62,63" === N26
     N26 == "61,63" === N27
-    N1 == "64,51,65" === N28
     N1 -- "66" --- N29
     N5 -- "67" --- N29
     N30 == "68" === N36
@@ -115,8 +94,9 @@ graph TD
     N13 -- "71" --- N33
     N1 -- "72" --- N34
     N13 -- "72" --- N34
+    N7 == "77" === N37
 
-    class N1,N4,N7,N9,N10,N11,N15,N18,N24,N26,N27,N28,N30,N31,N32,N36 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N24,N26,N27,N30,N31,N32,N36,N37 jeanneSourced
 ```
 
 

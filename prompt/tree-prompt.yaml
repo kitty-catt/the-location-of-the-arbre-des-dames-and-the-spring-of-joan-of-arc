@@ -66,15 +66,15 @@ object-model:
  - L’Arbre des fées
  - L’Arbre de la Pucelle
  - L'Arbre
- - Arbor Dominarum
- - Arborem Fatalium des Faées
+ #- Arbor Dominarum
+ #- Arborem Fatalium des Faées
  - Fagus
  - l'ermitage de Notre-Dame de Bermont
  - des ruines 
  - Chapelle de notre dame de domremy
  - Hordal chapel
  - Basilique
- - fons
+ #- fons
  - fontaine fiévreux
  - fontaine des Groseilliers 
  - fontaine aux Rains
@@ -87,7 +87,7 @@ object-model:
  - the ridge road on the west bank
  - vineyard
  - estate boundary
- - the Bourlemont land
+ - the Bourlemont estate
  - un Bois
  - le Bois Chenu
  - le Bosc Chesnu
@@ -114,17 +114,17 @@ object-model:
  - guirlande
  - herbe
  - image
- - mai
+ #- mai
  - maison
  - image
- - mai
+ #- mai
  - maison
  - mandragore
  - nappe
- - noix
- - oeuf
- - pain
- - vin 
+ #- noix
+ #- oeuf
+ #- pain
+ #- vin 
 
 
 candidate-locations:
