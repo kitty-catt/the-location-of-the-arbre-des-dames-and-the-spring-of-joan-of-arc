@@ -85,11 +85,12 @@ object-model:
  - vineyard
  - estate boundary
  - the Bourlemont land
- - the Bois Chenu
+ - un Bois
+ - le Bois Chenu
+ - le Bosc Chesnu
  - the slope to the top of the bois Chenu
  - the valley
  - the river meuse
- - un Bois
  - saintes
  - fiévreux
  - malades 
@@ -178,6 +179,10 @@ document-refence-list:
   url: https://ste-jeannedarc.fr/rehabilitation/dep_mengette.html
 - name: dep_jean_morel
   url: https://ste-jeannedarc.fr/rehabilitation/dep_jean_morel.html
+- name: interro_public3
+  url: https://www.ste-jeannedarc.fr/condamnation/interro_public3.html
+- name: interro_public5
+  url: https://www.ste-jeannedarc.fr/condamnation/interro_public5.html
 
 first-hand-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -293,6 +298,39 @@ first-hand-snippets:
   document-reference: dep_mengette
 - text: "Jean Morel : Dixit per suum iuramentum quod de arbore, que dicitur dominarum, audivit alias dici quod mulieres et persone fatales, que vocabantur lees, ibant antiquitus choreatum sub illa arbore. Sed, ut dicitur, postquam evangelium beati Iohannis legitur et dicitur, amplius non vadunt. Dixit eeiam quod, modernis temporibus, in dominica qua cantatur in sancta Dei ecclesia in introitu misse Letare lherusalem, in istis partibus vulgariter dicta des Fontaines, puelle et iuvenes de Dompno Remigio vadunt subtus illam arborem, et aliquociens tempore veris et estatis, diebus festivis ad coreandum ; et aliquando ibidem comedunt ; et redeundo veniunt supra fontem ad Rannos, spaciando et cantando, et de aqua illius fontis bibunt, et circumcirca ludendo flores colligunt. Dixit eciam quod ipsa Iohanna la Pucelle, cum aliis puellis, dictis temporibus, aliquociens ibat, et sicut cetere faciebat. Nec unquam dici audivit quod Iohanneta articulata sola, nec propter aliam causam, iret ad arborem, nee ad fontem, qui fens est propinquior villa quam sit arbor ; nisi ad spaciandum et iocandum, sicut et alie iuvencule. Nec alias deposuit."
   document-reference: dep_jean_morel
+- text: Item elle fut interrogée au sujet de certain arbre existant près de son village. A quoi elle répondit que, assez près de Domrémy, il y a certain arbre appelé l'Arbre des Dames, et les autres l'appellent l'Arbre des Fées ; auprès est une fontaine (6). Et a ouï dire que les gens malades de fièvre boivent à cette fontaine et vont quérir de son eau pour recouvrer santé. Cela, elle l'a vu ; mais ne sait s'ils guérissent ou non. Item dit qu'elle a ouï dire que les malades, quand ils peuvent se lever vont à l'arbre pour s'ébattre. Et c'est un grand arbre, appelé fau (7) d'où vient le beau mai (8) ; et appartenait, à ce qu'on dit, à Messire Pierre de Bourlemont (9), chevalier.
+  document-reference: interro_public3
+- text: Item, interrogata fuit de quadam arbore, existente prope villam ipsius. Ad quod respondit quod satis prope villam de Dompremi est quædam arbor, vocata Arbor Dominarum, et alii vocant eam Arborem Fatalium des Faées, juxta quam est unus fons ; et audivit dici quod infirmi febricitantes potant de illo fonte et vadunt quæsitum de aqua illius, pro habenda sanitate. Et hoc ipsamet vidit ; sed nescit utrum inde sanentur, vel non. Item, dicit quod audivit infirmi, quando possunt se levare, vadunt ad arborem pro spatiendo. Et est una magna arbor, vocata Fagus, unde venit mayum, le beau may ; et solebat pertinere domino Petro de Bourlemont, militi.
+  document-reference: interro_public3
+- text: Item, interroguee de l'arbre, respond que assez prez de Dompremy d'ung arbre qui ... (10) se appelle l'arbre des Dames ; et les aultres l'appellent l'arbre des Fees ; et auprez a une fontaine ; et a ouy dire que les gens malades des fiebvrez en boyvent ; et mesmes en a veu aller querir pour en guarir. Mais ne sçait se ilz en garissoyent ou non. Item, dit qu'elle a ouy dire que les malades, quand ilz se pevent lever, vont a l'arbre pour leur esbattre ; et dit que c'est ung grand arbre, nommé fou, dont vient de beau may; et souloit estre a messyre Pierre de Bolemont.
+  document-reference: interro_public3
+- text: Item disait que parfois elle allait s'ébattre avec les autres filles, et faisait à cet arbre couronnes pour l'image de Notre-Dame de Domrémy ; et plusieurs fois elle a ouï dire des anciens, non pas de ceux de son lignage, que les dames fées y repairaient. Et a ouï dire à une nommée Jeanne, femme du maire Aubery (11), de Domrémy, qui était sa marraine, qu'elle avait vu les dites dames fées, mais elle qui parle, ne sait si c'était vrai ou non. Item dit qu'elle ne vit jamais les dites fées à l'arbre, qu'elle sache ; interrogée si elle en a vu ailleurs, ne sait si elle en a vu ou non. Item dit qu'elle a vu mettre par les jouvencelles couronnes aux rameaux de l'arbre, et elle même en a mis parfois avec les autres filles ; et parfois elles les emportaient et parfois les y laissaient.
+  document-reference: interro_public3
+- text: Item, dicebat quod aliquando ipsa ibat spatiatum cum aliis filiabus, et faciebat apud illam arborem serta pro imagine Beate Mariæ de Dompremi. Et pluries audivit ab antiquis, (non ab illis de sua progenie), quod Dominæ Fatales illuc couversabantur. Et audivit dici ab una muliere, nominata Johanna, uxore Majoris Alberici du Maire Aubery, de illa villa, quæ erat ipsius Johannæ loquentis matrina, quod ipsa ibi viderat prædictas Dominas Fatales ; sed ipsa loquens nescit an utrum hoc esset verum, vel non. Item dixit quod nunquam vidit prædictas Fatales apud arborem, quod ipsa sciat ; sed si, viderit alibi, nescit an viderit, aut non. Item, dixit quod vidit apponere serta in ramis arboris per juvenculas, et ipsamet aliquando ibi apposuit cum aliis filiabus ; et aliquando secum deferebant, aliquando dimittebant.
+  document-reference: interro_public3
+- text: Item, qu'elle alloit aucunes foys avecques les aultres jeunes filles en temps d'esté ; et y faisoit des chappeaux pour Nostre Dame de Dompremy. Item, dit qu'elle a ouy dire a plusieurs anciens, non pas de son lignaiges, que les fees y reperoyent ; et a ouy dire a une nommee Jhenne, femme du maire de la ville de Dompremy, sa marraine, qu'elle les avoit veues la. Se il estoit vray, elle ne sçait. Item, dit qu'elle ne veit jamais fee, qu'elle saiche, a l'arbre, ne ailleurs. Item, dit qu'elle avoit veu mectre es branches dudit arbre des chappeaux par les jeunes filles ; et elle mesmes y en a mys avecques les aultres fille. Et aulcunes foys les emportoyent ; et aulcunes foys laissoyent.
+  document-reference: interro_public3
+- text: Item dit que depuis qu'elle sut qu'elle devait venir en France, elle fit peu de jeux ou ébattements, et le moins qu'elle put ; et ne sait point que, depuis qu'elle eut entendement, elle ait dansé près de l'arbre ; mais parfois elle peut bien y avoir dansé avec les enfants ; mais y avait plus chanté que dansé.
+  document-reference: interro_public3
+- text: Item, dixit quod, postquam ipsa scivit quod debebat venire in Franciam, parum fecit de jocis sive spatiamentis, et quantum minus potuit. Et nesci quod postquam habuit discretionem, ipsa tripudiaverit juxta illam arborem ; sed aliquando bene potuit ibi tripudiare cum pueris, et plus ibi cantavit quam tripudiaverit.
+  document-reference: interro_public3
+- text: Item, dit que, depuis qu'elle sceut qu'elle debvoit venir en France, elle feit pou d'esbattemenz ; et le moins qu'elle peut. Et ne sçait point que, depuis qu'elle eut entendement, qu'elle ait dansé prez dudit arbre. Mais aulcunes foys y peult bien avoir dansé avecques les enfans ; mais y avoit plus chanté que dansé.
+  document-reference: interro_public3
+- text: "Item dit qu'il y a un bois chenu (12) qu'on voit de l'huis de sa maison de son père ; et n'y a pas la distance qu'une demi-lieue. Item ne sait ni ouït oncques dire que les dames fées y repairassent ; mais a ouï dire de son frère qu'on disait au pays qu'elle, Jeanne, avait pris son fait à l'arbre des dames fées : mais dit qu'elle ne l'avait pas fait, et elle lui a bien dit le contraire ; et dit en outre que, lorsqu'elle vint vers son roi, certains lui demandaient si, en son pays, il n'y avait point de bois qu'on appelaît le bois chenu ; car il y avait prophétie disant que devers ce bois devait venir une pucelle qui ferait merveille ; mais ladite Jeanne a dit qu'elle n'y a point ajouté de foi (13)."
+  document-reference: interro_public3
+- text: Item, dicit quod est ibi unum nemus, quod vocatur Nemus-quercosum, le Bois-Chenu quod videtur ab ostio patris sui ; et non est distantia dimidiæ Item, nescit nec audivit unquam quod Dominæ Fatales supradictæ ibi conversarentur ; sed audivit dici a fratre suo quod dicebatur in patria quod ipsa johanna ceperat factum suum apud arborem Dominarum Fatalium. Sed dicit quod non fecerat, et dicebat sibi contrarium. Item, ulterius dicit quod, quando ipsa versus regem suum, aliqui petebant sibi an in patria sua erat aliquod nemus, quod vocaretur le Bois chesnu, quia erant prophetiæ dicentes quod, circa illud nemus, debebat venire quædam puella quæ faceret mirabilia. Sed dixit ipsa Johanna quod in hoc non adhibuit fidem.
+  document-reference: interro_public3
+- text: "Item, dit bien qu'il y a ung bosc, que on appelle le Bosc Chesnu, que on voit de l'huys de son pere ; et y a petite espace non pas d'une lieue ; mais qu'elle ne sçait ne ouyt oncques dire que les fees y repperassent. Item, dit qu'elle a ouy dire a son frere que on disoit au pays qu'elle avoit prins ses revelacions a l'arbre et es fees. Mais non avoit. Et luy disoit bien le contraire. Et dit oultre, quand elle vint devers le roy, que aulcuns demandoyent si en son pays avoit point de boys que on appelast le Boys Chesnu. Car il y avoit prophecies qui disoyent que de devers le Boys Chanu debvoit venir une pucelle qui venoit faire merveilles ; mais en ce n'a point adiousté de foy."
+  document-reference: interro_public3
+- text: " Interrogée si saintes Catherine et Marguerite lui parlèrent sous l'arbre mentionné plus haut, répondit : "Je ne sais". lnterrogée si, à la fontaine qui est près de l'arbre, les saintes parlèrent avec elle, répondit que oui, et que là elle les ouït bien mais ce qu'elles lui dirent alors, elle ne le sait plus."
+  document-reference: interro_public5
+- text: "Interrogata an sanctæ Katharina et Margareta locutæ sunt cum ea sub arbore, de qua superius fit mentio, respondit : "Ego nihil scio".  Interrogata si, apud fontem qui est juxta arborem, prædicta Sanctæ locutæ sunt cum ea, respondit quod sic, et quod audivit eas ibi ; sed quid sibi tunc dixerunt, nescit."
+  document-reference: interro_public5
+- text: "Interrogée en quel lieu est cette mandragore dont elle ouït parler répondit qu'elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné; mais ne sait le lieu. Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier. Interrogée à quoi elle a entendu dire que sert cette mandragore, répondit qu'elle a ouï dire qu'elle fait venir l'argent ; mais n'a croyance en cela. Et dit que les voix ne lui dirent jamais rien à ce sujet."
+  document-reference: interro_public5
+- text: "Interrogata quid fecit de sua mandragora, respondit quod non habet mandragoram, nec unquam habuit ; sed audivit dici quod prope villam suam est una, et nunquam vidit aliquam. Dixit etiam quod audivit dici quod est res periculosa et mala ad custodiendum ; nescit tamen de quo deservit. Interrogata in quo loco illa mandragora est, de qua loqui audivit, respondit quod audivit dici quod est in terra, prope illam arborem de qua superius dictum est ; sed nescit locum. Dicit etiam se audivisse dici quod supra illam mandragoram est una corylus. Interrogata de quo audivit dici quod serviat illa mandragora, respondit se audivisse quod facit venire pecunias ; sed non credit in hoc aliquid. Et dicit quod voces suæ nunquam de hoc sibi aliquid dixerunt."
+  document-reference: interro_public5
+
 
 general-reputation:
 - text:  There is also a tree beside a vineyard which they call “l’arbre de la Pucelle,” but there is nothing remarkable about it. 
