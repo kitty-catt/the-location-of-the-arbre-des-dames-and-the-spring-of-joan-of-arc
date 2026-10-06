@@ -30,7 +30,7 @@ I affirm that all AI-generated and co-created content underwent thorough review 
 
 # juxta quam est unus fons
 
-    Item, interrogata fuit de quadam arbore, existente prope villam ipsius. Ad quod respondit quod satis prope villam de Dompremi est quædam arbor, vocata Arbor Dominarum, et alii vocant eam Arborem Fatalium des Faées, juxta quam est unus fons ; et audivit dici quod infirmi febricitantes potant de illo fonte et vadunt quæsitum de aqua illius, pro habenda sanitate. Et hoc ipsamet vidit ; sed nescit utrum inde sanentur, vel non. Item, dicit quod audivit infirmi, quando possunt se levare, vadunt ad arborem pro spatiendo. Et est una magna arbor, vocata Fagus, unde venit mayum, le beau may ; et solebat pertinere domino Petro de Bourlemont, militi.
+Item, interrogata fuit de quadam arbore, existente prope villam ipsius. Ad quod respondit quod satis prope villam de Dompremi est quædam arbor, vocata Arbor Dominarum, et alii vocant eam Arborem Fatalium des Faées, juxta quam est unus fons ; et audivit dici quod infirmi febricitantes potant de illo fonte et vadunt quæsitum de aqua illius, pro habenda sanitate. Et hoc ipsamet vidit ; sed nescit utrum inde sanentur, vel non. Item, dicit quod audivit infirmi, quando possunt se levare, vadunt ad arborem pro spatiendo. Et est una magna arbor, vocata Fagus, unde venit mayum, le beau may ; et solebat pertinere domino Petro de Bourlemont, militi.
 
 # AI generated object relations based on first hand witness accounts
 
