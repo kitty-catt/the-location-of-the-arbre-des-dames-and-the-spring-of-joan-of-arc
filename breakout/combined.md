@@ -25,7 +25,18 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
-`prompt/tree-prompt.yaml` changed two ways this pass: five more
+`prompt/tree-prompt.yaml` changed one way this pass: two new entries,
+`vigne` and `la vigne des seigneurs`, were added to `object-model`. Neither
+is named in any `first-hand-snippets` entry — both appear only in the
+vocabulary list itself — so per rule 5(a) neither qualifies for a node;
+both are added to "Never named in a first-hand-snippet" below, alongside
+the pre-existing `vineyard` entry they're closely related to. No
+first-hand snippets changed, so no nodes, edges, or relation numbers move
+this pass.
+
+### Prior update (retained for history)
+
+`prompt/tree-prompt.yaml` changed two ways that pass: five more
 `object-model` entries were commented out, and one brand-new first-hand
 snippet was added (a new `document-reference`, `tome2livre7pieceK-5`, with
 one new snippet from witness Johannes Moen).
@@ -117,8 +128,13 @@ removals — is unchanged.
 `L’Arbre de la Pucelle`, `des ruines`, `Chapelle de notre dame de domremy`,
 `Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `the spring of the
 frogs`, `fontaine des grenouilles`, `fontaine aux Groselles`, `the ridge
-road on the west bank`, `vineyard`, `estate boundary`,
-`the slope to the top of the bois Chenu`, `the valley`, `the river meuse`.
+road on the west bank`, `vineyard`, `vigne`, `la vigne des seigneurs`,
+`estate boundary`, `the slope to the top of the bois Chenu`, `the valley`,
+`the river meuse`. (`vigne` and `la vigne des seigneurs` are new entries
+this pass — see "Change in this update" — and join `vineyard` for the same
+reason: none of the three is named in any first-hand snippet, only in the
+vocabulary list itself.)
+
 (`the spring of the frogs` and `fontaine des grenouilles` are both named
 only in a `general-reputation` editorial note speculating that "fontaine
 des Rains" might really mean "fontaine des grenouilles" — not a first-hand

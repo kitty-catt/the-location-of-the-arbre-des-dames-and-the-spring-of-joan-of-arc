@@ -15,16 +15,23 @@
 5. Audessus de la Fontaine aux Groselles
 
 ![Napoleonic-cadastre-fontaine](../images/fontaines-aux-groselles.png)
+![Napoleonic-cadastre-sous-la-pucelle](../images/sous-la-pucelle.png)
 
 ## Observations
 
 - The old ridge road ends stops where the basilique begins
 - The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
-- There is a patch of land next to the river Meuse called la Fontaine aux Groselles
+- There is a patch of land next to the river Meuse called "la Fontaine aux Groselles"
+- The old ridge road has a parcel called "sous la vigne des Seigneurs"
+- The old ridge road has a parcel called "sous la Pucelle"
+- The old ridge road has a parcel called "a la Pucelle"
+- Walking the old ridge road from Domremy to the plateau you will pass in order: "sous la vigne des Seigneurs" on your left, followed by "sous la Pucelle" on your left, and finally you end up at "a la Pucelle"
+
 
 ## Personal Thoughts
 
 - The ridge road could have been more to the west than the current D53
+- If the tree stood next to a vineyard as Montaigne wrote, this could have been "la vigne des Seigneurs"
 
 
 # What Claude Code thinks of it

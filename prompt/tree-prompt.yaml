@@ -38,7 +38,8 @@ user-prompt:
   - The ridge may have become narrow because a fountain washed out sand from the hill over centuries.
   - In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank because on the East Bank they may be welcomed with stones.
   - Jeanne's healing fountain is not necessarily the fountain that was mentioned by the witnesses, “fountain of the frogs”
-  
+  - If the tree stood next to a vineyard as Montaigne wrote, this could have been "la vigne des Seigneurs"
+
   obervation-list:
   - source: naudin-map
     remarks:
@@ -56,6 +57,10 @@ user-prompt:
     - The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
     - There is a patch of land next to the river Meuse called "la Fontaine aux Groselles"
     - The ridge road could have been more to the west than the current D53
+    - The old ridge road has a parcel called "sous la vigne des Seigneurs"
+    - The old ridge road has a parcel called "sous la Pucelle"
+    - The old ridge road has a parcel called "a la Pucelle"
+    - Walking the old ridge road from Domremy to the plateau you will pass in order: "sous la vigne des Seigneurs" on your left, followed by "sous la Pucelle" on your left, and finally you end up at "a la Pucelle"
   - source: LiDar Scan
     remarks:
     - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
@@ -86,6 +91,8 @@ object-model:
  - the road to Neufchâteau
  - the ridge road on the west bank
  - vineyard
+ - vigne
+ - la vigne des seigneurs
  - estate boundary
  - the Bourlemont estate
  - un Bois
