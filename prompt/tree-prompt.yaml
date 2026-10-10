@@ -212,6 +212,8 @@ document-refence-list:
   url: https://www.ste-jeannedarc.fr/condamnation/interro_public5.html
 - name: tome2livre7pieceK-5
   url: https://jeanne.wiki/ayroles-vraie-jeanne/tome2/livre7#tome2livre7pieceK-5
+- name: journal-dun-borgeois-de-paris
+  url: https://www.gutenberg.org/cache/epub/54182/pg54182-images.html#Page_267
 
 first-hand-snippets:
 - text: Il y avait chez nous un arbre que, depuis l’ancien temps, on nommait l’arbre des Dames. Les vieilles gens disaient qu’il était hanté des dames appelées fées. Cependant, je n’ai jamais ouï citer personne qui ait vu les fées.
@@ -385,6 +387,8 @@ first-hand-snippets:
   document-reference: tome2livre7pieceK-5
 
 general-reputation:
+- text: Item, vray est qu'elle disoit estre aagée environ de XVII ans [986], sans avoir honte que maugré pere et mere et parens et amis, que souvent alloit à une belle fontaine ou païs de Louraine, laquelle elle nommoit Bonne Fontaine aux Fées Nostre-Seigneur, et en cellui lieu tous ceulx du païs, quant ilz avoient fievres, ilz alloient pour recouvrer garison. Et là alloit souvent ladicte Jehanne la Pucelle soubz ung grant arbre qui la fontaine ombreoit, et s'apparurent à lui saincte Katherine et saincte Marguerite, qui lui dirent qu'elle allast à ung cappitaine que ilz lui nommerent [987], laquelle y alla sans prendre congié à pere ne à mere; lequel cappitaine la vesti en guise de homme, et l'arma et lui sainct l'espée, et lui bailla ung escuier et IIII varletz, et en ce point fut montée sur ung bon cheval. Et en ce point vint au roy de France et lui dist que du commendement de Dieu [988] estoit venue à lui, et qu'elle le feroit estre le plus grant signeur du monde, et qu'il fust ordonné que tretous ceulx qui lui desobeiroient fussent occis sans mercy, et que sainct Michel et plusieurs anges lui avoient baillé une coronne moult riche pour lui, et si avoit une espée en terre aussi pour lui, mais elle ne lui baudroit tant que sa guerre fust faillie [989]. Et tous les jours chevaulchoit avec le roy, à grant foison de gens d'armes, sans aucune femme, vestue, atachée et armée en guise de homme, ung gros baston en sa main, et quant aucun de ses 268gens mesprenoit, elle frappoit dessus de son baston grans coulz, en maniere de femme tres cruelle.
+  document-reference: journal-dun-borgeois-de-paris
 - text:  There is also a tree beside a vineyard which they call “l’arbre de la Pucelle,” but there is nothing remarkable about it. 
   document-reference: michel-montaigne
 - text: Le lieu où se dresse aujourd’hui la basilique Sainte Jeanne à Domrémy est connu depuis l’origine de l´épopée johannique. 
