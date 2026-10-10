@@ -136,50 +136,41 @@ object-model:
 
 candidate-locations:
 - name: current fontaine des Groseilliers
-  distance-from-Domremy: approximately 700 meters to the south of Domremy
-  distance-from-the-river: approximately 120 meters
   location: west bank of the meuse
   geolocation: 48.43540944638572, 5.67359974987573
   height: 909 ft
   elevation-above-the-river: 32 ft
 - name: la Fontaine aux Groselles
-  distance-from-Domremy: approximately 800 meters to the south of Domremy
-  distance-from-the-river: approximately 10 meters
   location: west bank of the meuse
   geolocation: 48.43403052445277, 5.6740496095353405
   height: 887 ft
   elevation-above-the-river: 1 ft  
+- name: the parcel of land called "sous la vigne des Seigneurs" on the old ridge road
+  location: west bank of the meuse
+  geolocation: 48.430925052080624, 5.671513237987132
+  height: 1022 ft
+  elevation-above-the-river: 136 ft
 - name: the shrubbery bushes between the calvaire and the current fountain of the Pucelle
-  distance-from-Domremy: approximately 1000 meters to the south of Domremy
-  distance-from-the-river: approximately 120 meters
   location: west bank of the meuse
   geolocation: 48.432359972489074, 5.672283784793448
   height: 965 ft
   elevation-above-the-river: 79 ft
 - name: the location of the basilique
-  distance-from-Domremy: 1500 meters
-  distance-from-the-river: approximately 550 meters
   location: west bank of the meuse  
   geolocation: 48.42812518793471, 5.669488065468301
   height: 1,103 ft
   elevation-above-the-river: 217 ft
 - name: Fontaine fiévreux
-  distance-from-Domremy: 1600 meters
-  distance-from-the-river: approximately 400 meters
   location: west bank of the meuse  
   geolocation: 48.42696530646268, 5.671810662798567
   height: 984 ft
   elevation-above-the-river: 98 ft 
 - name: south spot
   geolocation: 48.42496485738549, 5.668258634475983
-  distance-from-Domremy: 1900 meters
-  distance-from-the-river: approximately 550 meters
   location: west bank of the meuse
   height: 1,103 ft
   elevation-above-the-river: 217 ft
-- name: fountain washout at the plateau edge (north of basilique)
-  distance-from-Domremy: approximately 1400 meters to the south of Domremy
-  distance-from-the-river: approximately 460 meters
+- name: posssible start of fountain washout at the plateau edge (north of basilique) with downslope traces of water erosion
   location: west bank of the meuse
   geolocation: 48.428972, 5.670047
   height: 1,075 ft
