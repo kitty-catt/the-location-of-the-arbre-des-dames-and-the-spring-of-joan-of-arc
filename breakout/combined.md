@@ -25,7 +25,48 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
-`prompt/tree-prompt.yaml` changed one way this pass: two new entries,
+`prompt/tree-prompt.yaml` changed two ways this pass, both inside
+`first-hand-snippets`/`general-reputation`; `object-model` is unchanged.
+
+- **Seven new first-hand snippets** under a new `document-reference`,
+  `doncoeur-lanhers-documents` (the archaic-French clerk's minute of
+  Jeanne's interrogation, the same answers `interro_public3` carries). They
+  have no `who` field; they are Jeanne's own recorded answers ("Respond
+  que...", "Item, dit que...", "Interroguee... Respond que non") and are
+  attributed to her — a judgment call, see below. They add six new
+  relations (85–90), every one co-citing an edge that already exists, so
+  **no new node and no new edge** appears:
+  - 85, `Arbre des dames — fontaine fiévreux` (and a third direct statement
+    that the tree has the two names "l'arbre des Dames"/"l'arbre des Fees")
+  - 86, `fiévreux — fontaine fiévreux`
+  - 87, `Arbre des dames — malades`
+  - 88, `Arbre des dames — the Bourlemont estate`
+  - 89 and 90, `guirlande — Arbre des dames` ("chappeaux" in the branches)
+- **The Latin depositions moved out of `first-hand-snippets` into
+  `general-reputation`**: Gérardin d'Épinal (`dep_gerardin_epinal`),
+  Mengette (`dep_mengette`), Jean Morel (`dep_jean_morel`), the four Latin
+  `interro_public3` paragraphs, the Latin `interro_public5` saints and
+  mandrake paragraphs, and Johannes Moen (`tome2livre7pieceK-5`). Per rule 1
+  they no longer count as evidence.
+  - **`Fontem Rannorum` (`N14`) is dropped.** Its only first-hand mentions
+    were the Latin depositions; it is now named only in `general-reputation`
+    (and the editorial *ndlr*), so rule 5(a) fails. Relations 45
+    (`Arbre des dames — Fontem Rannorum`) and 79 (`fleur — Fontem
+    Rannorum`) are retired, not reassigned. `fleur` keeps its edges 66 and 67.
+  - **Relation 84** (Johannes Moen's Latin parallel) is retired. Its three
+    facts keep their French first-hand support: 14 (`un Bois`, `the road to
+    Neufchâteau`) and 81/83 (`fontaine`), so those edges stay, with the
+    label shrunk.
+  - Latin "parallel" quotes appended to relations 48, 52, 63, 68, 69 and 70
+    are removed; each relation stands on its French quote.
+
+Nothing is newly thick or newly green: every edge touched by 85–90 was
+already thick (the Jeanne-sourced attribution of the new snippets changes no
+line weight or colour).
+
+### Prior update (vigne additions)
+
+`prompt/tree-prompt.yaml` changed one way that pass: two new entries,
 `vigne` and `la vigne des seigneurs`, were added to `object-model`. Neither
 is named in any `first-hand-snippets` entry — both appear only in the
 vocabulary list itself — so per rule 5(a) neither qualifies for a node;
@@ -34,7 +75,7 @@ the pre-existing `vineyard` entry they're closely related to. No
 first-hand snippets changed, so no nodes, edges, or relation numbers move
 this pass.
 
-### Prior update (retained for history)
+### Earlier update (retained for history)
 
 `prompt/tree-prompt.yaml` changed two ways that pass: five more
 `object-model` entries were commented out, and one brand-new first-hand
@@ -83,9 +124,11 @@ removals — is unchanged.
 
 - **L’Arbre des dames** (merged with **L’Arbre des fées**, per rule 4) —
   two first-hand snippets each directly state the tree carries both names:
-  relation 5 (bibliotheque-monastique) and relation 48 (interro_public3,
-  French), *"il y avait un arbre appelé l'arbre des Dames ; d'autres
-  l'appelaient l'arbre des Fées."* That equivalence is itself the evidence,
+  relation 5 (bibliotheque-monastique), relation 48 (interro_public3,
+  French) and now relation 85 (doncoeur-lanhers-documents, archaic French:
+  *"l'arbre des Dames ; et les aultres l'appellent l'arbre des Fees"*),
+  *"il y avait un arbre appelé l'arbre des Dames ; d'autres l'appelaient
+  l'arbre des Fées."* That equivalence is itself the evidence,
   so it is recorded as one merged node (keeping the dominant label
   `L'Arbre des dames`/`N1`) rather than drawn as two nodes joined by an
   identity edge. Bare/unqualified references ("l'arbre," "cet arbre") and
@@ -93,10 +136,6 @@ removals — is unchanged.
   most-recently-named rule, unchanged.
 - **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux Rains**
   — each is named outright in a snippet, each tied to the tree.
-- **Fontem Rannorum** — the Latin name three witness depositions
-  (Gérardin d'Épinal, Mengette, Jean Morel) use for the fountain the young
-  people walk back to from the tree; kept as its own node rather than folded
-  into `fontaine aux Rains` (see judgment calls below).
 - **the road to Neufchâteau**, **the Bourlemont estate**, **un Bois** — named
   outright, each tied to the tree.
 - **Les saintes** — named outright, tied to `fontaine fiévreux` via Jeanne
@@ -126,14 +165,16 @@ removals — is unchanged.
 ### Never named in a first-hand-snippet
 
 `L’Arbre de la Pucelle`, `des ruines`, `Chapelle de notre dame de domremy`,
-`Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `the spring of the
-frogs`, `fontaine des grenouilles`, `fontaine aux Groselles`, `the ridge
-road on the west bank`, `vineyard`, `vigne`, `la vigne des seigneurs`,
-`estate boundary`, `the slope to the top of the bois Chenu`, `the valley`,
-`the river meuse`. (`vigne` and `la vigne des seigneurs` are new entries
-this pass — see "Change in this update" — and join `vineyard` for the same
-reason: none of the three is named in any first-hand snippet, only in the
-vocabulary list itself.)
+`Hordal chapel`, `Basilique`, `fontaine de l’Ermite`, `Fontem Rannorum`,
+`the spring of the frogs`, `fontaine des grenouilles`, `fontaine aux
+Groselles`, `the ridge road on the west bank`, `vineyard`, `vigne`, `la
+vigne des seigneurs`, `estate boundary`, `the slope to the top of the bois
+Chenu`, `the valley`, `the river meuse`. (`vigne` and `la vigne des
+seigneurs` join `vineyard` because none of the three is named in any
+first-hand snippet, only in the vocabulary list itself. `Fontem Rannorum`
+is newly here: its only first-hand mentions were the Latin depositions,
+which moved to `general-reputation` this pass — see "Change in this
+update".)
 
 (`the spring of the frogs` and `fontaine des grenouilles` are both named
 only in a `general-reputation` editorial note speculating that "fontaine
@@ -297,8 +338,36 @@ relation-number labels on `L'Arbre des dames — fontaine fiévreux` (5,7,29,48
 — previously also 8), `fontaine fiévreux — Les saintes` (7,52 — previously
 also 9), and `fiévreux — fontaine fiévreux` (26,49 — previously also 28).
 
+### Latin depositions relocated to general-reputation (rule 1)
+
+The Latin texts of Gérardin d'Épinal, Mengette and Jean Morel, the Latin
+paragraphs of `interro_public3` and `interro_public5` (including the
+"Arbor Dominarum"/"Fagus"/"fons" tree paragraph and the "Nemus-quercosum"
+paragraph), and Johannes Moen's Latin deposition now sit under
+`general-reputation`, so none is evidence. Only `Fontem Rannorum`, relation
+45, relation 79 and relation 84 depended on them alone (see "Change in this
+update"); every other fact they carried is independently stated in a French
+first-hand snippet already cited.
+
 ## Judgment calls
 
+- **The new `doncoeur-lanhers-documents` snippets carry no `who` field.**
+  Attributing them to Jeanne rests on their content: each is a clerk's
+  third-person record of her answer ("Respond que...", "Item, dit
+  que...", "Interroguee... Respond que non"), word-for-word the archaic
+  French that `interro_public3` records with `who: Jeanne D'Arc`. They are
+  not Article-of-Accusation prose (rule 2). Every edge they support was
+  already thick, so a different call would change no line weight or colour,
+  only the "(Jeanne D'Arc)" tags on 85–90.
+- **Three of the seven new snippets draw nothing**: "ne veit jamais fee"
+  (`fées` is not in `object-model`), the one about dancing near the tree,
+  and the one about her brother ("l'arbre et es fees") name no second
+  included entity. In relation 90, "celles qui luy apparoyent" is not
+  stated to be `Les saintes`, so no edge to them is drawn.
+- **"chappeaulx"/"chappeaux" read as `guirlande`**, same call as the earlier
+  "couronnes"/"chappeaux" (relation 63): no separate vocabulary slot, same
+  act of placing wreaths in the tree.
+- **"nommé fou" in relation 87/88** folds to the tree, as "le Fou"/"fau" did.
 - Whether the two snippets above are truly the judges'/promoter's own
   words, as opposed to a further unnamed witness deposition, is itself a
   judgment call: the yaml gives no explicit "speaker" tag. The call rests
@@ -345,11 +414,10 @@ also 9), and `fiévreux — fontaine fiévreux` (26,49 — previously also 28).
   is plural/unqualified and does *not* get this treatment — it is now
   drawn to the new bare `fontaine` node (`N19`) instead, rather than left
   undrawn as before.
-- **`Fontem Rannorum` kept separate from `fontaine aux Rains`** — almost
-  certainly the same real fountain (even Gérardin d'Épinal's own
-  French-summarized testimony describes the identical scene as "la
-  fontaine des Rains"), but no single snippet states that equivalence, and
-  `object-model` lists them as distinct entries, so they stay two nodes.
+- **`Fontem Rannorum` vs `fontaine aux Rains`** — moot this pass:
+  `Fontem Rannorum` has no first-hand mention and no node. Recorded in case
+  the Latin depositions return to `first-hand-snippets`; no snippet stated
+  the equivalence, so they would again start as two nodes.
 - **Confirmed-synonym collapsing (rule 4).** `L'Arbre des dames`/`L'Arbre
   des fées` collapse into one node (relations 5, 48) because a snippet
   directly states the equivalence. The prior two passes' second merge —
@@ -363,10 +431,9 @@ also 9), and `fiévreux — fontaine fiévreux` (26,49 — previously also 28).
   `Fagus` has no node to be separate *from* — recorded here in case any of
   `Arbor Dominarum`/`Arborem Fatalium des Faées`/`Fagus` returns to
   `object-model` in a future pass.
-- **Dep_mengette's "ad lobias dominarum"** is judgment-called as matching
-  the French "aux Loges-les-Dames" phrasing (which has no vocabulary slot
-  and folds to `N1`), so relation 45 (`L'Arbre des dames — Fontem
-  Rannorum`) is unaffected by this pass's vocabulary removal. The spelling
+- **Dep_mengette's "ad lobias dominarum"** was judgment-called as matching
+  the French "aux Loges-les-Dames" phrasing; Mengette's deposition is now in
+  `general-reputation`, so relation 45 is retired and the call is moot. The spelling
   variants that used to be judgment-called the other way — Gérardin
   d'Épinal's "l'obre dominarum" and Jean Morel's "arbore que dicitur
   dominarum," as naming `Arbor Dominarum` rather than the French cluster —
@@ -417,7 +484,6 @@ graph TD
     N9["Les saintes"]
     N10["fiévreux"]
     N11["malades"]
-    N14["Fontem Rannorum"]
     N19["fontaine"]
     N24["eau"]
     N26["guirlande"]
@@ -429,20 +495,18 @@ graph TD
     N36["le Bois Chenu"]
 
     N1 -- "1,2,3,4" --- N3
-    N1 == "5,7,29,48" === N4
-    N1 == "6,51" === N7
+    N1 == "5,7,29,48,85" === N4
+    N1 == "6,51,88" === N7
     N4 == "7,52" === N9
-    N4 == "26,49" === N10
-    N1 == "27,50" === N11
+    N4 == "26,49,86" === N10
+    N1 == "27,50,87" === N11
     N1 -- "10,11,12,13,15,16,17,18,19,20,21,22,23,24,25" --- N5
-    N1 -- "12,14,84" --- N6
-    N1 -- "14,84" --- N8
-    N1 -- "45" --- N14
-    N29 -- "79" --- N14
-    N1 -- "81,83,84" --- N19
+    N1 -- "12,14" --- N6
+    N1 -- "14" --- N8
+    N1 -- "81,83" --- N19
     N4 == "58" === N24
     N5 -- "59" --- N24
-    N1 == "61,62,63" === N26
+    N1 == "61,62,63,89,90" === N26
     N26 == "61,63" === N27
     N1 -- "66" --- N29
     N5 -- "67" --- N29
@@ -541,12 +605,11 @@ graph TD
 
 *(Relation 36 — le curé — Arbre des dames; le curé — fontaine aux Rains, from Béatrice's deposition — is retired: `le curé` left `object-model` this pass, see "No longer in the fixed vocabulary.")*
 
-*(Relations 44 and 47 — Arbor Dominarum — Fontem Rannorum, from Gérardin d'Épinal's and Jean Morel's Latin depositions — are retired: `Arbor Dominarum` left `object-model` this pass, see "No longer in the fixed vocabulary." `Fontem Rannorum` keeps its remaining edges, 45 and 79.)*
+*(Relations 44 and 47 — Arbor Dominarum — Fontem Rannorum, from Gérardin d'Épinal's and Jean Morel's Latin depositions — are retired: `Arbor Dominarum` left `object-model`, see "No longer in the fixed vocabulary.")*
 
-45. **Arbre des dames — Fontem Rannorum.** Mengette's Latin deposition names the tree "ad lobias dominarum" (matching the French "aux Loges-les-Dames," which has no vocabulary slot and folds to `L'Arbre des dames`), and has the group drink at Fontem Rannorum after eating under it.
-    *"Et postea veniebant bibitum ad fontem rannorum."* (dep_mengette, Mengette).
+*(Relation 45 — Arbre des dames — Fontem Rannorum, from Mengette's Latin deposition — is retired: that deposition moved to `general-reputation` and `Fontem Rannorum` has no first-hand mention left, see "Latin depositions relocated to general-reputation.")*
 
-48. **Arbre des dames — fontaine fiévreux** (and restates the tree's two names are the same, co-citing relation 5's node merge). *(Jeanne D'Arc — thick edge)* The condemnation-trial minute records Jeanne's answer that the tree has two names, with a fountain immediately beside it — the same facts as relation 5, from a different document. The parallel Latin ("Arbor Dominarum"/"Arborem Fatalium des Faées"/"fons") used to be drawn as relation 73 on a separate `Arbor Dominarum`/`fons` cluster; both names left `object-model` this pass, so relation 73 is retired and no Latin parallel is drawn for this fact — see "No longer in the fixed vocabulary" and judgment calls.
+48. **Arbre des dames — fontaine fiévreux** (and restates the tree's two names are the same, co-citing relation 5's node merge). *(Jeanne D'Arc — thick edge)* The condemnation-trial minute records Jeanne's answer that the tree has two names, with a fountain immediately beside it — the same facts as relation 5, from a different document. The Latin parallel ("Arbor Dominarum"/"Arborem Fatalium des Faées"/"fons", former relation 73) is retired and now sits in `general-reputation`.
     *"...assez près de Domrémy, il y a certain arbre appelé l'Arbre des Dames, et les autres l'appellent l'Arbre des Fées ; auprès est une fontaine."* (interro_public3, from Jeanne D'Arc). Parallel archaic French: *"...se appelle l'arbre des Dames ; et les aultres l'appellent l'arbre des Fees ; et auprez a une fontaine..."* (interro_public3).
 
 49. **fiévreux — fontaine fiévreux.** *(Jeanne D'Arc — thick edge)* The same minute records Jeanne's answer that feverish people drink from that fountain to recover health — the same fact as relation 26, from a different document.
@@ -589,14 +652,12 @@ graph TD
     *"...autour s'amusent à cueillir des fleurs."* (questionnaire-lorraine, Jean Morel).
 
 68. **maison — le Bois Chenu.** *(Jeanne D'Arc — thick edge)* Jeanne states the wood is visible from her father's house door — the relationship that pulls both entities into the diagram.
-    *"il y a un bois chenu qu'on voit de l'huis de sa maison de son père ; et n'y a pas la distance qu'une demi-lieue."* (interro_public3, from Jeanne D'Arc). Parallel Latin: *"...quod videtur ab ostio patris sui..."*; archaic French: *"...que on voit de l'huys de son pere..."* (interro_public3).
+    *"il y a un bois chenu qu'on voit de l'huis de sa maison de son père ; et n'y a pas la distance qu'une demi-lieue."* (interro_public3, from Jeanne D'Arc). Parallel archaic French: *"...que on voit de l'huys de son pere..."* (interro_public3).
 
 69. **mandragore — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Jeanne states a mandrake lies in the ground near the tree.
-    *"elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné."* (interro_public5, from Jeanne D'Arc). Parallel Latin: *"...in terra, prope illam arborem de qua superius dictum est..."* (interro_public5).
-
+    *"elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné."* (interro_public5, from Jeanne D'Arc).
 70. **coudrier — mandragore.** *(Jeanne D'Arc — thick edge)* Jeanne states a hazel grows above the mandrake.
-    *"Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier."* (interro_public5, from Jeanne D'Arc). Parallel Latin: *"...supra illam mandragoram est una corylus."* (interro_public5).
-
+    *"Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier."* (interro_public5, from Jeanne D'Arc).
 *(Relations 71 and 72 — croix — le curé, and évangile — Arbre des dames; évangile — le curé, both from Béatrice's deposition — are retired: `le curé` and `évangile` both left `object-model` this pass. `croix` has no other stated relationship and is dropped as isolated — see judgment calls.)*
 
 *(Relations 73, 74, 75, and 76 — Arbor Dominarum — fons, fiévreux — fons, malades — Arbor Dominarum, and mai — Arbor Dominarum — are retired: `Arbor Dominarum`, `fons`, and `mai` all left `object-model` this pass. `fiévreux` and `malades` keep their other edges, 26/49 and 27/50 respectively.)*
@@ -605,8 +666,7 @@ graph TD
 
 *(Relation 78 — pain/vin — Arbor Dominarum, from Gérardin d'Épinal's Latin deposition — is retired: all three named entities left `object-model` this pass.)*
 
-79. **fleur — Fontem Rannorum.** Jean Morel's Latin deposition has the group pick flowers around Fontem Rannorum on the way back.
-    *"...et circumcirca ludendo flores colligunt."* (dep_jean_morel, Jean Morel).
+*(Relation 79 — fleur — Fontem Rannorum, from Jean Morel's Latin deposition — is retired: the deposition moved to `general-reputation` and `Fontem Rannorum` has no node. `fleur` keeps 66 and 67.)*
 
 *(Relation 80 — Les saintes — fons — is retired: `fons` left `object-model` this pass. `Les saintes` keeps its other edge, 7/52.)*
 
@@ -618,8 +678,25 @@ graph TD
 83. **Arbre des dames — fontaine.** Jean Waterin has the group go, on the way back from the tree, to the fountain aux Rains "or sometimes other fountains" (plural/unqualified).
     *"...puis au retour vont à la fontaine des Rains ou parfois à d'autres fontaines, et boivent."* (questionnaire-lorraine, Jean Waterin).
 
-84. **Arbre des dames — un Bois; Arbre des dames — the road to Neufchâteau; Arbre des dames — fontaine.** Johannes Moen's Latin deposition — the Latin parallel of Jean Moen's French testimony, relations 14 and 81, from a different document — places the tree near a wood, beside the great road to Neufchâteau, and has the village children go to drink at "the fountains" near the tree (plural/unqualified).
-    *"...arbor articulata est subtus nemus, juxta magnum iter per quod itur ad NovumCastrum ; et pueri et puellæ dictæ villæ, annis singulis communiter in dicto dominico des Fontaines, solent ire ad spatiandum subtus illam arborem, et ibidem comedunt jocose, et vadunt ad fontes juxta illam arborem ad bibendum."* (tome2livre7pieceK-5, Johannes Moen).
+*(Relation 84 — Johannes Moen's Latin parallel of relations 14 and 81 — is retired: it moved to `general-reputation`. Those edges keep 14 and 81.)*
+
+85. **Arbre des dames — fontaine fiévreux** (and a third direct statement that "l'arbre des Dames"/"l'arbre des Fees" are one tree — see node merge). *(Jeanne D'Arc — thick edge)* The archaic-French minute records Jeanne placing a fountain beside the tree.
+    *"...assez prez de Dompremy d'ung arbre qui [un blanc] se appelle l'arbre des Dames ; et les aultres l'appellent l'arbre des Fees ; et auprez a une fontaine..."* (doncoeur-lanhers-documents, Jeanne D'Arc — attribution is a judgment call, see above).
+
+86. **fiévreux — fontaine fiévreux.** *(Jeanne D'Arc — thick edge)* Same minute: the sick of fevers drink from that fountain.
+    *"...et a ouy dire que les gens malades des fiebvrez en boyvent ; et mesmes en a veu aller quérir pour en guarir."* (doncoeur-lanhers-documents, Jeanne D'Arc).
+
+87. **Arbre des dames — malades.** *(Jeanne D'Arc — thick edge)* Same minute: the sick, once able to rise, go to the tree to amuse themselves.
+    *"...les malades, quand ilz se pevent lever, vont a l'arbre pour leur esbattre..."* (doncoeur-lanhers-documents, Jeanne D'Arc).
+
+88. **Arbre des dames — the Bourlemont estate.** *(Jeanne D'Arc — thick edge)* Same minute: the tree ("nommé fou") used to belong to Pierre de Bolemont.
+    *"...c'est ung grand arbre, nommé fou, dont vient de beau may ; et souloit estre a messyre Pierre de Bolemont."* (doncoeur-lanhers-documents, Jeanne D'Arc).
+
+89. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same minute: she saw young girls put "chappeaux" in the tree's branches, and put some there herself.
+    *"...elle avoit veu mectre es branches dudit arbre des chappeaux par les jeunes filles ; et elle mesmes y en a mys avecques les aultres filles."* (doncoeur-lanhers-documents, Jeanne D'Arc).
+
+90. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same minute: asked about putting "chappeaulx en l'arbre."
+    *"Interroguee, quand elle metoit chappeaulx en l'arbre, se elle les metoit en l'honneur de celles qui luy apparoyent, Respond que non."* (doncoeur-lanhers-documents, Jeanne D'Arc).
 
 ## Jeanne-sourced coloring
 
@@ -628,21 +705,21 @@ thick (Jeanne-D'Arc-sourced) edge, per rule 9. This is purely derived from
 which edges are already thick.
 
 - **L'Arbre des dames** (`N1`, merged with `L'Arbre des fées`) *(green)*.
-  Endpoint of many thick edges, including 5/7/29/48 to `fontaine fiévreux`,
-  6/51 to `the Bourlemont estate`, 27/50 to `malades`, 61/63 to
-  `guirlande`, 69 to `mandragore`.
-- **fontaine fiévreux** (`N4`) *(green)*. Endpoint of thick edges 5/7/29/48
-  (to `N1`), 7/52 (to `Les saintes`), 26/49 (to `fiévreux`), and 58 (to
+  Endpoint of many thick edges, including 5/7/29/48/85 to `fontaine
+  fiévreux`, 6/51/88 to `the Bourlemont estate`, 27/50/87 to `malades`,
+  61/63/89/90 to `guirlande`, 69 to `mandragore`.
+- **fontaine fiévreux** (`N4`) *(green)*. Endpoint of thick edges 5/7/29/48/85
+  (to `N1`), 7/52 (to `Les saintes`), 26/49/86 (to `fiévreux`), and 58 (to
   `eau`).
-- **the Bourlemont estate** (`N7`) *(green)*. Its edge is relation 6/51
+- **the Bourlemont estate** (`N7`) *(green)*. Its edge is relation 6/51/88
   (to `N1`).
 - **Les saintes** (`N9`) *(green)*. Its edge is relation 7/52 (to `N4`).
-- **fiévreux** (`N10`) *(green)*. Its edge is relation 26/49 (to `N4`).
-- **malades** (`N11`) *(green)*. Its edge is relation 27/50 (to `N1`).
+- **fiévreux** (`N10`) *(green)*. Its edge is relation 26/49/86 (to `N4`).
+- **malades** (`N11`) *(green)*. Its edge is relation 27/50/87 (to `N1`).
 - **eau** (`N24`) *(green)*. Endpoint of thick edge 58 (to `N4`); its
   other edge, 59 (to `fontaine aux Rains`), is normal.
-- **guirlande** (`N26`) *(green)*. Endpoint of thick edges 61/63 (to `N1`
-  and to `image`); its other citation, 62, is normal.
+- **guirlande** (`N26`) *(green)*. Endpoint of thick edges 61/63/89/90 (to
+  `N1`; 61/63 also to `image`); its other citation, 62, is normal.
 - **image** (`N27`) *(green)*. Its edges, to `N26`, are relations 61/63.
 - **maison** (`N30`) *(green)*. Its only edge, to `N36`, is relation 68.
 - **mandragore** (`N31`) *(green)*. Endpoint of thick edge 69 (to `N1`)
@@ -651,7 +728,7 @@ which edges are already thick.
 - **le Bois Chenu** (`N36`) *(green)*. Its only edge, to `N30`, is
   relation 68.
 - **fontaine des Groseilliers** (`N3`), **fontaine aux Rains** (`N5`), **the
-  road to Neufchâteau** (`N6`), **Fontem Rannorum** (`N14`), **un Bois**
+  road to Neufchâteau** (`N6`), **un Bois**
   (`N8`), **fontaine** (`N19`), **fleur** (`N29`)
   *(default styling)*. None of their edges are thick — every relation
   touching them comes from a named witness other than Jeanne, so they stay
