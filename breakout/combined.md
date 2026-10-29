@@ -25,9 +25,32 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
+`prompt/tree-prompt.yaml` changed in `object-model` only; no snippet changed.
+Four entries are now current again or new: `le curé`, `évangile` (both
+un-commented), `hêtre` (newly added; `Fagus` stays commented out), and
+`croix` (already current, now un-isolated). Per rule 5, nodes exist for
+current entries, so:
+
+- **`le curé` (`N13`), `évangile` (`N34`), `croix` (`N33`) return** with
+  their original numbers. Relations 36, 71, 72 and 82, retired two passes
+  ago, are restored on Béatrice's rogation sentence ("quand le curé porte
+  les croix par les champs, il va lui aussi sous cet arbre et y chante
+  l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines").
+- **`hêtre` (`N38`) is new**, with relations 95 (Bertrand Lacloppe) and 96
+  (Jeanne, 24 February summary), both to the tree.
+- **Two new relations, 97 and 98**, draw `évangile` to `fontaine aux Rains`
+  and to bare `fontaine` ("ainsi qu'à la fontaine aux Rains et aux autres
+  fontaines"). The earlier pass drew only the tree and `le curé` edges from
+  this sentence; the rest are directly stated too.
+- **Newly green: `hêtre`** (thick edge 96). `le curé`, `évangile` and
+  `croix` have only normal edges, so they stay default.
+- No existing edge changed weight or colour.
+
+### Prior update (24 February snippet)
+
 `prompt/tree-prompt.yaml` gained **one new `first-hand-snippets` entry**
-(`document-reference` key spelled `document-references`, value
-`condamnation-24-fevrier`, plus a new `document-refence-list` entry for it).
+(`document-reference: condamnation-24-fevrier`; the key was first typed
+`document-references` and has since been corrected, plus a new `document-reference-list` entry for it).
 It is a third-person summary of Jeanne's 24 February 1431 answers ("Dit avoir
 vu des malades guérir de l'eau de la fontaine... que l'arbre était un grand
 hêtre qui appartenait au chevalier Pierre de Bourlemont..."). It is kept and
@@ -43,7 +66,7 @@ unchanged. It adds four relations (91–94):
 No new nodes. **Newly green: `fontaine` (`N19`)** — it is now an endpoint of
 thick edges 91. Every other touched edge was already thick.
 
-### Prior update (retained for history)
+### Earlier update (Latin depositions and doncoeur snippets)
 
 `prompt/tree-prompt.yaml` changed two ways that pass, both inside
 `first-hand-snippets`/`general-reputation`; `object-model` is unchanged.
@@ -84,7 +107,7 @@ Nothing is newly thick or newly green: every edge touched by 85–90 was
 already thick (the Jeanne-sourced attribution of the new snippets changes no
 line weight or colour).
 
-### Earlier update (vigne additions)
+### Older update (vigne additions)
 
 `prompt/tree-prompt.yaml` changed one way that pass: two new entries,
 `vigne` and `la vigne des seigneurs`, were added to `object-model`. Neither
@@ -164,6 +187,15 @@ removals — is unchanged.
   states they go to the fountain beside the tree to recover their health.
 - **malades** — named outright in Jeanne d'Arc's testimony, which states
   they go to the tree itself to amuse themselves once recovered.
+- **le curé** (`N13`), **évangile** (`N34`), **croix** (`N33`) — Béatrice's
+  rogation sentence (relations 36, 71, 72, 82, 97, 98): the curé carries the
+  croix through the fields, goes under the tree and sings the évangile
+  there, and likewise at the fontaine aux Rains and "aux autres fontaines."
+  These return after being retired when `le curé` and `évangile` left
+  `object-model`.
+- **hêtre** (`N38`) — Lacloppe and Jeanne's 24 February summary both state
+  the tree is a beech (relations 95, 96). Kept as its own node, not
+  collapsed into the tree — see judgment calls.
 - **fontaine** (bare, `N19`) — Jean Moen's and Jean Waterin's unqualified
   "fontaines" (81, 83) and now Jeanne's "la fontaine" in the 24 February
   summary (91), tied to `malades` and `eau`.
@@ -235,13 +267,6 @@ time, the same treatment the bare `L'Arbre` entry has always had.
   pèlerinage de Notre-Dame de Bermont." Neither snippet states any relation
   between this place and the tree, a fountain, or any other included
   entity. Dropped rather than drawn as an unconnected node.
-- **croix** — named first-hand in Béatrice's deposition ("quand le curé
-  porte les croix par les champs..."), and its one stated relationship
-  (relation 71, `croix — le curé`) used to qualify it for inclusion. `le
-  curé` left `object-model` this pass (see "No longer in the fixed
-  vocabulary"), so that relationship is now to an excluded entity, and
-  `croix` has no other stated relationship to any remaining included
-  entity. Dropped as isolated — see judgment calls.
 - **cierge** — named once, in Jean Waterin's deposition: "Elle portait
   souvent des cierges et allait au pèlerinage de Notre-Dame de Bermont."
   This ties cierges to Jeanne herself (not an `object-model` entity) and
@@ -295,7 +320,9 @@ time, the same treatment the bare `L'Arbre` entry has always had.
 - **`vin`** — removed from `object-model` in a prior pass. Node `N21` is
   retired, not reassigned, taking relations 53, 54, 55, and 78 with it
   (shared with `pain`, above).
-- **`Fagus`** — survived last pass's `Arbor Dominarum`/`Arborem Fatalium
+- **`Fagus`** — still commented out (its Latin mentions are only in
+  `general-reputation`); the French `hêtre` now covers the beech. History:
+  it survived an earlier pass's `Arbor Dominarum`/`Arborem Fatalium
   des Faées` removal as a standalone node (`N37`), but is itself removed
   from `object-model` this pass. `N37` is retired, not reassigned, taking
   its only relation, 77 (`the Bourlemont estate — Fagus`), with it. `the
@@ -303,15 +330,8 @@ time, the same treatment the bare `L'Arbre` entry has always had.
 - **`prêtre`** — removed from `object-model` this pass; was already
   excluded as isolated before removal, the same treatment `esprit malin`
   already got.
-- **`le curé`** — removed from `object-model` this pass. Node `N13` is
-  retired, not reassigned, taking relations 36 (`le curé — Arbre des
-  dames; le curé — fontaine aux Rains`), 71 (`croix — le curé`), and 82
-  (`le curé — fontaine`) with it. This also cascades `croix` into isolation
-  — see "Named first-hand, but dropped as isolated" and judgment calls.
-- **`évangile`** — removed from `object-model` this pass. Node `N34` is
-  retired, not reassigned, taking relation 72 (`évangile — Arbre des
-  dames; évangile — le curé`) with it — doubly dead, since `le curé` left
-  too.
+- **`le curé`** and **`évangile`** — were removed in an earlier pass; both
+  are back in `object-model` this pass (see "Included entities").
 - **`nappe`** — removed from `object-model` this pass. Node `N25` is
   retired, not reassigned, taking relation 60 (`nappe — Arbre des dames`)
   with it.
@@ -375,8 +395,7 @@ first-hand snippet already cited.
 ## Judgment calls
 
 - **`condamnation-24-fevrier` snippet: Jeanne's answers, not the judges'
-  assertion.** It has no `who` field and its key is misspelled
-  `document-references`. It is a reported-speech summary ("Dit avoir vu...
+  assertion.** It has no `who` field. It is a reported-speech summary ("Dit avoir vu...
   qu'elle y jouait... qu'elle ne vit jamais rien... qu'elle-même ignore si
   c'était vrai ou non"), recording her own denials and hedges — not
   Article-of-Accusation prose ("Item ladite Jeanne avait coutume..."). It is
@@ -496,20 +515,35 @@ first-hand snippet already cited.
   vont plus" was never drawn as an `évangile — arbre` edge**, for the same
   reason as `château`: it states a causal/temporal sequence (the gospel
   being read *causes* the fées to stop visiting), not that the gospel
-  reading happens at the tree. Moot now that `évangile` has left
-  `object-model` entirely, but recorded for the historical record.
+  reading happens at the tree. Still undrawn now that `évangile` is back:
+  the only `évangile` edges are Béatrice's (72, 97, 98).
 - **`maison`/`le Bois Chenu` un-isolation.** This was the first time this
   diagram's rule 5(b) test flipped an entity from isolated to included
   purely because a *later* vocabulary addition supplied the missing
   relationship — worth flagging since it demonstrates rule 5 is sensitive
   to the current state of `object-model`, not a fixed historical judgment.
-- **`croix` re-isolation — the mirror image of the above.** `le curé` left
-  `object-model` this pass, taking relation 71 (`croix — le curé`) with
-  it; `croix` has no other first-hand-stated relationship to any included
-  entity, so rule 5(b) now drops it the opposite direction: an entity can
-  flip from included back to isolated when a vocabulary change removes its
-  only relationship partner, not just when one is added. See "Named
-  first-hand, but dropped as isolated."
+- **`croix` un-isolated again.** It was dropped when `le curé` left
+  `object-model`, its only relationship partner. With `le curé` back,
+  relation 71 (`croix — le curé`) qualifies it, so it returns as `N33`.
+  `croix` has no edge of its own to the tree or a fountain: Béatrice says
+  the curé carries the croix through the fields, not that the croix is at
+  the tree.
+- **`hêtre` is a separate node, not folded into the tree.** "Est un hêtre"
+  (95) and "un grand hêtre" (96) state the species of the tree, not that two
+  names refer to one entity (rule 4), so `hêtre` is drawn as its own node
+  with an edge to `L'Arbre des dames`. Folding it in would erase the
+  species fact. `Fagus` stays out, since only Latin text names it.
+- **Béatrice's rogation sentence: who goes where.** The grammatical subject
+  of "il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la
+  fontaine aux Rains et aux autres fontaines" is the curé. Edges 36, 82
+  (curé to tree/fountains) and 72, 97, 98 (évangile to tree/fountains)
+  rest on "y chante l'évangile ... ainsi qu'à" reading as "also sings the
+  gospel at the fountain aux Rains and the other fountains." "Aux autres
+  fontaines" goes to the bare `fontaine` node, as with Jean Waterin (83).
+  The earlier retired relation 72 drew `évangile — le curé` too; that
+  edge is kept because the gospel is sung by the curé in the same clause.
+  Whether the curé's route went from tree to fountains or the reverse is
+  not stated and no direction is drawn.
 
 Each edge is labeled with the number(s) of the matching relation(s) listed
 below. Where more than one first-hand snippet supports the same edge, the
@@ -529,6 +563,7 @@ graph TD
     N9["Les saintes"]
     N10["fiévreux"]
     N11["malades"]
+    N13["le curé"]
     N19["fontaine"]
     N24["eau"]
     N26["guirlande"]
@@ -537,7 +572,10 @@ graph TD
     N30["maison"]
     N31["mandragore"]
     N32["coudrier"]
+    N33["croix"]
+    N34["évangile"]
     N36["le Bois Chenu"]
+    N38["hêtre"]
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48,85" === N4
@@ -561,8 +599,17 @@ graph TD
     N11 == "91" === N19
     N24 == "91" === N19
     N11 == "91" === N24
+    N13 -- "36" --- N1
+    N13 -- "36" --- N5
+    N13 -- "82" --- N19
+    N33 -- "71" --- N13
+    N34 -- "72" --- N1
+    N34 -- "72" --- N13
+    N34 -- "97" --- N5
+    N34 -- "98" --- N19
+    N1 == "95,96" === N38
 
-    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36,N38 jeanneSourced
 ```
 
 ## Numbered relations
@@ -651,7 +698,8 @@ graph TD
 
 *(Relations 30, 31, 32, 34, 35, and 37–43 — all `fées — Arbre des dames` edges — and relation 46 are retired: `fées` was removed from `object-model`.)*
 
-*(Relation 36 — le curé — Arbre des dames; le curé — fontaine aux Rains, from Béatrice's deposition — is retired: `le curé` left `object-model` this pass, see "No longer in the fixed vocabulary.")*
+36. **le curé — Arbre des dames; le curé — fontaine aux Rains.** Béatrice has the curé go to the tree and to the fountain on the eve of the Ascension.
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
 
 *(Relations 44 and 47 — Arbor Dominarum — Fontem Rannorum, from Gérardin d'Épinal's and Jean Morel's Latin depositions — are retired: `Arbor Dominarum` left `object-model`, see "No longer in the fixed vocabulary.")*
 
@@ -706,7 +754,11 @@ graph TD
     *"elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné."* (interro_public5, from Jeanne D'Arc).
 70. **coudrier — mandragore.** *(Jeanne D'Arc — thick edge)* Jeanne states a hazel grows above the mandrake.
     *"Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier."* (interro_public5, from Jeanne D'Arc).
-*(Relations 71 and 72 — croix — le curé, and évangile — Arbre des dames; évangile — le curé, both from Béatrice's deposition — are retired: `le curé` and `évangile` both left `object-model` this pass. `croix` has no other stated relationship and is dropped as isolated — see judgment calls.)*
+71. **croix — le curé.** Béatrice has the curé carry the crosses through the fields.
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
+
+72. **évangile — Arbre des dames; évangile — le curé.** The curé sings the gospel under the tree.
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
 
 *(Relations 73, 74, 75, and 76 — Arbor Dominarum — fons, fiévreux — fons, malades — Arbor Dominarum, and mai — Arbor Dominarum — are retired: `Arbor Dominarum`, `fons`, and `mai` all left `object-model` this pass. `fiévreux` and `malades` keep their other edges, 26/49 and 27/50 respectively.)*
 
@@ -721,7 +773,8 @@ graph TD
 81. **Arbre des dames — fontaine.** Jean Moen has the village youths go to "the fountains near this tree" to drink — plural/unqualified, so drawn to the new bare `fontaine` node rather than any single named spring. Co-cited by relation 83.
     *"vont aux fontaines près de cet arbre pour boire."* (questionnaire-lorraine, Jean Moen).
 
-*(Relation 82 — le curé — fontaine, from Béatrice's deposition — is retired: `le curé` left `object-model` this pass.)*
+82. **le curé — fontaine.** The curé also goes to "les autres fontaines" (plural, unqualified, so the bare `fontaine` node).
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
 
 83. **Arbre des dames — fontaine.** Jean Waterin has the group go, on the way back from the tree, to the fountain aux Rains "or sometimes other fountains" (plural/unqualified).
     *"...puis au retour vont à la fontaine des Rains ou parfois à d'autres fontaines, et boivent."* (questionnaire-lorraine, Jean Waterin).
@@ -757,6 +810,18 @@ graph TD
 
 94. **maison — le Bois Chenu.** *(Jeanne D'Arc — thick edge)* Same summary: the Bois Chenu is visible from her house door.
     *"qu’on voit le bois chênu depuis la porte de sa maison, à moins d’une demi-lieue"* (condamnation-24-fevrier).
+95. **hêtre — Arbre des dames.** Bertrand Lacloppe states the tree is a beech and strongly bent.
+    *"L'arbre qu'on appelle arbre des dames est un hêtre, et il est très courbé."* (questionnaire-lorraine, Bertrand Lacloppe).
+
+96. **hêtre — Arbre des dames.** *(Jeanne D'Arc — thick edge)* The 24 February summary of Jeanne's answers states the tree was a large beech.
+    *"que l’arbre était un grand hêtre qui appartenait au chevalier Pierre de Bourlemont"* (condamnation-24-fevrier; attribution to Jeanne is a judgment call, see above).
+
+97. **évangile — fontaine aux Rains.** The curé sings the gospel at the fountain aux Rains.
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
+
+98. **évangile — fontaine.** The curé sings the gospel at "les autres fontaines" (plural, unqualified).
+    *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
+
 
 ## Jeanne-sourced coloring
 
@@ -790,6 +855,11 @@ which edges are already thick.
 - **coudrier** (`N32`) *(green)*. Its only edge, to `N31`, is relation 70.
 - **le Bois Chenu** (`N36`) *(green)*. Its only edge, to `N30`, is
   relation 68.
+- **hêtre** (`N38`) *(green, newly)*. Its only edge, to `N1`, is relation
+  95/96; 96 is Jeanne-sourced, so the edge is thick.
+- **le curé** (`N13`), **croix** (`N33`), **évangile** (`N34`) *(default
+  styling)*. Every edge touching them comes from Béatrice (36, 71, 72, 82,
+  97, 98), so none is thick.
 - **fontaine des Groseilliers** (`N3`), **fontaine aux Rains** (`N5`), **the
   road to Neufchâteau** (`N6`), **un Bois**
   (`N8`), **fleur** (`N29`)

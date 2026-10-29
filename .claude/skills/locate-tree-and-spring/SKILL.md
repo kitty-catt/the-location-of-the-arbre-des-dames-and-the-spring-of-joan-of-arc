@@ -1,6 +1,6 @@
 ---
 name: locate-tree-and-spring
-description: Produce the retired-inspector's best-guess geolocation for the tree and its spring from the full current state of prompt/tree-prompt.yaml — first-hand-snippets, candidate-locations, obervation-list, and personal-musings — following the user-prompt's process/output/performance instructions. Use whenever asked for the best-shot location of the tree or spring, or after a new personal-musing or candidate-location is added that could change the call.
+description: Produce the retired-inspector's best-guess geolocation for the tree and its spring from the full current state of prompt/tree-prompt.yaml — first-hand-snippets, candidate-locations, observation-list, and personal-musings — following the user-prompt's process/output/performance instructions. Use whenever asked for the best-shot location of the tree or spring, or after a new personal-musing or candidate-location is added that could change the call.
 ---
 
 # Locate tree and spring
@@ -32,7 +32,7 @@ two sites in a prior run).
    entities, or justify an offset. Re-check every musing currently listed
    against the candidate guess — a newly added one can overturn a previous
    answer.
-3. `obervation-list` — map/LiDAR-derived observations, keyed by source
+3. `observation-list` — map/LiDAR-derived observations, keyed by source
    (naudin-map, jollois, Carte de l'état-major, LiDAR scan). Use these for
    terrain/road reasoning: slope, clearing, washout, a narrowing path.
 4. `candidate-locations` — the geolocated starting points. Prefer one

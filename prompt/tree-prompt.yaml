@@ -19,51 +19,53 @@ user-prompt:
   - add the notes of a seasoned police inspector who lives at the cutoff time of the AI who read the novel with his thought about what was right, and what he would have done with modern police investigation methods
   performance-description:
   - give me the best supported geolocation for the spring and the tree and explain your reasoning
-  personal-musings:
-  - Michel de montaigne does not mention remains of a structure near the tree alongside of the vineyards
-  - The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
-  - The tree must have stood on the land of Messire Pierre de Bourlémont
-  - The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
-  - The spring was closer to the village than the tree according to Jean Morel
-  - The tree was pretty close to the tree. A 700 meter walk does not feel like pretty close.
-  - The fact that the children danced around the tree makes it likely that the tree was in a clearing, not in a dense forest and not on a steep slope.
-  - When Domremy was raided, the villagers fled to Neufchateau with their livestock. That implies that the road to Neufchateau was safe and passable for cows, horses, and children. Most likely they would have taken the ridge road to Neufchateau, which is the D53 today. That road avoids crossing through the pro Burgundian village of Coussey. 
-  - Jeanne D'Arc said that she heard the voices of the saints at the spring, not at the tree which implies that the tree was not at the spring. The tree and the spring were separate locations.
-  - If "Fontem Rannorum" translates to "the spring of the frogs" then it is likely that the spring was a wetland area with frogs, not a dry area with a tree. The spring was likely in a low-lying area, not on the ridge.
-  - Consequenty, it is possible to see the vineyards from the other side of the river
-  - That line on the map may not accurately represent the old road
-  - The ridge road could have been more to the west than the current D53
-  - In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank
-  - The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled
-  - The ridge may have become narrow because a fountain washed out sand from the hill over centuries.
-  - In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank because on the East Bank they may be welcomed with stones.
-  - Jeanne's healing fountain is not necessarily the fountain that was mentioned by the witnesses, “fountain of the frogs”
-  - If the tree stood next to a vineyard as Montaigne wrote, this could have been "la vigne des Seigneurs"
+personal-musings:
+- Michel de montaigne does not mention remains of a structure near the tree alongside of the vineyards
+- The village elders would likely not want children to go too far out of the village as occasionally wolves, bears and wild boars frequented it
+- The tree must have stood on the land of Messire Pierre de Bourlémont
+- The branches of the beech swept the ground. That means that for centuries farm animals must not have been able to reach it.
+- The spring was closer to the village than the tree according to Jean Morel
+- The tree was pretty close to the tree. A 700 meter walk does not feel like pretty close.
+- The fact that the children danced around the tree makes it likely that the tree was in a clearing, not in a dense forest and not on a steep slope.
+- When Domremy was raided, the villagers fled to Neufchateau with their livestock. That implies that the road to Neufchateau was safe and passable for cows, horses, and children. Most likely they would have taken the ridge road to Neufchateau, which is the D53 today. That road avoids crossing through the pro Burgundian village of Coussey. 
+- Jeanne D'Arc said that she heard the voices of the saints at the spring, not at the tree which implies that the tree was not at the spring. The tree and the spring were separate locations.
+- If "Fontem Rannorum" translates to "the spring of the frogs" then it is likely that the spring was a wetland area with frogs, not a dry area with a tree. The spring was likely in a low-lying area, not on the ridge.
+- Consequenty, it is possible to see the vineyards from the other side of the river
+- That line on the map may not accurately represent the old road
+- The ridge road could have been more to the west than the current D53
+- In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank
+- The stream La Saonelle is not wide, and it must have been passable, it would have been protected by Armagnac soldiers when the villagers of Domremy fled
+- The ridge may have become narrow because a fountain washed out sand from the hill over centuries.
+- In the 100 years war, it would have been wise to travel over the west bank as that was France as opposed to the East bank because on the East Bank they may be welcomed with stones.
+- Jeanne's healing fountain is not necessarily the fountain that was mentioned by the witnesses, “fountain of the frogs”
+- If the tree stood next to a vineyard as Montaigne wrote, this could have been "la vigne des Seigneurs"
+- On the eve of the Ascension the curé carried the crosses through the fields and sang the gospel at the tree, at the fontaine aux Rains and at the other fountains (Béatrice). So the tree and the fountains lay on one rogation route that a priest and a procession could walk in a day from the village church.
+- The tree was a beech (Bertrand Lacloppe, and the 24 February summary of Jeanne's answers), and Jean Moen puts it near a wood. That suggests a well-drained wood edge, not a wet valley bottom, so the wet "frogs" spring was probably a separate, lower place.
 
-  obervation-list:
-  - source: naudin-map
-    remarks:
-    - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
-    - Where the path leads to the plateau, there is also a spot where the ridge becomes more narrow. The fountain may have washed out the path and made it smaller.
-    - Label this path as the ridge old road
-    - Let us refer to this path as the ridge road
-  - source: jollois
-    remarks:
-    - The vineyard grew on both sides of the ridge road
-    - From the old ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
-  - source: Carte de L'etat major 1820-1866
-    remarks:
-    - The old ridge road ends stops where the basilique begins
-    - The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
-    - There is a patch of land next to the river Meuse called "la Fontaine aux Groselles"
-    - The ridge road could have been more to the west than the current D53
-    - The old ridge road has a parcel called "sous la vigne des Seigneurs"
-    - The old ridge road has a parcel called "sous la Pucelle"
-    - The old ridge road has a parcel called "a la Pucelle"
-    - Walking the old ridge road from Domremy to the plateau you will pass in order: "sous la vigne des Seigneurs" on your left, followed by "sous la Pucelle" on your left, and finally you end up at "a la Pucelle"
-  - source: LiDar Scan
-    remarks:
-    - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
+observation-list:
+- source: naudin-map
+  remarks:
+  - The path from Domremy goes up the ridge and stops at the entry of the shoulder of the hill.
+  - Where the path leads to the plateau, there is also a spot where the ridge becomes more narrow. The fountain may have washed out the path and made it smaller.
+  - Label this path as the ridge old road
+  - Let us refer to this path as the ridge road
+- source: jollois
+  remarks:
+  - The vineyard grew on both sides of the ridge road
+  - From the old ridge road it is possible to see the NEW road to Neufchateau on the other side of the river
+- source: Carte de L'etat major 1820-1866
+  remarks:
+  - The old ridge road ends stops where the basilique begins
+  - The map shows that South of the basilique the territory of Coussey starts in the Napoleonic times
+  - There is a patch of land next to the river Meuse called "la Fontaine aux Groselles"
+  - The ridge road could have been more to the west than the current D53
+  - The old ridge road has a parcel called "sous la vigne des Seigneurs"
+  - The old ridge road has a parcel called "sous la Pucelle"
+  - The old ridge road has a parcel called "a la Pucelle"
+  - 'Walking the old ridge road from Domremy to the plateau you will pass in order: "sous la vigne des Seigneurs" on your left, followed by "sous la Pucelle" on your left, and finally you end up at "a la Pucelle"'
+- source: LiDar Scan
+  remarks:
+  - there are traces in the landscape from what could have been the fountain washing over the road into the lower road, just north where the plateau begins.
 
 object-model:
  - arbre
@@ -105,7 +107,7 @@ object-model:
  - fiévreux
  - malades 
 # - prêtre
-# - le curé
+ - le curé
  - bois
  - charrue
  - château
@@ -115,7 +117,8 @@ object-model:
  - cierge
  - eau
  - église
-# - évangile
+ - évangile
+ - hêtre
  - fleur
  - fontaine
  - guirlande
@@ -177,7 +180,7 @@ candidate-locations:
   elevation-above-the-river: 189 ft
   note: estimated by linear interpolation between "the shrubbery bushes between the calvaire and the current fountain of the Pucelle" and "the location of the basilique", based on the observation-list entries describing a fountain washout where the old ridge road narrows and the plateau begins, just north of the basilique (naudin-map, Carte de L'etat major 1820-1866, LiDar Scan). Not derived from a GPS fix or first-hand testimony.
 
-document-refence-list:
+document-reference-list:
 - name: bibliotheque-monastique
   url: https://www.bibliotheque-monastique.ch/bibliotheque/bibliotheque/saints/jeanne/index.htm
 - name: michel-montaigne
@@ -372,7 +375,7 @@ first-hand-snippets:
 - text: "Item, dit bien qu'il y a ung bosc, que on appelle le Bosc Chesnu, que on voit de l'huys de son pere ; et y a petite espace non pas d'une lieue ; mais qu'elle ne sçait ne ouyt oncques dire que les fees y repperassent. Item, dit qu'elle a ouy dire a son frere que on disoit au pays qu'elle avoit prins ses revelacions a l'arbre et es fees. Mais non avoit. Et luy disoit bien le contraire. Et dit oultre, quand elle vint devers le roy, que aulcuns demandoyent si en son pays avoit point de boys que on appelast le Boys Chesnu. Car il y avoit prophecies qui disoyent que de devers le Boys Chanu debvoit venir une pucelle qui venoit faire merveilles ; mais en ce n'a point adiousté de foy."
   document-reference: interro_public3
   who: Jeanne D'Arc according to the interrogatoire of 1431
-- text: " Interrogée si saintes Catherine et Marguerite lui parlèrent sous l'arbre mentionné plus haut, répondit : "Je ne sais". lnterrogée si, à la fontaine qui est près de l'arbre, les saintes parlèrent avec elle, répondit que oui, et que là elle les ouït bien mais ce qu'elles lui dirent alors, elle ne le sait plus."
+- text: ' Interrogée si saintes Catherine et Marguerite lui parlèrent sous l''arbre mentionné plus haut, répondit : "Je ne sais". lnterrogée si, à la fontaine qui est près de l''arbre, les saintes parlèrent avec elle, répondit que oui, et que là elle les ouït bien mais ce qu''elles lui dirent alors, elle ne le sait plus.'
   document-reference: interro_public5
   who: Jeanne D'Arc according to the interrogatoire of 1431
 - text: "Interrogée en quel lieu est cette mandragore dont elle ouït parler répondit qu'elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné; mais ne sait le lieu. Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier. Interrogée à quoi elle a entendu dire que sert cette mandragore, répondit qu'elle a ouï dire qu'elle fait venir l'argent ; mais n'a croyance en cela. Et dit que les voix ne lui dirent jamais rien à ce sujet."
@@ -395,7 +398,7 @@ general-reputation:
 - text: Item, dicit quod est ibi unum nemus, quod vocatur Nemus-quercosum, le Bois-Chenu quod videtur ab ostio patris sui ; et non est distantia dimidiæ Item, nescit nec audivit unquam quod Dominæ Fatales supradictæ ibi conversarentur ; sed audivit dici a fratre suo quod dicebatur in patria quod ipsa johanna ceperat factum suum apud arborem Dominarum Fatalium. Sed dicit quod non fecerat, et dicebat sibi contrarium. Item, ulterius dicit quod, quando ipsa versus regem suum, aliqui petebant sibi an in patria sua erat aliquod nemus, quod vocaretur le Bois chesnu, quia erant prophetiæ dicentes quod, circa illud nemus, debebat venire quædam puella quæ faceret mirabilia. Sed dixit ipsa Johanna quod in hoc non adhibuit fidem.
   document-reference: interro_public3
   who: Jeanne D'Arc according to the interrogatoire of 1431
-- text: "Interrogata an sanctæ Katharina et Margareta locutæ sunt cum ea sub arbore, de qua superius fit mentio, respondit : "Ego nihil scio".  Interrogata si, apud fontem qui est juxta arborem, prædicta Sanctæ locutæ sunt cum ea, respondit quod sic, et quod audivit eas ibi ; sed quid sibi tunc dixerunt, nescit."
+- text: 'Interrogata an sanctæ Katharina et Margareta locutæ sunt cum ea sub arbore, de qua superius fit mentio, respondit : "Ego nihil scio".  Interrogata si, apud fontem qui est juxta arborem, prædicta Sanctæ locutæ sunt cum ea, respondit quod sic, et quod audivit eas ibi ; sed quid sibi tunc dixerunt, nescit.'
   document-reference: interro_public5
   who: Jeanne D'Arc according to the interrogatoire of 1431
 - text: Item, interrogata fuit de quadam arbore, existente prope villam ipsius. Ad quod respondit quod satis prope villam de Dompremi est quædam arbor, vocata Arbor Dominarum, et alii vocant eam Arborem Fatalium des Faées, juxta quam est unus fons ; et audivit dici quod infirmi febricitantes potant de illo fonte et vadunt quæsitum de aqua illius, pro habenda sanitate. Et hoc ipsamet vidit ; sed nescit utrum inde sanentur, vel non. Item, dicit quod audivit infirmi, quando possunt se levare, vadunt ad arborem pro spatiendo. Et est una magna arbor, vocata Fagus, unde venit mayum, le beau may ; et solebat pertinere domino Petro de Bourlemont, militi.
@@ -422,7 +425,7 @@ general-reputation:
 - text: « L’arbre des Fées, dit Béatrix, veuve d’Estellin, laboureur de Domrémy, qui avait quatre-vingts ans lorsqu’elle fit sa déposition, l’arbre des fées se trouve près du grand chemin qui conduit à Neufchâteau. La beauté de cet arbre attirait sous son ombre nos seigneurs et leurs dames ; bien des fois je m’y suis promenée en leur compagnie dans ma jeunesse. D’après ce que j’ai ouï conter, les femmes qu’on appelle fées y venaient autrefois, mais, pour nos péchés, elles n’y viennent plus. La veille de l’Ascension, à la procession où les croix sont portées par les champs, le curé va sous le grand Fau et y chante l’évangile. Il va aussi à la Fontaine aux Groseilliers et aux autres fontaines pour chanter l’évangile ; ce sont faits que j’ai vus. 
   document-reference: biblisem
 - text: Tout proche, à l’orée du bois, au-dessus du grand chemin de Neufchâteau, s’élevait un hêtre très vieux qui répandait une belle et grande ombre2. Il était vénéré presque à l’égal de ces arbres tenus pour sacrés avant que les hommes apostoliques eussent évangélisé les Gaules3. Ses branches, qu’aucune main n’osait toucher, descendaient jusqu’à terre. Les lis, disait un laboureur, ne sont pas plus beaux4. Comme la fontaine, l’arbre avait plusieurs noms. On l’appelait l’Arbre-des-Dames, l’Arbre-aux-Loges-les-Dames, l’Arbre-des-Fées, l’ArbreCharmine-Fée-de-Bourlémont, le Beau-Mai5. 
-  document-refence: mediterranee-antique
+  document-reference: mediterranee-antique
 - text: L'emplacement " de cette chapelle se voit encore aujourd'hui à i,4oo mètres environ de distance des dernières maisons de Domremy, vers le sud. Elle fut, dit-on, détruite au temps des guerres de religion, peut-être à la même époque où la statue de l'héroïne fut brisée ^ à Orléans. Il ne reste plus rien aujourd'hui dans cet emplacement, qu'un énorme tas de pierres ramassées dans les champs par les cultivateurs, et sous lequel sont cachées certainement les fondations de l'édifice. Les plus anciens de la commune de Domremy se souviennent encore de les avoir vues. Ils assurent même avoir aperçu dans les décombres une pierre que l'on disait être le dessus de l'autel. C'est aux environs de cette chapelle que devait être l'arbre des fées'^, a l'ombre duquel les jeunes garçons et les jeunes filles de Domremy venaient se reposer et se livrer aux jeux de leur âge. La tradition du pays a conservé le souvenir de cet arbre extraordinaire , qui était un hêtre d'une grande beauté, dont, suivant les expressions mêmes d'un habitant de Domremy, appelé à déposer au procès de la Pucelle, les antiques rameaux chargés d'un riche feuillage se courbaient en voûtes obscures, impénétrables, et descendaient jusquà terre. Les plus âgés de Domremy se rappellent encore avoir entendu dire que cet arbre avait été arraché par un habitant nommé Soudart. 
   document-reference: jollois
 - text: L'arbre des fées était placé près d'une fontaine qui , d'après ce qu'en rapportent les plus anciens de Domremy , s'appelait la fontaine de l'Ermite. Comme il existe plusieurs sources sur le penchant de la côte où se trouve le vignoble connu sous le nom de la Pucelle, il est difficile d'indiquer quelle est cette fontaine; mais il est assez probable que c'est celle même des groseillers dont nous ferons bientôt mention , et qui alimente aujourd'hui la fontaine élevée sur la place de Domremy , à la mémoire de Jeanne d'Arc. 
@@ -430,10 +433,10 @@ general-reputation:
 - text: Le monument plus spécialement consacré à rappeler la mémoire de l'héroïne du quinzième siècle est érigé sur la place ' de Domremy, qui a été à cet effet nivelée et exhaussée de manière à la mettre à l'abri des inondations ordinaires de la Meuse. Les terres rapportées sont maintenues par des murs en talus construits à pierres sèches. Sur le sommet de ces murs on a établi une barrière en bois qui dessine tout l'extérieur de la place. Le monument^ consiste en une fontaine d'eaux jaillissantes amenées de la source des Groseillers, située à sept cents mètres de distance de la place de Domremy, et non loin, probablement, de l'endroit où existait l'arbre des fées. 
   document-reference: jollois
 - text: La chapelle dont il est ici parlé est nommée, comme on le voit, Notre-Dame de Domrémy (1), et ne doit pas être confondue avec l'ermitage de Notre-Dame de Bermont, situé de l'autre côté de Domrémy. On en montre encore l'emplacement, signalé naguère par des ruines et aujourd'hui par des décombres, vers le lieu où la tradition plaçait l'arbre des Dames.
-  document-refence: ste-jeannedarc.fr
+  document-reference: ste-jeannedarc.fr
   author: Jeanne d'Arc - Henri Wallon - 5° éd. 1879
 - text: On se rappelle que la Basilique en construction a pour assises les ruines d’une antique chapelle, dont le constructeur fut Étienne Hordal, grand doyen de la cathédrale de Toul, et petit neveu de Jeanne d’Arc
-  document-refence: jeanne.wiki
+  document-reference: jeanne.wiki
 - text: 'Cette fontaine des Rains est souvent traduite par fontaine des "groseilles". Certains ont dit que "rains" pourrait être "grenouilles". Il semble que sur l''acte d''accensement des biens en faveur de Gérardin d''Epinal en 1442 (photo), les termes "La Loge les Dames" (arbre des fées) et "Grouselier" accrédite la traduction "fontaine des groseilles". (ndlr)'
-  document-refence: dep_gerardin_epinal
+  document-reference: dep_gerardin_epinal
 

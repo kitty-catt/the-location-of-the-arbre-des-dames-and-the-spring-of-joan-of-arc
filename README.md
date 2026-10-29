@@ -50,6 +50,7 @@ graph TD
     N9["Les saintes"]
     N10["fiévreux"]
     N11["malades"]
+    N13["le curé"]
     N19["fontaine"]
     N24["eau"]
     N26["guirlande"]
@@ -58,7 +59,10 @@ graph TD
     N30["maison"]
     N31["mandragore"]
     N32["coudrier"]
+    N33["croix"]
+    N34["évangile"]
     N36["le Bois Chenu"]
+    N38["hêtre"]
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48,85" === N4
@@ -82,8 +86,17 @@ graph TD
     N11 == "91" === N19
     N24 == "91" === N19
     N11 == "91" === N24
+    N13 -- "36" --- N1
+    N13 -- "36" --- N5
+    N13 -- "82" --- N19
+    N33 -- "71" --- N13
+    N34 -- "72" --- N1
+    N34 -- "72" --- N13
+    N34 -- "97" --- N5
+    N34 -- "98" --- N19
+    N1 == "95,96" === N38
 
-    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36,N38 jeanneSourced
 ```
 
 
@@ -117,8 +130,8 @@ Skills defined in this repo:
 | `/verify-citations` | Audit a `breakout/` file against `prompt/tree-prompt.yaml` for claims miscategorized as first-hand. |
 | `/extract-entities` | Pull named people/supernatural beings/afflicted groups out of `prompt/tree-prompt.yaml` into `prompt/entities.yaml`. |
 | `/extract-objects` | Pull named inanimate objects (trees, fountains/springs, roads, and other physical things) out of `prompt/tree-prompt.yaml` into `prompt/objects.yaml`. |
-| `/locate-tree-and-spring` | Produce the retired inspector's best-guess geolocation for the tree and spring from the current `personal-musings`, `candidate-locations`, and `obervation-list` — the hypothesis-building task, as opposed to the strictly-first-hand diagram. |
-| `/sync-observations` | Carry new `## Observations` bullets into `prompt/tree-prompt.yaml`'s `obervation-list` and new `Personal Thoughts` bullets into its `personal-musings`, from any `breakout/*.md` file, then refresh the matching row(s) of this README's two-column Personal Thoughts table. |
+| `/locate-tree-and-spring` | Produce the retired inspector's best-guess geolocation for the tree and spring from the current `personal-musings`, `candidate-locations`, and `observation-list` — the hypothesis-building task, as opposed to the strictly-first-hand diagram. |
+| `/sync-observations` | Carry new `## Observations` bullets into `prompt/tree-prompt.yaml`'s `observation-list` and new `Personal Thoughts` bullets into its `personal-musings`, from any `breakout/*.md` file, then refresh the matching row(s) of this README's two-column Personal Thoughts table. |
 
 Typical workflow going forward:
 1. Add new witness testimony to `prompt/tree-prompt.yaml` (as `first-hand-snippets`, correctly categorized).

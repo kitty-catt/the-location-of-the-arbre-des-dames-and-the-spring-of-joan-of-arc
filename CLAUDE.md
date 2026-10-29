@@ -16,7 +16,7 @@ Treat this repo as a body of primary-source evidence plus prior analysis to reas
   - `observation-list`, `personal-musings`: the author's own notes/inferences — not first-hand.
   - `candidate-locations`: specific lat/lon geolocations with distance/elevation data, used as starting points for analysis.
   - `object-model`: the fixed vocabulary of named entities (trees, fountains, roads, land parcels) that any diagram or analysis must draw from.
-  - `document-refence-list`: source URLs keyed by name, referenced from snippets via `document-reference`.
+  - `document-reference-list`: source URLs keyed by name, referenced from snippets via `document-reference`.
   - `user-prompt`: instructions for an LLM roleplaying as a retired police inspector, defining the process/output/performance expectations for the actual analysis task.
 - `breakout/*.md` — per-source analysis notes, one per map/document (`naudin.md`, `jollois.md`, `napoleonic.md`, `copernicus.md`), plus `combined.md`, a mermaid object-relationship diagram built strictly from `first-hand-snippets`.
 - `images/` — supporting maps and imagery referenced by the breakout files (Napoleonic cadastre, Naudin map, Jollois map, Copernicus moisture maps, LIDAR scan, 1821 etching).

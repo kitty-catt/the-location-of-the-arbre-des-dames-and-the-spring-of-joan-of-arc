@@ -1,20 +1,20 @@
 ---
 name: sync-observations
-description: Carry new "Observations" bullets from breakout/*.md map/data files into prompt/tree-prompt.yaml's obervation-list, and new "Personal Thoughts" bullets into prompt/tree-prompt.yaml's personal-musings — then fully rebuild README.md's two-column Personal Thoughts table from scratch, straight from the breakout files. Use after adding or editing an Observations or Personal Thoughts bullet in a breakout file.
+description: Carry new "Observations" bullets from breakout/*.md map/data files into prompt/tree-prompt.yaml's observation-list, and new "Personal Thoughts" bullets into prompt/tree-prompt.yaml's personal-musings — then fully rebuild README.md's two-column Personal Thoughts table from scratch, straight from the breakout files. Use after adding or editing an Observations or Personal Thoughts bullet in a breakout file.
 ---
 
 # Sync observations
 
 Reproduce, as a repeatable skill, the author's own habit: notice a new fact
 or inference in a `breakout/*.md` map/data write-up, record it in
-`prompt/tree-prompt.yaml` (keeping the pre-existing `obervation-list`
+`prompt/tree-prompt.yaml` (keeping the pre-existing `observation-list`
 spelling — not a typo to fix), and keep the `# Personal Thoughts` table in
 `README.md` in sync. This skill handles **two independent jobs**, each with
 its own source of truth:
 
 | Job | Reads from | Writes to |
 |---|---|---|
-| Sync new bullets into the yaml | each breakout file's `## Observations` / `Personal Thoughts` bullets, diffed against the yaml | `prompt/tree-prompt.yaml` (`obervation-list` grouped by `source`; `personal-musings` flat) |
+| Sync new bullets into the yaml | each breakout file's `## Observations` / `Personal Thoughts` bullets, diffed against the yaml | `prompt/tree-prompt.yaml` (`observation-list` grouped by `source`; `personal-musings` flat) |
 | Rebuild the README table | **every** breakout file's `## Observations` / `Personal Thoughts` bullets, directly, every run | `README.md`'s `# Personal Thoughts` table, entirely |
 
 The table is **not** patched incrementally and does **not** mirror the yaml
@@ -43,7 +43,7 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
   not an observation/musing source.
 - This skill does not touch `first-hand-snippets`, `candidate-locations`, or
   `object-model`. `/locate-tree-and-spring` is the skill that *consumes*
-  `personal-musings` and `obervation-list` to re-derive a geolocation;
+  `personal-musings` and `observation-list` to re-derive a geolocation;
   suggest running it afterward per the last step, but don't do its job here.
 
 ## What to read, every time
@@ -52,7 +52,7 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
    `Personal Thoughts` bullets (either may be absent or empty — e.g.
    `copernicus.md` has neither section at all; `naudin.md`'s `Personal
    Thoughts` heading currently has no bullets under it).
-2. `prompt/tree-prompt.yaml`'s `obervation-list` array (each entry has a
+2. `prompt/tree-prompt.yaml`'s `observation-list` array (each entry has a
    `source` key and a `remarks` list) and its `personal-musings` array (a
    flat list of strings — no per-source grouping). Needed for the yaml-sync
    job only.
@@ -62,10 +62,10 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
 
 ## Rules — yaml-sync job (additive only)
 
-1. **Additive only.** Never delete or reword an existing `obervation-list`
+1. **Additive only.** Never delete or reword an existing `observation-list`
    remark or `personal-musings` entry — only add. A bullet counts as
    "already synced" if it (or an evident paraphrase) is already present in
-   its yaml destination (`obervation-list` for Observations,
+   its yaml destination (`observation-list` for Observations,
    `personal-musings` for Personal Thoughts) — check the yaml only; the
    README table is a derived view now (see the rebuild job below), not an
    independent record, so it is no longer a dedup signal.
@@ -115,7 +115,7 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
 1. Read every in-scope breakout file (or just the ones named in
    `$ARGUMENTS`) and pull out its `## Observations` bullets and its
    `Personal Thoughts` bullets, if any.
-2. **Yaml-sync job:** read `prompt/tree-prompt.yaml`'s `obervation-list`
+2. **Yaml-sync job:** read `prompt/tree-prompt.yaml`'s `observation-list`
    (flatten all `remarks`) and `personal-musings`. Drop any breakout bullet
    already present per rule 1. For what's left, resolve each Observations
    bullet's `source` key (rule 2) and append it; append each new Personal
@@ -140,7 +140,7 @@ check. If omitted, scan every `breakout/*.md` file except `combined.md`
 ## Output
 
 Edits to two files: `prompt/tree-prompt.yaml` (new remarks appended to the
-right `obervation-list` source entries, new bullets appended to
+right `observation-list` source entries, new bullets appended to
 `personal-musings` — additive only, nothing removed) and `README.md` (the
 entire `# Personal Thoughts` table replaced with a fresh rebuild straight
 from the breakout files, each cell an HTML bullet list (`<ul><li>...</li></ul>`)
