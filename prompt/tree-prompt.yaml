@@ -216,8 +216,12 @@ document-refence-list:
   url: https://www.gutenberg.org/cache/epub/54182/pg54182-images.html#Page_267
 - name: doncoeur-lanhers-documents
   url: https://jeanne.wiki/doncoeur-lanhers-documents/minute/texte2#t1textes-minute
+- name: condamnation-24-fevrier
+  url: https://jeanne.wiki/condamnation-24-fevrier
 
 first-hand-snippets:
+- text: Dit avoir vu des malades guérir de l’eau de la fontaine mais sans savoir si c’en était la cause ; que l’arbre était un grand hêtre qui appartenait au chevalier Pierre de Bourlemont ; qu’elle y jouait avec ses amies, y accrochait des couronnes de fleurs pour Notre-Dame, y a peut-être dansé ; que des anciens disaient que les dames fées s’y rendaient ; que sa marraine, la femme du maire Aubery, affirmait les y avoir vues ; qu’elle-même ignore si c’était vrai ou non, et qu’elle ne vit jamais rien ; qu’elle n’y alla plus jouer dès qu’elle sut qu’elle devrait aller en France ; qu’on voit le bois chênu depuis la porte de sa maison, à moins d’une demi-lieue ; qu’elle ne sait rien au sujet des fées ; que son frère lui rapporta qu’une rumeur disait que c’était à l’arbre aux fées qu’elle avait pris son fait, ce qu’elle lui démentit ; que lorsqu’elle vint auprès du roi on la questionna sur l’existence d’un bois chênu, car il y avait prophétie disant que devers ce bois devait venir une pucelle qui ferait merveille, mais qu’elle n’y prêta foi.
+  document-reference: condamnation-24-fevrier
 - text: Respond que assez prez de Dompremy d’ung arbre qui [un blanc] se appelle l’arbre des Dames ; et les aultres l’appellent l’arbre des Fees ; et auprez a une fontaine ; et a ouy dire que les gens malades des fiebvrez en boyvent ; et mesmes en a veu aller quérir pour en guarir. Mais ne sçait se ilz en garissoyent ou non.
   document-reference: doncoeur-lanhers-documents
 - text: Item, dit qu’elle a ouy dire que les malades, quand ilz se pevent lever, vont a l’arbre pour leur esbattre ; et dit que c’est ung grand arbre, nommé fou, dont vient de beau may ; et souloit estre a messyre Pierre de Bolemont.

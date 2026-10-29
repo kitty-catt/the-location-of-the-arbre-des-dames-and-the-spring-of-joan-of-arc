@@ -25,7 +25,27 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
-`prompt/tree-prompt.yaml` changed two ways this pass, both inside
+`prompt/tree-prompt.yaml` gained **one new `first-hand-snippets` entry**
+(`document-reference` key spelled `document-references`, value
+`condamnation-24-fevrier`, plus a new `document-refence-list` entry for it).
+It is a third-person summary of Jeanne's 24 February 1431 answers ("Dit avoir
+vu des malades guérir de l'eau de la fontaine... que l'arbre était un grand
+hêtre qui appartenait au chevalier Pierre de Bourlemont..."). It is kept and
+attributed to Jeanne — a judgment call, see below. `object-model` is
+unchanged. It adds four relations (91–94):
+
+- 91, `malades — fontaine; eau — fontaine; malades — eau` — **three new
+  edges**, all to the bare `fontaine` node (`N19`).
+- 92, `Arbre des dames — the Bourlemont estate` (co-cites 6, 51, 88).
+- 93, `guirlande — Arbre des dames` (co-cites 61, 62, 63, 89, 90).
+- 94, `maison — le Bois Chenu` (co-cites 68).
+
+No new nodes. **Newly green: `fontaine` (`N19`)** — it is now an endpoint of
+thick edges 91. Every other touched edge was already thick.
+
+### Prior update (retained for history)
+
+`prompt/tree-prompt.yaml` changed two ways that pass, both inside
 `first-hand-snippets`/`general-reputation`; `object-model` is unchanged.
 
 - **Seven new first-hand snippets** under a new `document-reference`,
@@ -64,7 +84,7 @@ Nothing is newly thick or newly green: every edge touched by 85–90 was
 already thick (the Jeanne-sourced attribution of the new snippets changes no
 line weight or colour).
 
-### Prior update (vigne additions)
+### Earlier update (vigne additions)
 
 `prompt/tree-prompt.yaml` changed one way that pass: two new entries,
 `vigne` and `la vigne des seigneurs`, were added to `object-model`. Neither
@@ -75,7 +95,7 @@ the pre-existing `vineyard` entry they're closely related to. No
 first-hand snippets changed, so no nodes, edges, or relation numbers move
 this pass.
 
-### Earlier update (retained for history)
+### Oldest update (retained for history)
 
 `prompt/tree-prompt.yaml` changed two ways that pass: five more
 `object-model` entries were commented out, and one brand-new first-hand
@@ -144,6 +164,9 @@ removals — is unchanged.
   states they go to the fountain beside the tree to recover their health.
 - **malades** — named outright in Jeanne d'Arc's testimony, which states
   they go to the tree itself to amuse themselves once recovered.
+- **fontaine** (bare, `N19`) — Jean Moen's and Jean Waterin's unqualified
+  "fontaines" (81, 83) and now Jeanne's "la fontaine" in the 24 February
+  summary (91), tied to `malades` and `eau`.
 - **eau** — directly stated as carried to, drunk, or placed at the tree or
   a fountain by one or more witnesses.
 - **guirlande** (garland/wreath, including "couronnes"/"chappeaux"/Latin
@@ -351,6 +374,28 @@ first-hand snippet already cited.
 
 ## Judgment calls
 
+- **`condamnation-24-fevrier` snippet: Jeanne's answers, not the judges'
+  assertion.** It has no `who` field and its key is misspelled
+  `document-references`. It is a reported-speech summary ("Dit avoir vu...
+  qu'elle y jouait... qu'elle ne vit jamais rien... qu'elle-même ignore si
+  c'était vrai ou non"), recording her own denials and hedges — not
+  Article-of-Accusation prose ("Item ladite Jeanne avait coutume..."). It is
+  kept and treated as Jeanne-sourced (thick). If it were instead judged a
+  neutral editor's summary, 91–94 would lose their thick weight, but 92–94
+  edges stay thick via other Jeanne relations, and only the three `N19`
+  edges (91) would turn normal and `fontaine` would lose its green.
+- **"la fontaine" in relation 91 goes to the bare `fontaine` node (`N19`),
+  not `fontaine fiévreux`.** The summary says "l'eau de la fontaine" before
+  any tree is mentioned and never states it is the fountain beside the tree,
+  nor that the sick are fever sufferers. With no explicit identity statement
+  (rule 4) it defaults to the unqualified node.
+- **"couronnes de fleurs" in 93 draws only `guirlande — Arbre des dames`.**
+  The wreaths are of flowers, but a `guirlande — fleur` edge is not drawn,
+  consistent with earlier snippets that never drew it. "pour Notre-Dame"
+  does not name `image`, so no `guirlande — image` edge is added.
+- Other claims in that snippet name no second included entity (the fées —
+  not in `object-model` — the dancing, the brother's rumor, the prophecy
+  about the Bois Chenu) and draw nothing.
 - **The new `doncoeur-lanhers-documents` snippets carry no `who` field.**
   Attributing them to Jeanne rests on their content: each is a clerk's
   third-person record of her answer ("Respond que...", "Item, dit
@@ -496,7 +541,7 @@ graph TD
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48,85" === N4
-    N1 == "6,51,88" === N7
+    N1 == "6,51,88,92" === N7
     N4 == "7,52" === N9
     N4 == "26,49,86" === N10
     N1 == "27,50,87" === N11
@@ -506,15 +551,18 @@ graph TD
     N1 -- "81,83" --- N19
     N4 == "58" === N24
     N5 -- "59" --- N24
-    N1 == "61,62,63,89,90" === N26
+    N1 == "61,62,63,89,90,93" === N26
     N26 == "61,63" === N27
     N1 -- "66" --- N29
     N5 -- "67" --- N29
-    N30 == "68" === N36
+    N30 == "68,94" === N36
     N1 == "69" === N31
     N31 == "70" === N32
+    N11 == "91" === N19
+    N24 == "91" === N19
+    N11 == "91" === N24
 
-    class N1,N4,N7,N9,N10,N11,N24,N26,N27,N30,N31,N32,N36 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36 jeanneSourced
 ```
 
 ## Numbered relations
@@ -698,6 +746,18 @@ graph TD
 90. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same minute: asked about putting "chappeaulx en l'arbre."
     *"Interroguee, quand elle metoit chappeaulx en l'arbre, se elle les metoit en l'honneur de celles qui luy apparoyent, Respond que non."* (doncoeur-lanhers-documents, Jeanne D'Arc).
 
+91. **malades — fontaine; eau — fontaine; malades — eau.** *(Jeanne D'Arc — thick edges)* Jeanne's answer, as summarized, states she saw sick people healed by the water of the fountain.
+    *"Dit avoir vu des malades guérir de l’eau de la fontaine mais sans savoir si c’en était la cause"* (condamnation-24-fevrier; attribution to Jeanne is a judgment call, see above).
+
+92. **Arbre des dames — the Bourlemont estate.** *(Jeanne D'Arc — thick edge)* Same summary: the tree belonged to the knight Pierre de Bourlemont.
+    *"que l’arbre était un grand hêtre qui appartenait au chevalier Pierre de Bourlemont"* (condamnation-24-fevrier).
+
+93. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same summary: she hung wreaths of flowers at the tree.
+    *"qu’elle y jouait avec ses amies, y accrochait des couronnes de fleurs pour Notre-Dame"* (condamnation-24-fevrier).
+
+94. **maison — le Bois Chenu.** *(Jeanne D'Arc — thick edge)* Same summary: the Bois Chenu is visible from her house door.
+    *"qu’on voit le bois chênu depuis la porte de sa maison, à moins d’une demi-lieue"* (condamnation-24-fevrier).
+
 ## Jeanne-sourced coloring
 
 Green nodes denote an included entity that is an endpoint of at least one
@@ -716,8 +776,11 @@ which edges are already thick.
 - **Les saintes** (`N9`) *(green)*. Its edge is relation 7/52 (to `N4`).
 - **fiévreux** (`N10`) *(green)*. Its edge is relation 26/49/86 (to `N4`).
 - **malades** (`N11`) *(green)*. Its edge is relation 27/50/87 (to `N1`).
-- **eau** (`N24`) *(green)*. Endpoint of thick edge 58 (to `N4`); its
-  other edge, 59 (to `fontaine aux Rains`), is normal.
+- **fontaine** (`N19`) *(green, newly)*. Endpoint of thick edge 91 (to
+  `malades` and to `eau`); its edges 81/83 to `N1` are normal.
+- **eau** (`N24`) *(green)*. Endpoint of thick edges 58 (to `N4`) and 91
+  (to `fontaine` and `malades`); its other edge, 59 (to `fontaine aux
+  Rains`), is normal.
 - **guirlande** (`N26`) *(green)*. Endpoint of thick edges 61/63/89/90 (to
   `N1`; 61/63 also to `image`); its other citation, 62, is normal.
 - **image** (`N27`) *(green)*. Its edges, to `N26`, are relations 61/63.
@@ -729,7 +792,7 @@ which edges are already thick.
   relation 68.
 - **fontaine des Groseilliers** (`N3`), **fontaine aux Rains** (`N5`), **the
   road to Neufchâteau** (`N6`), **un Bois**
-  (`N8`), **fontaine** (`N19`), **fleur** (`N29`)
+  (`N8`), **fleur** (`N29`)
   *(default styling)*. None of their edges are thick — every relation
   touching them comes from a named witness other than Jeanne, so they stay
   uncolored.
