@@ -45,7 +45,7 @@ graph TD
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
     N6["the road to Neufchâteau"]
-    N7["the Bourlemont estate"]
+    N7["the land of Messire Pierre de Bourlémont"]
     N8["un Bois"]
     N9["Les saintes"]
     N10["fiévreux"]
