@@ -25,6 +25,18 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
+Full re-check against `prompt/tree-prompt.yaml` after the `user-prompt` block
+was removed from it (it held no evidence, so no node, edge, weight or colour
+changes). Every edge's relation numbers were re-checked against the relation
+titles (rule 10): 23 nodes, 31 edges, 61 relations, no number on the wrong
+edge, no isolated node, and the green set equals the set of thick-edge
+endpoints. Every quote was re-matched against the YAML. One fix: relation 63
+read "faisoit" and now reads "faisait", as in the source. Relations 51 and 68
+leave out the source's footnote numerals ("(7)", "(8)", "(12)") and relation 52
+writes the nested quotation with single quotes; neither changes the wording.
+
+### Prior update (object-model renames)
+
 `prompt/tree-prompt.yaml` changed in `object-model` only (no snippet changed):
 the entry `the Bourlemont estate` is now `the land of Messire Pierre de
 Bourlémont`, and `the river meuse` is now `the river Meuse` (capitalisation
@@ -758,7 +770,7 @@ graph TD
     *"J'ai vu des filles mettre des guirlandes aux branches de cet arbre..."* (bibliotheque-monastique).
 
 63. **guirlande — Arbre des dames; guirlande — image.** *(Jeanne D'Arc — thick edges)* The condemnation-trial minute restates relation 61's facts under "couronnes"/Latin "serta"/archaic French "chappeaux" — all treated as the same `guirlande` node, since no separate vocabulary entry exists for any of those words.
-    *"faisoit à cet arbre couronnes pour l'image de Notre-Dame de Domrémy."* (interro_public3, from Jeanne D'Arc).
+    *"faisait à cet arbre couronnes pour l'image de Notre-Dame de Domrémy."* (interro_public3, from Jeanne D'Arc).
 
 *(Relations 64 and 65 — mai — Arbre des dames, including Colin fils de Jean Colin's May-Day effigy — are retired: `mai` left `object-model` this pass. Relation 51, which also names the May-bough, keeps its number for the Bourlemont-ownership fact it still supports — see judgment calls.)*
 
