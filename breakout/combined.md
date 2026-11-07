@@ -25,6 +25,14 @@ and the citation establishing each equivalence.
 
 ## Change in this update
 
+Evidence-audit fixes (prose, attributions, newly flagged judgment calls), plus
+one diagram change: **new thick edge `guirlande — fleur` (relation 93)**, so
+**`fleur` (`N29`) is newly green**. Now 23 nodes, 32 edges. `N7` (the land of
+Messire Pierre de Bourlémont) is deliberately kept. Earlier notes below that
+say no `guirlande — fleur` edge is drawn are superseded.
+
+### Prior update (before the audit)
+
 Full re-check against `prompt/tree-prompt.yaml` after the `user-prompt` block
 was removed from it (it held no evidence, so no node, edge, weight or colour
 changes). Every edge's relation numbers were re-checked against the relation
@@ -190,7 +198,7 @@ removals — is unchanged.
 ## Included entities and why
 
 - **L’Arbre des dames** (merged with **L’Arbre des fées**, per rule 4) —
-  two first-hand snippets each directly state the tree carries both names:
+  three first-hand snippets each directly state the tree carries both names:
   relation 5 (bibliotheque-monastique), relation 48 (interro_public3,
   French) and now relation 85 (doncoeur-lanhers-documents, archaic French:
   *"l'arbre des Dames ; et les aultres l'appellent l'arbre des Fees"*),
@@ -201,8 +209,12 @@ removals — is unchanged.
   identity edge. Bare/unqualified references ("l'arbre," "cet arbre") and
   the unslotted "le Fou"/"fau" continue to fold here via the pre-existing
   most-recently-named rule, unchanged.
-- **fontaine des Groseilliers**, **fontaine fiévreux**, **fontaine aux Rains**
-  — each is named outright in a snippet, each tied to the tree.
+- **fontaine des Groseilliers**, **fontaine aux Rains** — each is named
+  outright in a snippet, each tied to the tree.
+- **fontaine fiévreux** — *not* named outright: no snippet contains that
+  string. The label comes from `object-model`. Snippets say "une fontaine" /
+  "Auprès est une fontaine" beside the tree, and separately "les fiévreux" who
+  drink from it. Treating those as one spring is a judgment call (see below).
 - **the road to Neufchâteau**, **the land of Messire Pierre de Bourlémont**, **un Bois** — named
   outright, each tied to the tree.
 - **Les saintes** — named outright, tied to `fontaine fiévreux` via Jeanne
@@ -225,8 +237,7 @@ removals — is unchanged.
   summary (91), tied to `malades` and `eau`.
 - **eau** — directly stated as carried to, drunk, or placed at the tree or
   a fountain by one or more witnesses.
-- **guirlande** (garland/wreath, including "couronnes"/"chappeaux"/Latin
-  "serta") and **image** (the devotional "image de la Notre-Dame de
+- **guirlande** (garland/wreath, including "couronnes"/"chappeaux") and **image** (the devotional "image de la Notre-Dame de
   Domrémy") — Jeanne states she made guirlandes at the tree *for* the
   image; both the tree-guirlande and guirlande-image relations are directly
   stated in the same sentence.
@@ -236,8 +247,9 @@ removals — is unchanged.
   this wood is visible from her father's house door; this is the only
   first-hand-stated relationship either entity has, and it ties them
   together, so both are included.
-- **mandragore** / **coudrier** — Jeanne states a mandrake lies in the
-  ground near the tree, with a hazel growing above it.
+- **mandragore** / **coudrier** — Jeanne reports, as hearsay ("ouït dire")
+  and without knowing the place, that a mandrake lies in the ground near the
+  tree, with a hazel growing above it.
 
 ## Excluded entirely
 
@@ -284,7 +296,11 @@ time, the same treatment the bare `L'Arbre` entry has always had.
 
 ### Named first-hand, but dropped as isolated (no stated relationship)
 
-- **l’ermitage de Notre-Dame de Bermont** — named first-hand twice: (1) as
+- **l’ermitage de Notre-Dame de Bermont** — the word "ermitage" appears only
+  in `general-reputation` (Wallon, `ste-jeannedarc.fr`); first-hand snippets
+  say "l'église Notre-Dame de Bermont" and "pèlerinage de Notre-Dame de
+  Bermont". Treating these as the `object-model` entry is an unflagged
+  identification, made here as a judgment call. Named first-hand twice: (1) as
   "l'église Notre-Dame de Bermont" in Gérard Guillemette's deposition, which
   describes a *different* village's (Greux) custom, and (2) in Jean
   Waterin's deposition, which states that Jeanne herself "allait au
@@ -373,8 +389,9 @@ time, the same treatment the bare `L'Arbre` entry has always had.
 
 Two `first-hand-snippets` under `document-reference: bibliotheque-monastique`
 are excluded as the judges'/promoter's own accusatory record rather than a
-witness's or Jeanne's own statement — neither has a `from` field or a named
-witness, and both address Jeanne in the third person in the legalistic
+witness's or Jeanne's own statement — both carry the block-wide tag `who:
+Jeanne D'Arc according to the interrogatoire of 1431` (see the judgment call
+on that tag below), but name no individual witness, and both address Jeanne in the third person in the legalistic
 register of the Articles of Accusation, unlike every surrounding snippet
 from that same source:
 
@@ -436,14 +453,48 @@ first-hand snippet already cited.
   neutral editor's summary, 91–94 would lose their thick weight, but 92–94
   edges stay thick via other Jeanne relations, and only the three `N19`
   edges (91) would turn normal and `fontaine` would lose its green.
+- **Relation 91's `malades — fontaine` edge chains two statements.** The
+  snippet ties the sick to "l'eau" and "l'eau" to "la fontaine"; no clause
+  states the sick and the fountain directly. Drawn anyway, flagged here, and
+  the causation hedge ("sans savoir si c'en était la cause") applies.
+- **Further judgment calls surfaced by the evidence audit (not previously
+  flagged):**
+  - *"le Fou"/"fau"/"nommé fou" = the tree of relation 5.* Relation 6's
+    snippet says only "un grand arbre appelé le Fou"; identity with the
+    "arbre des Dames" is not stated within it. Folded by the most-recently-
+    named rule.
+  - *"aux Loges-les-Dames"/"Aux loges des dames" = `L'Arbre des dames`.* No
+    snippet states this equivalence; only the Dames/Fées merge is directly
+    stated.
+  - *"fontaine des Rains" = "fontaine aux Rains".* Witnesses use both; only
+    "aux Rains" is in `object-model`. Treated as one spring on spelling.
+  - *"le Bosc Chesnu" = `le Bois Chenu`.* `object-model` lists them
+    separately; identity rests on near-identical spelling in parallel
+    `interro_public3` snippets.
+  - *"autour" in relation 67* (Jean Morel: "autour s'amusent à cueillir des
+    fleurs") has no stated antecedent; reading it as "around the fountain"
+    is a judgment call (it could be the tree).
+  - *Relation 62's speaker* ("J'ai vu des filles mettre des guirlandes...")
+    has no `who` and is treated as an unnamed witness, whereas the untagged
+    `doncoeur` snippets are attributed to Jeanne on content grounds.
+  - *Rule numbers* cited in this file ("rule 2", "rule 4", "rule 5(a)/(b)",
+    "rule 7", "rule 9", "rule 10") come from the `evidence-diagram` skill,
+    not from the five rules in `CLAUDE.md`, and do not match its numbering.
+  - *Node N7* is still drawn although no snippet mentions land (see the
+    first judgment call); under a strict reading of the no-inference rule it
+    would be dropped. The author has decided to keep it, with further
+  material for this node to follow.
 - **"la fontaine" in relation 91 goes to the bare `fontaine` node (`N19`),
   not `fontaine fiévreux`.** The summary says "l'eau de la fontaine" before
   any tree is mentioned and never states it is the fountain beside the tree,
   nor that the sick are fever sufferers. With no explicit identity statement
   (rule 4) it defaults to the unqualified node.
-- **"couronnes de fleurs" in 93 draws only `guirlande — Arbre des dames`.**
-  The wreaths are of flowers, but a `guirlande — fleur` edge is not drawn,
-  consistent with earlier snippets that never drew it. "pour Notre-Dame"
+- **"couronnes de fleurs" in 93 draws `guirlande — Arbre des dames` and
+  `guirlande — fleur`.** The snippet states "couronnes de fleurs" directly
+  and both nodes are included, so the edge is drawn (thick, since 93 is
+  Jeanne-sourced). An earlier pass omitted it "consistent with earlier
+  snippets", which was not a textual basis; corrected at the author's
+  direction. "pour Notre-Dame"
   does not name `image`, so no `guirlande — image` edge is added.
 - Other claims in that snippet name no second included entity (the fées —
   not in `object-model` — the dancing, the brother's rumor, the prophecy
@@ -489,15 +540,17 @@ first-hand snippet already cited.
   register). They now carry `who: Jeanne D'Arc according to the
   interrogatoire of 1431` directly, settling that call with data rather
   than inference. Still kept and attributed to Jeanne throughout
-  (relations 48–52, 58, 61, 63, 68–70, 77 — 64, 73–76, and 80 are retired
+  (relations 48–52, 63, 68–70, 77 — 64, 73–76, and 80 are retired
   this pass for the unrelated reason that their vocabulary left
   `object-model`, see "No longer in the fixed vocabulary").
 - **The same blanket `who` tag also landed on the two rule-2-excluded
   judges'/promoter's-assertion snippets** ("Item ladite Jeanne avait
   coutume de fréquenter..." and "Lesdites saintes lui ont plusieurs fois
-  parlé...") — every snippet in that `bibliotheque-monastique` block
+  parlé...") — most snippets in that `bibliotheque-monastique` block
   received the identical tag, apparently mechanically, rather than per
-  individual speaker. Rule 2's test is a snippet's own register and
+  individual speaker. (Not all: the Groseilliers snippets, the
+  Loges-les-Dames snippet and the "J'ai vu des filles mettre des
+  guirlandes..." snippet carry no `who` at all.) Rule 2's test is a snippet's own register and
   content (third-person "ladite Jeanne," no witness name, Articles-of-
   Accusation phrasing), not the presence or absence of an attribution
   field, so this doesn't reopen their exclusion — flagged here rather
@@ -506,8 +559,12 @@ first-hand snippet already cited.
   `fiévreux` to `fontaine fiévreux`) relies on treating every snippet that
   places "une fontaine" immediately beside/next to the tree ("auprès,"
   "proche," "située près") as the same single spring — as opposed to
-  `fontaine des Groseilliers` or `fontaine aux Rains`, always reached "en
-  revenant." Jean Moen's "vont aux fontaines près de cet arbre pour boire"
+  `fontaine des Groseilliers` or `fontaine aux Rains`. Correction: the
+  Rains witnesses say "en revenant"/"au retour", but the Groseilliers
+  witnesses (relations 1–4) say "allaient à l'arbre ... et à la
+  Fontaine-des-Groseilliers" / "puis nous allions boire", not "en revenant".
+  The separation of the three springs rests on their distinct names, not on
+  that phrase. Jean Moen's "vont aux fontaines près de cet arbre pour boire"
   is plural/unqualified and does *not* get this treatment — it is now
   drawn to the new bare `fontaine` node (`N19`) instead, rather than left
   undrawn as before.
@@ -625,6 +682,7 @@ graph TD
     N1 == "61,62,63,89,90,93" === N26
     N26 == "61,63" === N27
     N1 -- "66" --- N29
+    N26 == "93" === N29
     N5 -- "67" --- N29
     N30 == "68,94" === N36
     N1 == "69" === N31
@@ -642,18 +700,18 @@ graph TD
     N34 -- "98" --- N19
     N1 == "95,96" === N38
 
-    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36,N38 jeanneSourced
+    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N29,N30,N31,N32,N36,N38 jeanneSourced
 ```
 
 ## Numbered relations
 
-1. **Arbre des dames — fontaine des Groseilliers.** Village children walked from the tree to the fountain on Fountain Sunday.
+1. **Arbre des dames — fontaine des Groseilliers.** Village children went to the tree and to the fountain on Fountain Sunday (no order of travel is stated).
    *"Les petits du village, filles et garçons, avec du pain et des noix, allaient à l'arbre des Dames et à la Fontaine-des-Groseilliers, le dimanche de Laetare Jerusalem..."* (bibliotheque-monastique).
 
 2. **Arbre des dames — fontaine des Groseilliers.** After eating under the tree, the group went on to drink at the fountain.
    *"Nous mangions sous l'arbre, puis nous allions boire à la Fontaine-des-Groseilliers."* (bibliotheque-monastique).
 
-3. **Arbre des dames — fontaine des Groseilliers.** Jeannette is described dancing under the tree, then going to drink at the fountain.
+3. **Arbre des dames — fontaine des Groseilliers.** Jeannette is described dancing and playing at the tree ("va à l'arbre jouer et danser"), then going to drink at the fountain.
    *"Jeannette venait danser et jouer avec nous... et puis s'en venait boire à la Fontaine-des-Groseilliers."* (bibliotheque-monastique).
 
 4. **Arbre des dames — fontaine des Groseilliers.** Jeanne, in her youth, is placed at both sites together.
@@ -750,7 +808,7 @@ graph TD
 51. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* The same minute records Jeanne's answer that the tree belonged to Pierre de Bourlemont — the same fact as relation 6, from a different document. The same sentence also states the May-bough comes from the tree ("d'où vient le beau mai"), the same fact as the now-retired relation 64, but that no longer draws an edge now that `mai` has left `object-model` — see "No longer in the fixed vocabulary."
     *"Et c'est un grand arbre, appelé fau d'où vient le beau mai ; et appartenait, à ce qu'on dit, à Messire Pierre de Bourlemont, chevalier."* (interro_public3, from Jeanne D'Arc).
 
-52. **fontaine fiévreux — Les saintes.** *(Jeanne D'Arc — thick edge)* A second condemnation-trial minute records Jeanne confirming the saints spoke to her at the fountain near the tree (but not, so far as she knows, under the tree itself) — the same fact as relation 7, from a different document.
+52. **fontaine fiévreux — Les saintes.** *(Jeanne D'Arc — thick edge)* A second condemnation-trial minute records Jeanne confirming the saints spoke to her at the fountain near the tree (asked whether they spoke under the tree, she answered only "Je ne sais") — the same fact as relation 7, from a different document.
     *"Interrogée si saintes Catherine et Marguerite lui parlèrent sous l'arbre mentionné plus haut, répondit : 'Je ne sais'. Interrogée si, à la fontaine qui est près de l'arbre, les saintes parlèrent avec elle, répondit que oui, et que là elle les ouït bien mais ce qu'elles lui dirent alors, elle ne le sait plus."* (interro_public5, from Jeanne D'Arc).
 
 *(Relations 53, 54, 55, 56, and 57 — pain/vin/oeuf at the tree, and noix at the tree and at "the fountains" — are retired: `pain`, `vin`, `oeuf`, and `noix` all left `object-model` this pass, see "No longer in the fixed vocabulary.")*
@@ -769,7 +827,7 @@ graph TD
 62. **guirlande — Arbre des dames.** An anonymous witness states girls hung garlands on the tree's branches.
     *"J'ai vu des filles mettre des guirlandes aux branches de cet arbre..."* (bibliotheque-monastique).
 
-63. **guirlande — Arbre des dames; guirlande — image.** *(Jeanne D'Arc — thick edges)* The condemnation-trial minute restates relation 61's facts under "couronnes"/Latin "serta"/archaic French "chappeaux" — all treated as the same `guirlande` node, since no separate vocabulary entry exists for any of those words.
+63. **guirlande — Arbre des dames; guirlande — image.** *(Jeanne D'Arc — thick edges)* The condemnation-trial minute restates relation 61's facts under "couronnes" (and, in other relations, "chappeaux") — all treated as the same `guirlande` node, since no separate vocabulary entry exists for any of those words.
     *"faisait à cet arbre couronnes pour l'image de Notre-Dame de Domrémy."* (interro_public3, from Jeanne D'Arc).
 
 *(Relations 64 and 65 — mai — Arbre des dames, including Colin fils de Jean Colin's May-Day effigy — are retired: `mai` left `object-model` this pass. Relation 51, which also names the May-bough, keeps its number for the Bourlemont-ownership fact it still supports — see judgment calls.)*
@@ -783,9 +841,9 @@ graph TD
 68. **maison — le Bois Chenu.** *(Jeanne D'Arc — thick edge)* Jeanne states the wood is visible from her father's house door — the relationship that pulls both entities into the diagram.
     *"il y a un bois chenu qu'on voit de l'huis de sa maison de son père ; et n'y a pas la distance qu'une demi-lieue."* (interro_public3, from Jeanne D'Arc). Parallel archaic French: *"...que on voit de l'huys de son pere..."* (interro_public3).
 
-69. **mandragore — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Jeanne states a mandrake lies in the ground near the tree.
+69. **mandragore — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Jeanne reports hearsay ("elle ouït dire") that a mandrake lies in the ground near the tree; she adds that she does not know the place ("mais ne sait le lieu").
     *"elle ouït dire qu'elle est en terre, proche de l'arbre ci-dessus mentionné."* (interro_public5, from Jeanne D'Arc).
-70. **coudrier — mandragore.** *(Jeanne D'Arc — thick edge)* Jeanne states a hazel grows above the mandrake.
+70. **coudrier — mandragore.** *(Jeanne D'Arc — thick edge)* Jeanne reports hearsay ("elle a ouï dire") that a hazel grows above the mandrake.
     *"Et dit qu'elle a ouï dire que sur cette mandragore s'élève un coudrier."* (interro_public5, from Jeanne D'Arc).
 71. **croix — le curé.** Béatrice has the curé carry the crosses through the fields.
     *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
@@ -832,13 +890,13 @@ graph TD
 90. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same minute: asked about putting "chappeaulx en l'arbre."
     *"Interroguee, quand elle metoit chappeaulx en l'arbre, se elle les metoit en l'honneur de celles qui luy apparoyent, Respond que non."* (doncoeur-lanhers-documents, Jeanne D'Arc).
 
-91. **malades — fontaine; eau — fontaine; malades — eau.** *(Jeanne D'Arc — thick edges)* Jeanne's answer, as summarized, states she saw sick people healed by the water of the fountain.
+91. **malades — fontaine; eau — fontaine; malades — eau.** *(Jeanne D'Arc — thick edges)* Jeanne's answer, as summarized, states she saw sick people recover, and names the water of the fountain — but "sans savoir si c'en était la cause." The snippet links the sick to the water and the water to the fountain; the direct `malades — fontaine` edge chains those two statements (see judgment calls).
     *"Dit avoir vu des malades guérir de l’eau de la fontaine mais sans savoir si c’en était la cause"* (condamnation-24-fevrier; attribution to Jeanne is a judgment call, see above).
 
 92. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Same summary: the tree belonged to the knight Pierre de Bourlemont.
     *"que l’arbre était un grand hêtre qui appartenait au chevalier Pierre de Bourlemont"* (condamnation-24-fevrier).
 
-93. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same summary: she hung wreaths of flowers at the tree.
+93. **guirlande — Arbre des dames; guirlande — fleur.** *(Jeanne D'Arc — thick edges)* Same summary: she hung wreaths of flowers at the tree. "couronnes de fleurs" states the wreath–flower relation directly.
     *"qu’elle y jouait avec ses amies, y accrochait des couronnes de fleurs pour Notre-Dame"* (condamnation-24-fevrier).
 
 94. **maison — le Bois Chenu.** *(Jeanne D'Arc — thick edge)* Same summary: the Bois Chenu is visible from her house door.
@@ -879,8 +937,10 @@ which edges are already thick.
 - **eau** (`N24`) *(green)*. Endpoint of thick edges 58 (to `N4`) and 91
   (to `fontaine` and `malades`); its other edge, 59 (to `fontaine aux
   Rains`), is normal.
-- **guirlande** (`N26`) *(green)*. Endpoint of thick edges 61/63/89/90 (to
-  `N1`; 61/63 also to `image`); its other citation, 62, is normal.
+- **guirlande** (`N26`) *(green)*. Endpoint of thick edges 61/63/89/90/93 (to
+  `N1`; 61/63 also to `image`; 93 also to `fleur`); its other citation, 62, is normal.
+- **fleur** (`N29`) *(green, newly)*. Endpoint of thick edge 93 (to
+  `guirlande`); its edges 66 and 67 are normal.
 - **image** (`N27`) *(green)*. Its edges, to `N26`, are relations 61/63.
 - **maison** (`N30`) *(green)*. Its only edge, to `N36`, is relation 68.
 - **mandragore** (`N31`) *(green)*. Endpoint of thick edge 69 (to `N1`)
@@ -895,7 +955,7 @@ which edges are already thick.
   97, 98), so none is thick.
 - **fontaine des Groseilliers** (`N3`), **fontaine aux Rains** (`N5`), **the
   road to Neufchâteau** (`N6`), **un Bois**
-  (`N8`), **fleur** (`N29`)
+  (`N8`)
   *(default styling)*. None of their edges are thick — every relation
   touching them comes from a named witness other than Jeanne, so they stay
   uncolored.
