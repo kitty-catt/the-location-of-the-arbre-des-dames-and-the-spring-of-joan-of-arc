@@ -45,7 +45,7 @@ graph TD
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
     N6["the road to Neufchâteau"]
-    N7["the land of Messire Pierre de Bourlémont"]
+    N39["Messire Pierre de Bourlémont"]
     N8["un Bois"]
     N9["Les saintes"]
     N10["fiévreux"]
@@ -66,7 +66,7 @@ graph TD
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48,85" === N4
-    N1 == "6,51,88,92" === N7
+    N1 == "6,51,88,92,99,100,101" === N39
     N4 == "7,52" === N9
     N4 == "26,49,86" === N10
     N1 == "27,50,87" === N11
@@ -79,6 +79,7 @@ graph TD
     N1 == "61,62,63,89,90,93" === N26
     N26 == "61,63" === N27
     N1 -- "66" --- N29
+    N26 == "93" === N29
     N5 -- "67" --- N29
     N30 == "68,94" === N36
     N1 == "69" === N31
@@ -96,7 +97,7 @@ graph TD
     N34 -- "98" --- N19
     N1 == "95,96" === N38
 
-    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N30,N31,N32,N36,N38 jeanneSourced
+    class N1,N4,N9,N10,N11,N19,N24,N26,N27,N29,N30,N31,N32,N36,N38,N39 jeanneSourced
 ```
 
 

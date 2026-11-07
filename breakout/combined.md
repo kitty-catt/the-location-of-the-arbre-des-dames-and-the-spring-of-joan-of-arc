@@ -33,9 +33,29 @@ and the citation establishing each equivalence.
 
 Evidence-audit fixes (prose, attributions, newly flagged judgment calls; relation 90 marked as weak, co-citation-only support), plus
 one diagram change: **new thick edge `guirlande — fleur` (relation 93)**, so
-**`fleur` (`N29`) is newly green**. Now 23 nodes, 32 edges. `N7` (the land of
-Messire Pierre de Bourlémont) is deliberately kept. Earlier notes below that
-say no `guirlande — fleur` edge is drawn are superseded.
+**`fleur` (`N29`) is newly green**. Earlier notes below that say no
+`guirlande — fleur` edge is drawn are superseded.
+
+### Latest update (new `object-model` entry `Messire Pierre de Bourlémont`)
+
+`prompt/tree-prompt.yaml` gained one `object-model` entry, the person
+`Messire Pierre de Bourlémont`, next to the existing `the land of Messire
+Pierre de Bourlémont`. No snippet changed. At the author's direction the
+ownership relations (6, 51, 88, 92) move to the person:
+
+- **New node `N39` (`Messire Pierre de Bourlémont`)**, green (thick edge).
+  Edge `Arbre des dames — Messire Pierre de Bourlémont` carries 6, 51, 88, 92
+  and the three new relations 99, 100, 101.
+- **`N7` (`the land of Messire Pierre de Bourlémont`) is dropped.** No snippet
+  states any relationship for the land (see "Named first-hand, but dropped as
+  isolated"), so rule 5(b) removes it. `N7` is retired, not reassigned. The
+  author had earlier asked to keep it, expecting further material; the entry
+  stays in `object-model`, so it returns if a snippet or relation for it
+  appears.
+- **Three new relations (99–101)**, all normal-weight, on the same edge.
+- Still 23 nodes (−`N7`, +`N39`) and 32 edges. Older notes below that mention
+  `N7` or "the land of Messire Pierre de Bourlémont" describe the retired
+  node; relation titles that used its name now name the person.
 
 ### Prior update (before the audit)
 
@@ -99,7 +119,7 @@ unchanged. It adds four relations (91–94):
 - 91, `malades — fontaine; eau — fontaine; malades — eau` — **three new
   edges**: two to the bare `fontaine` node (`N19`) and `malades — eau`
   (no `N19`).
-- 92, `Arbre des dames — the land of Messire Pierre de Bourlémont` (co-cites 6, 51, 88).
+- 92, `Arbre des dames — Messire Pierre de Bourlémont` (co-cites 6, 51, 88).
 - 93, `guirlande — Arbre des dames` (co-cites 61, 62, 63, 89, 90).
 - 94, `maison — le Bois Chenu` (co-cites 68).
 
@@ -123,7 +143,7 @@ thick edges 91. Every other touched edge was already thick.
     that the tree has the two names "l'arbre des Dames"/"l'arbre des Fees")
   - 86, `fiévreux — fontaine fiévreux`
   - 87, `Arbre des dames — malades`
-  - 88, `Arbre des dames — the land of Messire Pierre de Bourlémont`
+  - 88, `Arbre des dames — Messire Pierre de Bourlémont`
   - 89 and 90, `guirlande — Arbre des dames` ("chappeaux" in the branches; 90 is weak support — see relation 90)
 - **The Latin depositions moved out of `first-hand-snippets` into
   `general-reputation`**: Gérardin d'Épinal (`dep_gerardin_epinal`),
@@ -226,11 +246,13 @@ removals — is unchanged.
   drink from it. Treating those as one spring is a judgment call (see below).
 - **the road to Neufchâteau**, **un Bois** — named outright, each tied to the
   tree.
-- **the land of Messire Pierre de Bourlémont** (`N7`) — *not* named outright:
-  no snippet names a land or estate, only the person ("monseigneur Pierre de
-  Bourlemont", "Messire Pierre de Bourlemont", "messyre Pierre de Bolemont",
-  "appartenait au chevalier Pierre de Bourlemont"), who owned the tree. Kept deliberately
-  by the author; see the first judgment call.
+- **Messire Pierre de Bourlémont** (`N39`) — the person, named outright:
+  "monseigneur Pierre de Bourlemont" (relation 6), "Messire Pierre de
+  Bourlemont" (51), "messyre Pierre de Bolemont" (88), "appartenait au chevalier
+  Pierre de Bourlemont" (92), "le sire Pierre de Bourlemont" (100). Tied to the
+  tree by ownership (6, 51, 88, 92) and by going to it (99, 100, 101). The
+  spellings "Bolemont" and "Bourlemont" are folded as one person, a judgment
+  call (see below).
 - **Les saintes** (the `object-model` entry is `saintes`; the label adds "Les", as the snippets do) — named outright, tied to `fontaine fiévreux` via Jeanne
   d'Arc's confirmed interrogation answers.
 - **fiévreux** — named outright in Jeanne d'Arc's own testimony, which
@@ -314,6 +336,10 @@ time, the same treatment the bare `L'Arbre` entry has always had.
 
 ### Named first-hand, but dropped as isolated (no stated relationship)
 
+- **the land of Messire Pierre de Bourlémont** (formerly `N7`) — never named
+  first-hand as a land or estate; the snippets name only the person. Its former
+  edge to the tree (6, 51, 88, 92) now sits on the person, `N39`. Kept in
+  `object-model` by the author, who expects further material for it.
 - **l’ermitage de Notre-Dame de Bermont** — the word "ermitage" appears only
   in `general-reputation` (Wallon, `ste-jeannedarc.fr`); first-hand snippets
   say "l'église Notre-Dame de Bermont" and "pèlerinage de Notre-Dame de
@@ -453,15 +479,24 @@ first-hand snippet already cited.
 
 ## Judgment calls
 
-- **`the land of Messire Pierre de Bourlémont` (N7) is drawn from
-  statements about the tree's owner.** Relations 6, 51, 88 and 92 say the tree
-  *belonged to* Pierre de Bourlemont ("appartenait... à monseigneur Pierre de
-  Bourlemont", "souloit estre a messyre Pierre de Bolemont"). None says where
-  his land lay or that the tree stood on it. The renamed entry names the
-  land, so the node now reads slightly beyond the quotes: ownership of the
-  tree is mapped to the land entity, as it was to "the estate" before.
-  If you want a strict reading, this node would carry the person and not
-  land, which `object-model` has no entry for.
+- **Ownership goes to the person (`N39`), not the land.** Relations 6, 51, 88
+  and 92 say the tree *belonged to* Pierre de Bourlemont ("appartenait... à
+  monseigneur Pierre de Bourlemont", "souloit estre a messyre Pierre de
+  Bolemont"). None says where his land lay or that the tree stood on it, so
+  with the person now in `object-model` the edge goes to him and the land entry
+  has no stated relationship (it is dropped as isolated). Relations 6 and 51
+  are hearsay ("d'après le commun dire", "à ce qu'on dit").
+- **Relations 99–101 and what is left out.** The three walked-to-the-tree
+  relations name him directly: Thévenin Le Royer ("comme le seigneur Pierre de
+  Bourlemont"), Isabelle ("elle accompagna autrefois le sire Pierre de
+  Bourlemont") and Jeannette veuve de Thiesselin de Vittel ("ledit seigneur
+  Pierre ... à ce qu'on disait"). Thévenin and Jeannette are hearsay. Not drawn:
+  snippets where only his wife or mother goes to the tree (the unnamed
+  `bibliotheque-monastique` witness, Perrin Drappier), since they state no
+  relation for him; "Jean de Bourlemont" (Jeanette femme de Thévenin Le Royer)
+  and "Pierre Gravier, seigneur de Bourlemont" (Jeannette veuve de Thiesselin de
+  Vittel), whose identity with Pierre is not stated. Treating "Bolemont" and
+  "Bourlemont" as one person is a judgment call on spelling.
 - **`condamnation-24-fevrier` snippet: Jeanne's answers, not the judges'
   assertion.** It has no `who` field. It is a reported-speech summary ("Dit avoir vu...
   qu'elle y jouait... qu'elle-même ignore si c'était vrai ou non, et qu'elle
@@ -513,10 +548,10 @@ first-hand snippet already cited.
   - *Rule numbers* cited in this file ("rule 1", "rule 2", "rule 4", "rule 5", "rule 5(a)/(b)",
     "rule 7", "rule 9", "rule 10") come from the `evidence-diagram` skill,
     not from the five rules in `CLAUDE.md`, and do not match its numbering.
-  - *Node N7* is still drawn although no snippet mentions land (see the
-    first judgment call); under a strict reading of the no-inference rule it
-    would be dropped. The author has decided to keep it, with further
-  material for this node to follow.
+  - *Node N7* (the land) is no longer drawn: with the person `N39` in
+    `object-model`, no snippet states any relationship for the land, so it is
+    dropped as isolated. The author had asked to keep it, expecting further
+    material; that material would bring it back.
 - **"la fontaine" in relation 91 goes to the bare `fontaine` node (`N19`),
   not `fontaine fiévreux`.** The summary says "l'eau de la fontaine" before
   any tree is mentioned and never states it is the fountain beside the tree,
@@ -681,7 +716,7 @@ graph TD
     N4["fontaine fiévreux"]
     N5["fontaine aux Rains"]
     N6["the road to Neufchâteau"]
-    N7["the land of Messire Pierre de Bourlémont"]
+    N39["Messire Pierre de Bourlémont"]
     N8["un Bois"]
     N9["Les saintes"]
     N10["fiévreux"]
@@ -702,7 +737,7 @@ graph TD
 
     N1 -- "1,2,3,4" --- N3
     N1 == "5,7,29,48,85" === N4
-    N1 == "6,51,88,92" === N7
+    N1 == "6,51,88,92,99,100,101" === N39
     N4 == "7,52" === N9
     N4 == "26,49,86" === N10
     N1 == "27,50,87" === N11
@@ -733,7 +768,7 @@ graph TD
     N34 -- "98" --- N19
     N1 == "95,96" === N38
 
-    class N1,N4,N7,N9,N10,N11,N19,N24,N26,N27,N29,N30,N31,N32,N36,N38 jeanneSourced
+    class N1,N4,N9,N10,N11,N19,N24,N26,N27,N29,N30,N31,N32,N36,N38,N39 jeanneSourced
 ```
 
 ## Numbered relations
@@ -753,7 +788,7 @@ graph TD
 5. **Arbre des dames — fontaine fiévreux** (and states the tree's two names, "Arbre des Dames"/"Arbre des Fées," are the same tree — see "Included entities," node merge). *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states the tree has two names, and places a fountain beside it ("Auprès") where feverish people (fiévreux) go to recover.
    *"Près de Domrémy il y avait un arbre appelé l'arbre des Dames ; d'autres l'appelaient l'arbre des Fées. Auprès est une fontaine. J'ai ouï dire que les fiévreux boivent de cette fontaine et y vont quérir de l'eau pour se remettre en santé."* (bibliotheque-monastique, `who`: Jeanne D'Arc according to the interrogatoire of 1431).
 
-6. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states, "d'après le commun dire" (hearsay), that the tree (here called "le Fou"; identity with #5 is a judgment call) belonged to Pierre de Bourlémont.
+6. **Arbre des dames — Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Jeanne d'Arc states, "d'après le commun dire" (hearsay), that the tree (here called "le Fou"; identity with #5 is a judgment call) belonged to Pierre de Bourlémont.
    *"Il y a un grand arbre appelé le Fou, d'où vient le beau mai. Il appartenait, d'après le commun dire, à monseigneur Pierre de Bourlemont, chevalier."* (bibliotheque-monastique, `who`: Jeanne D'Arc according to the interrogatoire of 1431).
 
 7. **Arbre des dames — fontaine fiévreux; fontaine fiévreux — Les saintes.** *(Jeanne D'Arc — thick edges)* Jeanne confirms hearing the saints at "the fountain near the tree."
@@ -838,7 +873,7 @@ graph TD
 50. **Arbre des dames — malades.** *(Jeanne D'Arc — thick edge)* The same minute records Jeanne's answer that the sick, once able to rise, go to the tree to amuse themselves — the same fact as relation 27, from a different document.
     *"...les malades, quand ils peuvent se lever vont à l'arbre pour s'ébattre."* (interro_public3, `who`: Jeanne D'Arc according to the interrogatoire of 1431).
 
-51. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* The same minute records Jeanne's answer that the tree, "à ce qu'on dit" (hearsay), belonged to Pierre de Bourlemont — the same fact as relation 6, from a different document. The same sentence also states the May-bough comes from the tree ("d'où vient le beau mai"), the same fact as the now-retired relation 64, but that no longer draws an edge now that `mai` has left `object-model` — see "No longer in the fixed vocabulary."
+51. **Arbre des dames — Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* The same minute records Jeanne's answer that the tree, "à ce qu'on dit" (hearsay), belonged to Pierre de Bourlemont — the same fact as relation 6, from a different document. The same sentence also states the May-bough comes from the tree ("d'où vient le beau mai"), the same fact as the now-retired relation 64, but that no longer draws an edge now that `mai` has left `object-model` — see "No longer in the fixed vocabulary."
     *"Et c'est un grand arbre, appelé fau d'où vient le beau mai ; et appartenait, à ce qu'on dit, à Messire Pierre de Bourlemont, chevalier."* (interro_public3, `who`: Jeanne D'Arc according to the interrogatoire of 1431).
 
 52. **fontaine fiévreux — Les saintes.** *(Jeanne D'Arc — thick edge)* A second condemnation-trial minute records Jeanne confirming the saints spoke to her at the fountain near the tree (asked whether they spoke under the tree, she answered only "Je ne sais") — the same fact as relation 7, from a different document.
@@ -914,7 +949,7 @@ graph TD
 87. **Arbre des dames — malades.** *(Jeanne D'Arc — thick edge)* Same minute: the sick, once able to rise, go to the tree to amuse themselves.
     *"...les malades, quand ilz se pevent lever, vont a l'arbre pour leur esbattre..."* (doncoeur-lanhers-documents, Jeanne D'Arc).
 
-88. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Same minute: the tree ("nommé fou") used to belong to Pierre de Bolemont.
+88. **Arbre des dames — Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Same minute: the tree ("nommé fou") used to belong to Pierre de Bolemont.
     *"...c'est ung grand arbre, nommé fou, dont vient de beau may ; et souloit estre a messyre Pierre de Bolemont."* (doncoeur-lanhers-documents, Jeanne D'Arc).
 
 89. **guirlande — Arbre des dames.** *(Jeanne D'Arc — thick edge)* Same minute: she saw young girls put "chappeaux" in the tree's branches, and put some there herself.
@@ -926,7 +961,7 @@ graph TD
 91. **malades — fontaine; eau — fontaine; malades — eau.** *(Jeanne D'Arc — thick edges)* Jeanne's answer, as summarized, states she saw sick people recover, and names the water of the fountain — but "sans savoir si c'en était la cause." The snippet links the sick to the water and the water to the fountain; the direct `malades — fontaine` edge chains those two statements (see judgment calls).
     *"Dit avoir vu des malades guérir de l’eau de la fontaine mais sans savoir si c’en était la cause"* (condamnation-24-fevrier; attribution to Jeanne is a judgment call, see above).
 
-92. **Arbre des dames — the land of Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Same summary: the tree belonged to the knight Pierre de Bourlemont.
+92. **Arbre des dames — Messire Pierre de Bourlémont.** *(Jeanne D'Arc — thick edge)* Same summary: the tree belonged to the knight Pierre de Bourlemont.
     *"que l’arbre était un grand hêtre qui appartenait au chevalier Pierre de Bourlemont"* (condamnation-24-fevrier; attribution to Jeanne is a judgment call, see above).
 
 93. **guirlande — Arbre des dames; guirlande — fleur.** *(Jeanne D'Arc — thick edges)* Same summary: she hung wreaths of flowers at the tree. "couronnes de fleurs" states the wreath–flower relation directly.
@@ -946,6 +981,15 @@ graph TD
 98. **évangile — fontaine.** The curé sings the gospel at "les autres fontaines" (plural, unqualified).
     *"La veille de l'Ascension, quand le curé porte les croix par les champs, il va lui aussi sous cet arbre et y chante l'évangile, ainsi qu'à la fontaine aux Rains et aux autres fontaines."* (questionnaire-lorraine, Béatrice).
 
+99. **Arbre des dames — Messire Pierre de Bourlémont.** Thévenin Le Royer reports, as hearsay, that the lords and ladies of Domrémy, "comme le seigneur Pierre de Bourlemont", used to walk under the tree.
+    *"A entendu dire qu’anciennement les seigneurs et les dames du village de Domrémy, comme le seigneur Pierre de Bourlemont, son épouse, et d’autres serviteurs et demoiselles allaient se promener sous cet arbre."* (questionnaire-lorraine, Thévenin Le Royer).
+
+100. **Arbre des dames — Messire Pierre de Bourlémont.** Isabelle says she accompanied the sire Pierre de Bourlemont when the lords went to relax under the tree.
+    *"...les seigneurs et leurs femmes allaient se délasser sous cet arbre, le dimanche du Lætare, appelé des Fontaines, et parfois en été ils y conduisaient leurs filles et leurs garçons ; elle le sait, car elle accompagna autrefois le sire Pierre de Bourlemont, seigneur du village et son épouse, qui était de France, et plusieurs fois aussi les jeunes filles du village..."* (questionnaire-lorraine, Isabelle).
+
+101. **Arbre des dames — Messire Pierre de Bourlémont.** Jeannette, widow of Thiesselin de Vittel, reports, as hearsay, that the lord Pierre went to the tree with dame Béatrice.
+    *"...dame Béatrice, femme du seigneur Pierre de Bourlemont, avec ses demoiselles et ledit seigneur Pierre, allaient parfois, à ce qu’on disait, se promener jusqu’à cet arbre."* (questionnaire-lorraine, Jeannette veuve de Thiesselin de Vittel).
+
 
 ## Jeanne-sourced coloring
 
@@ -955,13 +999,12 @@ which edges are already thick.
 
 - **L'Arbre des dames** (`N1`, merged with `L'Arbre des fées`) *(green)*.
   Endpoint of many thick edges, including 5/7/29/48/85 to `fontaine
-  fiévreux`, 6/51/88/92 to `the land of Messire Pierre de Bourlémont`, 27/50/87 to `malades`,
+  fiévreux`, 6/51/88/92 to `Messire Pierre de Bourlémont`, 27/50/87 to `malades`,
   61/63/89/90/93 to `guirlande`, 95/96 to `hêtre`, 69 to `mandragore`.
 - **fontaine fiévreux** (`N4`) *(green)*. Endpoint of thick edges 5/7/29/48/85
   (to `N1`), 7/52 (to `Les saintes`), 26/49/86 (to `fiévreux`), and 58 (to
   `eau`).
-- **the land of Messire Pierre de Bourlémont** (`N7`) *(green)*. Its edge is relation 6/51/88/92
-  (to `N1`).
+- **Messire Pierre de Bourlémont** (`N39`) *(green, newly)*. Its edge to `N1` carries 6/51/88/92 (thick, Jeanne-sourced) and 99/100/101 (normal).
 - **Les saintes** (`N9`) *(green)*. Its edge is relation 7/52 (to `N4`).
 - **fiévreux** (`N10`) *(green)*. Its edge is relation 26/49/86 (to `N4`).
 - **malades** (`N11`) *(green)*. Its edge is relation 27/50/87 (to `N1`).
